@@ -1,0 +1,427 @@
+﻿,,Bridge Rectifiers,,,,,,,,,,,
+Manufacture,Product,Status,Compliance,Number of Functions,Package Type,IF(AV)(A),VRWM (V),"VF
+(V) [max]@IF(A)","IR (uA)  [max] @
+VR",IFSM (A),IF(A),VR (V),Tj [max] (°C)
+,,,,,,,,,,,,,
+MCC (Micro Commercial Components),GBU1016,Preferred,R H,1-Phase Bridge,GBU,10,1600,1.05,5,150,5,1600,150
+MCC (Micro Commercial Components),GBU2516,Preferred,R H,1-Phase Bridge,GBU,25,1600,1.1,5,280,12.5,1600,150
+MCC (Micro Commercial Components),GBU3516,Preferred,R H,1-Phase Bridge,GBU,35,1600,1.05,5,450,17.5,1600,150
+MCC (Micro Commercial Components),GBU5016,Preferred,R H,1-Phase Bridge,GBU,50,1600,1.05,5,500,25,1600,150
+MCC (Micro Commercial Components),GBU3016,Preferred,R H,1-Phase Bridge,GBU,30,1600,1.05,5,350,15,1600,150
+MCC (Micro Commercial Components),TBL1008E,Preferred,R H,1-Phase Bridge,TBL,10,800,0.92,5,160,5,800,150
+MCC (Micro Commercial Components),TBL808EA,Preferred,R H,1-Phase Bridge,TBL,8,800,0.90,5,160,4,800,150
+MCC (Micro Commercial Components),KBJ806GL,Preferred,R H,1-Phase Bridge,KBJ,8,600,0.92,5,175,4,600,150
+MCC (Micro Commercial Components),KBJ808GL,Preferred,R H,1-Phase Bridge,KBJ,8,800,0.92,5,175,4,800,150
+MCC (Micro Commercial Components),KBJ2010G,Preferred,R H,1-Phase Bridge,KBJ,20,1000,1.0,5,250,10,1000,150
+MCC (Micro Commercial Components),KBJ1506GL,Preferred,R H,1-Phase Bridge,KBJ,15,600,0.92,5,250,7.5,600,150
+MCC (Micro Commercial Components),KBJ1508GL,Preferred,R H,1-Phase Bridge,KBJ,15,800,0.92,5,250,7.5,800,150
+MCC (Micro Commercial Components),KBJ406GL,Preferred,R H,1-Phase Bridge,KBJ,4,600,0.92,5,135,2,600,150
+MCC (Micro Commercial Components),KBJ408GL,Preferred,R H,1-Phase Bridge,KBJ,4,800,0.92,5,135,2,800,150
+MCC (Micro Commercial Components),KBJ416GS,Active,R H,1-Phase Bridge,KBJ,4,1600,1.0,5,120,2,1600,150
+MCC (Micro Commercial Components),GBPC3512,Active,R,1-Phase Bridge,GBPC,35,1200,1.1,5,450,17.5,1200,150
+MCC (Micro Commercial Components),GBPC3512W,Active,R,1-Phase Bridge,GBPC-W,35,1200,1.1,5,450,17.5,1200,150
+MCC (Micro Commercial Components),GBPC5010L,Active,R,1-Phase Bridge,GBPC-L,50,1000,1.1,5,500,25,1000,150
+MCC (Micro Commercial Components),S50VB160DT,Active,R,1-Phase Bridge,S50VB DT,50,1600,1.05,5,500,25,1600,150
+MCC (Micro Commercial Components),S50VB100DT,Active,R,1-Phase Bridge,S50VB DT,50,1000,1.05,5,500,25,1000,150
+MCC (Micro Commercial Components),PB86,Active,R,1-Phase Bridge,PB-10,8,600,1.1,10,220,4,600,125
+MCC (Micro Commercial Components),PB810,Active,R,1-Phase Bridge,PB-10,8,1000,1.1,10,220,4,1000,125
+MCC (Micro Commercial Components),BR106,Active,R,1-Phase Bridge,PB-6,10,600,1.1,10,150,5,600,150
+MCC (Micro Commercial Components),BR108,Active,R,1-Phase Bridge,PB-6,10,800,1.1,10,150,5,800,150
+MCC (Micro Commercial Components),BR1010,Active,R,1-Phase Bridge,PB-6,10,1000,1.1,10,150,5,1000,150
+MCC (Micro Commercial Components),GBPC5004,Active,R,1-Phase Bridge,GBPC,50,400,1.1,5,500,25,400,150
+MCC (Micro Commercial Components),GBPC5006,Active,R,1-Phase Bridge,GBPC,50,600,1.1,5,500,25,600,150
+MCC (Micro Commercial Components),GBPC5008,Active,R,1-Phase Bridge,GBPC,50,800,1.1,5,500,25,800,150
+MCC (Micro Commercial Components),GBPC5010,Active,R,1-Phase Bridge,GBPC,50,1000,1.1,5,500,25,1000,150
+MCC (Micro Commercial Components),GBPC2506W,Active,R,1-Phase Bridge,GBPC-W,25,600,1.1,5,300,12.5,600,150
+MCC (Micro Commercial Components),GBPC2508W,Active,R,1-Phase Bridge,GBPC-W,25,800,1.1,5,300,12.5,800,150
+MCC (Micro Commercial Components),GBPC2510W,Active,R,1-Phase Bridge,GBPC-W,25,1000,1.1,5,300,12.5,1000,150
+MCC (Micro Commercial Components),GBPC1506,Active,R,1-Phase Bridge,GBPC,15,600,1.1,5,250,7.5,600,150
+MCC (Micro Commercial Components),GBPC1508,Active,R,1-Phase Bridge,GBPC,15,800,1.1,5,250,7.5,800,150
+MCC (Micro Commercial Components),GBPC1510,Active,R,1-Phase Bridge,GBPC,15,1000,1.1,5,250,7.5,1000,150
+MCC (Micro Commercial Components),GBPC3506W,Active,R,1-Phase Bridge,GBPC-W,35,600,1.1,5,400,17.5,600,150
+MCC (Micro Commercial Components),GBPC3508W,Active,R,1-Phase Bridge,GBPC-W,35,800,1.1,5,400,17.5,800,150
+MCC (Micro Commercial Components),GBPC3510W,Active,R,1-Phase Bridge,GBPC-W,35,1000,1.1,5,400,17.5,1000,150
+MCC (Micro Commercial Components),GBPC5012H,Active,R,1-Phase Bridge,GBPC-H,50,1200,1.1,5,500,25,1200,150
+MCC (Micro Commercial Components),GBPC5008H,Active,R,1-Phase Bridge,GBPC-H,50,800,1.1,5,500,25,800,150
+MCC (Micro Commercial Components),GBPC5010H,Active,R,1-Phase Bridge,GBPC-H,50,1000,1.1,5,500,25,1000,150
+MCC (Micro Commercial Components),PB610,Active,R,1-Phase Bridge,PB-6,6,1000,1,10,150,3,1000,150
+MCC (Micro Commercial Components),PB66,Active,R,1-Phase Bridge,PB-6,6,600,1,10,150,3,600,150
+MCC (Micro Commercial Components),PB68,Active,R,1-Phase Bridge,PB-6,6,800,1,10,150,3,800,150
+MCC (Micro Commercial Components),RS1005,Active,R,1-Phase Bridge,RS-6,10,600,1,10,250,5,600,150
+MCC (Micro Commercial Components),RS1006,Active,R,1-Phase Bridge,RS-6,10,800,1,10,250,5,800,150
+MCC (Micro Commercial Components),RS1007,Active,R,1-Phase Bridge,RS-6,10,1000,1,10,250,5,1000,150
+MCC (Micro Commercial Components),RS605,Active,R,1-Phase Bridge,RS-6,6,600,1.1,10,200,3,600,150
+MCC (Micro Commercial Components),RS606,Active,R,1-Phase Bridge,RS-6,6,800,1.1,10,200,3,800,150
+MCC (Micro Commercial Components),RS607,Active,R,1-Phase Bridge,RS-6,6,1000,1.1,10,200,3,1000,150
+MCC (Micro Commercial Components),RS805,Active,R,1-Phase Bridge,RS-6,8,600,1.1,10,300,4,600,150
+MCC (Micro Commercial Components),RS806,Active,R,1-Phase Bridge,RS-6,8,800,1.1,10,300,4,800,150
+MCC (Micro Commercial Components),RS807,Active,R,1-Phase Bridge,RS-6,8,1000,1.1,10,300,4,1000,150
+MCC (Micro Commercial Components),GBU4J,Active,R H,1-Phase Bridge,GBU,4,600,1,5,135,2,600,150
+MCC (Micro Commercial Components),GBU4K,Active,R H,1-Phase Bridge,GBU,4,800,1,5,135,2,800,150
+MCC (Micro Commercial Components),GBU4M,Active,R H,1-Phase Bridge,GBU,4,1000,1,5,135,2,1000,150
+MCC (Micro Commercial Components),GBU6J,Active,R H,1-Phase Bridge,GBU,6,600,1,5,175,3,600,150
+MCC (Micro Commercial Components),GBU6K,Active,R H,1-Phase Bridge,GBU,6,800,1,5,175,3,800,150
+MCC (Micro Commercial Components),GBU6M,Active,R H,1-Phase Bridge,GBU,6,1000,1,5,175,3,1000,150
+MCC (Micro Commercial Components),GBU8J,Active,R H,1-Phase Bridge,GBU,8,600,1,5,220,4,600,150
+MCC (Micro Commercial Components),GBU8K,Active,R H,1-Phase Bridge,GBU,8,800,1,5,220,4,800,150
+MCC (Micro Commercial Components),GBU8M,Active,R H,1-Phase Bridge,GBU,8,1000,1,5,220,4,1000,150
+MCC (Micro Commercial Components),GBU10B,Active,R H,1-Phase Bridge,GBU,10,100,1,5,240,5,100,150
+MCC (Micro Commercial Components),GBU10D,Active,R H,1-Phase Bridge,GBU,10,200,1,5,240,5,200,150
+MCC (Micro Commercial Components),GBU10J,Active,R H,1-Phase Bridge,GBU,10,600,1,5,240,5,600,150
+MCC (Micro Commercial Components),GBU10K,Active,R H,1-Phase Bridge,GBU,10,800,1,5,240,5,800,150
+MCC (Micro Commercial Components),GBU10M,Active,R H,1-Phase Bridge,GBU,10,1000,1,5,240,5,1000,150
+MCC (Micro Commercial Components),GBU15J,Active,R H,1-Phase Bridge,GBU,15,600,1,5,240,7.5,600,150
+MCC (Micro Commercial Components),GBU15K,Active,R H,1-Phase Bridge,GBU,15,800,1,5,240,7.5,800,150
+MCC (Micro Commercial Components),GBU15M,Active,R H,1-Phase Bridge,GBU,15,1000,1,5,240,7.5,1000,150
+MCC (Micro Commercial Components),GBU10KL,Active,R H,1-Phase Bridge,GBU,10,800,0.92,5,200,5,800,150
+MCC (Micro Commercial Components),GBU15L06,Active,R H,1-Phase Bridge,GBU,15,600,0.92,5,250,7.5,600,150
+MCC (Micro Commercial Components),GBU10MS,Active,R H,1-Phase Bridge,GBU,10,1000,1,5,175,5,1000,150
+MCC (Micro Commercial Components),GBU15MS,Active,R H,1-Phase Bridge,GBU,15,1000,1,5,200,7.5,1000,150
+MCC (Micro Commercial Components),GBU2010S,Active,R H,1-Phase Bridge,GBU,20,1000,1,5,250,10,1000,150
+MCC (Micro Commercial Components),GBU2510S,Active,R H,1-Phase Bridge,GBU,25,1000,1,5,300,12.5,1000,150
+MCC (Micro Commercial Components),GBU4MS,Active,R H,1-Phase Bridge,GBU,4,1000,1,5,135,2,1000,150
+MCC (Micro Commercial Components),GBU6MS,Active,R H,1-Phase Bridge,GBU,6,1000,1,5,150,3,1000,150
+MCC (Micro Commercial Components),GBU2006,Active,R H,1-Phase Bridge,GBU,20,600,1,5,240,10,600,150
+MCC (Micro Commercial Components),GBU2008,Active,R H,1-Phase Bridge,GBU,20,800,1,5,240,10,800,150
+MCC (Micro Commercial Components),GBU2010,Active,R H,1-Phase Bridge,GBU,20,1000,1,5,240,10,1000,150
+MCC (Micro Commercial Components),GBU4JL,Active,R H,1-Phase Bridge,GBU,4,600,0.89,5,150,2,600,150
+MCC (Micro Commercial Components),GBU4KL,Active,R H,1-Phase Bridge,GBU,4,800,0.89,5,150,2,800,150
+MCC (Micro Commercial Components),GBU3510,Active,R H,1-Phase Bridge,GBU,35,1000,1.05,5,450,17.5,1000,150
+MCC (Micro Commercial Components),GBU5010,Active,R H,1-Phase Bridge,GBU,50,1000,1,5,500,25,1000,150
+MCC (Micro Commercial Components),RGBU6M,Active,R H,1-Phase Bridge,GBU,6,1000,1.3,5,150,3,1000,150
+MCC (Micro Commercial Components),RGBU8M,Active,R H,1-Phase Bridge,GBU,8,1000,1.3,5,175,4,1000,150
+MCC (Micro Commercial Components),GBU2508L,Active,R H,1-Phase Bridge,GBU,25,800,0.92,5,450,12.5,800,150
+MCC (Micro Commercial Components),PB5008L,Active,R H,1-Phase Bridge,PB,50,800,0.97,5,500,25,800,150
+MCC (Micro Commercial Components),EGBU1006,Active,R H,1-Phase Bridge,GBU,10,600,1.7,5,120,5,600,150
+MCC (Micro Commercial Components),EGBU1506,Active,R H,1-Phase Bridge,GBU,15,600,2,5,180,7.5,600,150
+MCC (Micro Commercial Components),EGBU2006,Active,R H,1-Phase Bridge,GBU,20,600,2,5,180,10,600,150
+MCC (Micro Commercial Components),EGBU2506,Active,R H,1-Phase Bridge,GBU,25,600,2,5,220,12.5,600,150
+MCC (Micro Commercial Components),EGBU3506,Active,R H,1-Phase Bridge,GBU,35,600,2,5,350,17.5,600,150
+MCC (Micro Commercial Components),GBU15L08,Active,R H,1-Phase Bridge,GBU,15,800,0.92,5,220,7.5,800,150
+MCC (Micro Commercial Components),GBU25L08,Active,R H,1-Phase Bridge,GBU,25,800,0.92,5,360,12.5,800,150
+MCC (Micro Commercial Components),GBU3006,Active,R H,1-Phase Bridge,GBU,30,600,1,5,350,15,600,150
+MCC (Micro Commercial Components),GBU3008,Active,R H,1-Phase Bridge,GBU,30,800,1,5,350,15,800,150
+MCC (Micro Commercial Components),GBU3010,Active,R H,1-Phase Bridge,GBU,30,1000,1,5,350,15,1000,150
+MCC (Micro Commercial Components),DB307,Active,R H,1-Phase Bridge,DB-1,3,1000,1,5,80,1.5,1000,150
+MCC (Micro Commercial Components),DB307L,Active,R H,1-Phase Bridge,DBL-1,3,1000,1,5,80,1.5,1000,150
+MCC (Micro Commercial Components),TBSA20M,Active,R H,1-Phase Bridge,TBSG,2,1000,1,5,80,1,1000,150
+MCC (Micro Commercial Components),TBSA30M,Active,R H,1-Phase Bridge,TBSG,3,1000,1,5,110,1.5,1000,150
+MCC (Micro Commercial Components),TBSA40M,Active,R H,1-Phase Bridge,TBSG,4,1000,1,5,120,2,1000,150
+MCC (Micro Commercial Components),TBSA60M,Active,R H,1-Phase Bridge,TBSG,6,1000,1,5,150,3,1000,150
+MCC (Micro Commercial Components),TBN1510,Active,R H,1-Phase Bridge,TBN,15,1000,1,5,350,7.5,1000,150
+MCC (Micro Commercial Components),TBL408L,Active,R H,1-Phase Bridge,TBL,4,800,0.92,5,150,2,800,150
+MCC (Micro Commercial Components),TBL608L,Active,R H,1-Phase Bridge,TBL,6,800,0.92,5,200,3,800,150
+MCC (Micro Commercial Components),TBL808L,Active,R H,1-Phase Bridge,TBL,8,800,0.92,5,250,4,800,150
+MCC (Micro Commercial Components),RTBSA20M,Active,R H,1-Phase Bridge,TBSG,2,1000,1.3,5,75,1,1000,150
+MCC (Micro Commercial Components),RTBSA30M,Active,R H,1-Phase Bridge,TBSG,3,1000,1.3,5,90,1.5,1000,150
+MCC (Micro Commercial Components),RTBSA40M,Active,R H,1-Phase Bridge,TBSG,4,1000,1.3,5,120,2,1000,150
+MCC (Micro Commercial Components),RTBSA60M,Active,R H,1-Phase Bridge,TBSG,6,1000,1.3,5,150,3,1000,150
+MCC (Micro Commercial Components),TBN1508L,Active,R H,1-Phase Bridge,TBN,15,800,0.92,5,400,7.5,800,150
+MCC (Micro Commercial Components),SDB307,Active,R H,1-Phase Bridge,SDB-1,3,1000,1,5,80,1.5,1000,150
+MCC (Micro Commercial Components),SDB307L,Active,R H,1-Phase Bridge,SDBL-1,3,1000,1,5,80,1.5,1000,150
+MCC (Micro Commercial Components),LMB14S,Active,R H,1-Phase Bridge,LMBS-1,1,40,0.55,100,30,0.5,40,150
+MCC (Micro Commercial Components),LMB16S,Active,R H,1-Phase Bridge,LMBS-1,1,60,0.65,100,30,0.5,60,150
+MCC (Micro Commercial Components),LMB110S,Active,R H,1-Phase Bridge,LMBS-1,1,100,0.85,10,30,0.5,100,150
+MCC (Micro Commercial Components),LMB10S,Active,R H,1-Phase Bridge,LMBS-1,1,1000,0.95,5,30,0.4,1000,150
+MCC (Micro Commercial Components),RMB6S,Active,R,1-Phase Bridge,MBS-1,0.5,600,1.25,5,30,0.4,600,150
+MCC (Micro Commercial Components),LMB205S,Active,R H,1-Phase Bridge,LMBS-1,2,600,0.95,5,60,1,600,150
+MCC (Micro Commercial Components),LMB206S,Active,R H,1-Phase Bridge,LMBS-1,2,800,0.95,5,60,1,800,150
+MCC (Micro Commercial Components),LMB207S,Active,R H,1-Phase Bridge,LMBS-1,2,1000,0.95,5,60,1,1000,150
+MCC (Micro Commercial Components),TBS30J,Active,R H,1-Phase Bridge,TBS,3,600,0.95,5,110,1.5,600,150
+MCC (Micro Commercial Components),TBS30K,Active,R H,1-Phase Bridge,TBS,3,800,0.95,5,110,1.5,800,150
+MCC (Micro Commercial Components),TBS30M,Active,R H,1-Phase Bridge,TBS,3,1000,0.95,5,110,1.5,1000,150
+MCC (Micro Commercial Components),MBL6S,Active,R H,1-Phase Bridge,MBLS-1,0.5,600,1,5,35,0.4,600,150
+MCC (Micro Commercial Components),MBL8S,Active,R H,1-Phase Bridge,MBLS-1,0.5,800,1,5,35,0.4,800,150
+MCC (Micro Commercial Components),MBL10S,Active,R H,1-Phase Bridge,MBLS-1,0.5,1000,1,5,35,0.4,1000,150
+MCC (Micro Commercial Components),SDB105L,Active,R H,1-Phase Bridge,SDBL-1,1,600,1.1,10,30,0.5,600,150
+MCC (Micro Commercial Components),SDB106L,Active,R H,1-Phase Bridge,SDBL-1,1,800,1.1,10,30,0.5,800,150
+MCC (Micro Commercial Components),SDB107L,Active,R H,1-Phase Bridge,SDBL-1,1,1000,1.1,10,30,0.5,1000,150
+MCC (Micro Commercial Components),SDB155L,Active,R H,1-Phase Bridge,SDBL-1,1.5,600,1.1,10,50,0.7,600,150
+MCC (Micro Commercial Components),SDB156L,Active,R H,1-Phase Bridge,SDBL-1,1.5,800,1.1,10,50,0.7,800,150
+MCC (Micro Commercial Components),SDB157L,Active,R H,1-Phase Bridge,SDBL-1,1.5,1000,1.1,10,50,0.7,1000,150
+MCC (Micro Commercial Components),SDB205L,Active,R H,1-Phase Bridge,SDBL-1,2,600,1.1,5,60,1,600,150
+MCC (Micro Commercial Components),SDB206L,Active,R H,1-Phase Bridge,SDBL-1,2,800,1.1,5,60,1,800,150
+MCC (Micro Commercial Components),SDB207L,Active,R H,1-Phase Bridge,SDBL-1,2,1000,1.1,5,60,1,1000,150
+MCC (Micro Commercial Components),SLMB2S,Active,R H,1-Phase Bridge,LMBS-1,1,200,0.95,10,30,0.5,200,150
+MCC (Micro Commercial Components),SLMB4S,Active,R H,1-Phase Bridge,LMBS-1,1,400,1.3,10,30,0.5,400,150
+MCC (Micro Commercial Components),SLMB6S,Active,R H,1-Phase Bridge,LMBS-1,1,600,1.7,10,30,0.5,600,150
+MCC (Micro Commercial Components),DB105L,Active,R H,1-Phase Bridge,DBL-1,1,600,1,5,30,0.5,600,150
+MCC (Micro Commercial Components),DB106L,Active,R H,1-Phase Bridge,DBL-1,1,800,1,5,30,0.5,800,150
+MCC (Micro Commercial Components),DB107L,Active,R H,1-Phase Bridge,DBL-1,1,1000,1,5,30,0.5,1000,150
+MCC (Micro Commercial Components),DB155L,Active,R H,1-Phase Bridge,DBL-1,1.5,600,1.1,10,45,0.7,600,150
+MCC (Micro Commercial Components),DB156L,Active,R H,1-Phase Bridge,DBL-1,1.5,800,1.1,10,45,0.7,800,150
+MCC (Micro Commercial Components),DB157L,Active,R H,1-Phase Bridge,DBL-1,1.5,1000,1.1,10,45,0.7,1000,150
+MCC (Micro Commercial Components),DB205L,Active,R H,1-Phase Bridge,DBL-1,2,600,1.1,10,60,1,600,150
+MCC (Micro Commercial Components),DB207L,Active,R H,1-Phase Bridge,DBL-1,2,1000,1.1,10,60,1,1000,150
+MCC (Micro Commercial Components),TBS30KL,Active,R H,1-Phase Bridge,TBS,3,800,0.96,5,95,3,800,150
+MCC (Micro Commercial Components),TBL806,Active,R H,1-Phase Bridge,TBL,8,600,1,5,200,4,600,150
+MCC (Micro Commercial Components),TBL808,Active,R H,1-Phase Bridge,TBL,8,800,1,5,200,4,800,150
+MCC (Micro Commercial Components),TBL810,Active,R H,1-Phase Bridge,TBL,8,1000,1,5,200,4,1000,150
+MCC (Micro Commercial Components),RTBL610,Active,R H,1-Phase Bridge,TBL,6,1000,1.3,5,150,3,1000,150
+MCC (Micro Commercial Components),RTBL406,Active,R H,1-Phase Bridge,TBL,4,600,1.3,5,100,2,600,150
+MCC (Micro Commercial Components),LMB205SL,Active,R H,1-Phase Bridge,LMBS-1,2,600,0.95,5,65,1,600,150
+MCC (Micro Commercial Components),LMB206SL,Active,R H,1-Phase Bridge,LMBS-1,2,800,0.95,5,65,1,800,150
+MCC (Micro Commercial Components),LMB207SL,Active,R H,1-Phase Bridge,LMBS-1,2,1000,0.95,5,65,1,1000,150
+MCC (Micro Commercial Components),TBN1010,Active,R H,1-Phase Bridge,TBN,10,1000,1,5,250,5,1000,150
+MCC (Micro Commercial Components),LMB34S,Active,R H,1-Phase Bridge,LMBS-1,3,40,0.55,500,70,1.5,40,150
+MCC (Micro Commercial Components),LMB36S,Active,R H,1-Phase Bridge,LMBS-1,3,60,0.65,500,70,1.5,60,150
+MCC (Micro Commercial Components),LMB310S,Active,R H,1-Phase Bridge,LMBS-1,3,100,0.85,500,70,1.5,100,150
+MCC (Micro Commercial Components),FLMB207S,Active,R H,1-Phase Bridge,LMBS-1,2,1000,1.3,5,60,1,1000,150
+MCC (Micro Commercial Components),LMB24S,Active,R H,1-Phase Bridge,LMBS-1,2,40,0.5,100,50,1,40,125
+MCC (Micro Commercial Components),LMB26S,Active,R H,1-Phase Bridge,LMBS-1,2,60,0.7,100,50,1,60,150
+MCC (Micro Commercial Components),LMB210S,Active,R H,1-Phase Bridge,LMBS-1,2,100,0.85,10,50,1,100,150
+MCC (Micro Commercial Components),RTBS30M,Active,R H,1-Phase Bridge,TBS,3,1000,1.3,5,90,1.5,1000,150
+MCC (Micro Commercial Components),TBL406,Active,R H,1-Phase Bridge,TBL,4,600,0.95,5,120,2,600,150
+MCC (Micro Commercial Components),TBL410,Active,R H,1-Phase Bridge,TBL,4,1000,0.95,5,120,2,1000,150
+MCC (Micro Commercial Components),TBL610,Active,R H,1-Phase Bridge,TBL,6,1000,0.95,5,150,3,1000,150
+MCC (Micro Commercial Components),DB105,Active,R H,1-Phase Bridge,DB-1,1,600,1,5,30,0.5,600,150
+MCC (Micro Commercial Components),DB106,Active,R H,1-Phase Bridge,DB-1,1,800,1,5,30,0.5,800,150
+MCC (Micro Commercial Components),DB107,Active,R H,1-Phase Bridge,DB-1,1,1000,1,5,30,0.5,1000,150
+MCC (Micro Commercial Components),LMB6S,Active,R H,1-Phase Bridge,LMBS-1,1,600,0.95,5,30,0.4,600,150
+MCC (Micro Commercial Components),LMB8S,Active,R H,1-Phase Bridge,LMBS-1,1,800,0.95,5,30,0.4,800,150
+MCC (Micro Commercial Components),DB205,Active,R H,1-Phase Bridge,DB-1,2,600,1.1,10,60,1,600,150
+MCC (Micro Commercial Components),DB206,Active,R H,1-Phase Bridge,DB-1,2,800,1.1,10,60,1,800,150
+MCC (Micro Commercial Components),DB207,Active,R H,1-Phase Bridge,DB-1,2,1000,1.1,10,60,1,1000,150
+MCC (Micro Commercial Components),SDB205,Active,R H,1-Phase Bridge,SDB-1,2,600,1.1,10,60,1,600,150
+MCC (Micro Commercial Components),SDB206,Active,R H,1-Phase Bridge,SDB-1,2,800,1.1,10,60,1,800,150
+MCC (Micro Commercial Components),SDB207,Active,R H,1-Phase Bridge,SDB-1,2,1000,1.1,10,60,1,1000,150
+MCC (Micro Commercial Components),TBS20J,Active,R H,1-Phase Bridge,TBS,2,600,1,5,75,1,600,150
+MCC (Micro Commercial Components),TBS20K,Active,R H,1-Phase Bridge,TBS,2,800,1,5,75,1,800,150
+MCC (Micro Commercial Components),TBS20M,Active,R H,1-Phase Bridge,TBS,2,1000,1,5,75,1,1000,150
+MCC (Micro Commercial Components),TBS22J,Active,R H,1-Phase Bridge,TBS,2.2,600,0.95,5,90,1.1,600,150
+MCC (Micro Commercial Components),TBS22K,Active,R H,1-Phase Bridge,TBS,2.2,800,0.95,5,90,1.1,800,150
+MCC (Micro Commercial Components),TBS22M,Active,R H,1-Phase Bridge,TBS,2.2,1000,0.95,5,90,1.1,1000,150
+MCC (Micro Commercial Components),MB1S,Active,R,1-Phase Bridge,MBS-1,0.5,100,1,5,35,0.4,100,150
+MCC (Micro Commercial Components),SDB105,Active,R H,1-Phase Bridge,SDB-1,1,600,1.1,10,30,0.5,600,150
+MCC (Micro Commercial Components),SDB106,Active,R H,1-Phase Bridge,SDB-1,1,800,1.1,10,30,0.5,800,150
+MCC (Micro Commercial Components),SDB107,Active,R H,1-Phase Bridge,SDB-1,1,1000,1.1,10,30,0.5,1000,150
+MCC (Micro Commercial Components),MB10S,Active,R,1-Phase Bridge,MBS-1,0.5,1000,1,5,35,0.4,1000,150
+MCC (Micro Commercial Components),MB4S,Active,R,1-Phase Bridge,MBS-1,0.5,400,1,5,35,0.4,400,150
+MCC (Micro Commercial Components),MB6S,Active,R,1-Phase Bridge,MBS-1,0.5,600,1,5,35,0.4,600,150
+MCC (Micro Commercial Components),MB8S,Active,R,1-Phase Bridge,MBS-1,0.5,800,1,5,35,0.4,800,150
+MCC (Micro Commercial Components),SDB153,Active,R H,1-Phase Bridge,SDB-1,1.5,200,1.1,5,50,0.7,200,150
+MCC (Micro Commercial Components),SDB155,Active,R H,1-Phase Bridge,SDB-1,1.5,600,1.1,5,50,0.7,600,150
+MCC (Micro Commercial Components),SDB156,Active,R H,1-Phase Bridge,SDB-1,1.5,800,1.1,5,50,0.7,800,150
+MCC (Micro Commercial Components),SDB157,Active,R H,1-Phase Bridge,SDB-1,1.5,1000,1.1,5,50,0.7,1000,150
+MCC (Micro Commercial Components),DB156,Active,R H,1-Phase Bridge,DB-1,1.5,800,1.1,10,50,0.7,800,150
+MCC (Micro Commercial Components),DB157,Active,R H,1-Phase Bridge,DB-1,1.5,1000,1.1,10,50,0.7,1000,150
+MCC (Micro Commercial Components),MP358,Active,R,1-Phase Bridge,MP-50,35,800,1.1,5,400,17.5,800,150
+MCC (Micro Commercial Components),MP5010,Active,R,1-Phase Bridge,MP-50,50,1000,1.2,10,500,25,1000,150
+MCC (Micro Commercial Components),MP506,Active,R,1-Phase Bridge,MP-50,50,600,1.2,10,500,25,600,150
+MCC (Micro Commercial Components),MP5010W,Active,R,1-Phase Bridge,MP-50W,50,1000,1.1,10,450,25,1000,150
+MCC (Micro Commercial Components),MP506W,Active,R,1-Phase Bridge,MP-50W,50,600,1.1,10,450,25,600,150
+MCC (Micro Commercial Components),MP508W,Active,R,1-Phase Bridge,MP-50W,50,800,1.1,10,450,25,800,150
+MCC (Micro Commercial Components),MP156W,Active,R,1-Phase Bridge,MP-50W,15,600,1.1,5,300,7.5,600,125
+MCC (Micro Commercial Components),MP358W,Active,R,1-Phase Bridge,MP-50W,35,800,1.1,5,400,17.5,800,150
+MCC (Micro Commercial Components),MB2510,Active,R,1-Phase Bridge,MB-35,25,1000,1.1,10,300,12.5,1000,150
+MCC (Micro Commercial Components),MB256,Active,R,1-Phase Bridge,MB-35,25,600,1.1,10,300,12.5,600,150
+MCC (Micro Commercial Components),MB258,Active,R,1-Phase Bridge,MB-35,25,800,1.1,10,300,12.5,800,150
+MCC (Micro Commercial Components),MB3510,Active,R,1-Phase Bridge,MB-35,35,1000,1.1,10,400,17.5,1000,125
+MCC (Micro Commercial Components),MB356,Active,R,1-Phase Bridge,MB-35,35,600,1.1,10,400,17.5,600,125
+MCC (Micro Commercial Components),MB358,Active,R,1-Phase Bridge,MB-35,35,800,1.1,10,400,17.5,800,125
+MCC (Micro Commercial Components),SGBJ3516,Active,R H,3-Phase Bridge,SGBJ,35,1600,1.05,5,450,17.5,1600,150
+MCC (Micro Commercial Components),3GBJ3508,Active,R,3-Phase Bridge,TSB-5,35,800,1.1,10,400,17.5,800,150
+MCC (Micro Commercial Components),3GBJ3510,Active,R,3-Phase Bridge,TSB-5,35,1000,1.1,10,400,17.5,1000,150
+MCC (Micro Commercial Components),3GBJ3516,Active,R,3-Phase Bridge,TSB-5,35,1600,1.1,10,400,17.5,1600,150
+MCC (Micro Commercial Components),SGBJ2510,Active,R H,3-Phase Bridge,SGBJ,25,1000,1.05,5,400,12.5,1000,150
+MCC (Micro Commercial Components),SGBJ2512,Active,R H,3-Phase Bridge,SGBJ,25,1200,1.05,5,400,12.5,1200,150
+MCC (Micro Commercial Components),SGBJ2516,Active,R H,3-Phase Bridge,SGBJ,25,1600,1.05,5,400,12.5,1600,150
+MCC (Micro Commercial Components),SGBJ3510,Active,R H,3-Phase Bridge,SGBJ,35,1000,1.05,5,450,17.5,1000,150
+MCC (Micro Commercial Components),SGBJ3512,Active,R H,3-Phase Bridge,SGBJ,35,1200,1.05,5,450,17.5,1200,150
+MCC (Micro Commercial Components),SGBJ5010,Active,R H,3-Phase Bridge,SGBJ,50,1000,1.1,5,500,25,1000,150
+MCC (Micro Commercial Components),SGBJ5012,Active,R H,3-Phase Bridge,SGBJ,50,1200,1.1,5,500,25,1200,150
+MCC (Micro Commercial Components),SGBJ5016,Active,R H,3-Phase Bridge,SGBJ,50,1600,1.1,5,500,25,1600,150
+MCC (Micro Commercial Components),MT3510W,Active,R,3-Phase Bridge,MT-W,35,1000,1.1,5,450,17.5,1000,150
+MCC (Micro Commercial Components),MT3516W,Active,R,3-Phase Bridge,MT-W,35,1600,1.1,5,450,17.5,1600,150
+MCC (Micro Commercial Components),MT5010W,Active,R,3-Phase Bridge,MT-W,50,1000,1.15,5,500,25,1000,150
+MCC (Micro Commercial Components),MT5016W,Active,R,3-Phase Bridge,MT-W,50,1600,1.15,5,500,25,1600,150
+MCC (Micro Commercial Components),SKBPC3516,Active,R,3-Phase Bridge,SKBPC,35,1600,1.2,1,425,17.5,1600,150
+MCC (Micro Commercial Components),SKBPC7516,Active,R,3-Phase Bridge,SKBPC75,75,1600,1.2,5,800,37.5,1600,150
+MCC (Micro Commercial Components),SKBPC7510,Active,R,3-Phase Bridge,SKBPC75,75,1000,1.2,5,800,37.5,1000,150
+MCC (Micro Commercial Components),MT3510M,Active,R,3-Phase Bridge,MT-M,35,1000,1.1,5,400,17.5,1000,150
+MCC (Micro Commercial Components),MT3516M,Active,R,3-Phase Bridge,MT-M,35,1600,1.1,5,400,17.5,1600,150
+MCC (Micro Commercial Components),MT5010M,Active,R,3-Phase Bridge,MT-M,50,1000,1.15,5,500,25,1000,150
+MCC (Micro Commercial Components),MT5016M,Active,R,3-Phase Bridge,MT-M,50,1600,1.15,5,500,25,1600,150
+MCC (Micro Commercial Components),MT2510W,Active,R,3-Phase Bridge,MT-W,25,1000,1.1,5,350,12.5,1000,150
+MCC (Micro Commercial Components),MT2516W,Active,R,3-Phase Bridge,MT-W,25,1600,1.1,5,350,12.5,1600,150
+MCC (Micro Commercial Components),MT3508A,Active,R,3-Phase Bridge,MT-35A,35,800,1.2,10,400,17.5,800,150
+MCC (Micro Commercial Components),MT3512A,Active,R,3-Phase Bridge,MT-35A,35,1200,1.2,10,400,17.5,1200,150
+MCC (Micro Commercial Components),MT3516A,Active,R,3-Phase Bridge,MT-35A,35,1600,1.2,10,400,17.5,1600,150
+MCC (Micro Commercial Components),MT5008A,Active,R,3-Phase Bridge,MT-35A,50,800,1.2,10,500,25,800,150
+MCC (Micro Commercial Components),MT5016A,Active,R,3-Phase Bridge,MT-35A,50,1600,1.2,10,500,25,1600,150
+MCC (Micro Commercial Components),GBU15KL,Active,R H,1-Phase Bridge,GBU,15,800,0.92,5,240,7.5,800,150
+MCC (Micro Commercial Components),PB3506,Active,R H,1-Phase Bridge,PB,35,600,1,5,400,17.5,600,150
+MCC (Micro Commercial Components),PB3508,Active,R H,1-Phase Bridge,PB,35,800,1,5,400,17.5,800,150
+MCC (Micro Commercial Components),PB3510,Active,R H,1-Phase Bridge,PB,35,1000,1,5,400,17.5,1000,150
+MCC (Micro Commercial Components),PB5006,Active,R H,1-Phase Bridge,PB,50,600,1.05,5,450,25,600,150
+MCC (Micro Commercial Components),PB5008,Active,R H,1-Phase Bridge,PB,50,800,1.05,5,450,25,800,150
+MCC (Micro Commercial Components),PB5010,Active,R H,1-Phase Bridge,PB,50,1000,1.05,5,450,25,1000,150
+MCC (Micro Commercial Components),KBJ606G,Active,R H,1-Phase Bridge,KBJ,6,600,1,5,170,3,600,150
+MCC (Micro Commercial Components),KBJ608G,Active,R H,1-Phase Bridge,KBJ,6,800,1,5,170,3,800,150
+MCC (Micro Commercial Components),KBJ610G,Active,R H,1-Phase Bridge,KBJ,6,1000,1,5,170,3,1000,150
+MCC (Micro Commercial Components),GBJ1006,Active,R H,1-Phase Bridge,GBJ,10,600,1.05,10,170,5,600,150
+MCC (Micro Commercial Components),GBJ1008,Active,R H,1-Phase Bridge,GBJ,10,800,1.05,10,170,5,800,150
+MCC (Micro Commercial Components),GBJ1010,Active,R H,1-Phase Bridge,GBJ,10,1000,1.05,10,170,5,1000,150
+MCC (Micro Commercial Components),GBJ1506,Active,R H,1-Phase Bridge,GBJ,15,600,1,5,240,7.5,600,150
+MCC (Micro Commercial Components),GBJ1508,Active,R H,1-Phase Bridge,GBJ,15,800,1,5,240,7.5,800,150
+MCC (Micro Commercial Components),GBJ1510,Active,R H,1-Phase Bridge,GBJ,15,1000,1,5,240,7.5,1000,150
+MCC (Micro Commercial Components),GBJ2006,Active,R H,1-Phase Bridge,GBJ,20,600,1,5,240,10,600,150
+MCC (Micro Commercial Components),GBJ2008,Active,R H,1-Phase Bridge,GBJ,20,800,1,5,240,10,800,150
+MCC (Micro Commercial Components),GBJ2010,Active,R H,1-Phase Bridge,GBJ,20,1000,1,5,240,10,1000,150
+MCC (Micro Commercial Components),GBJ2506,Active,R H,1-Phase Bridge,GBJ,25,600,1,5,350,12.5,600,150
+MCC (Micro Commercial Components),GBJ2508,Active,R H,1-Phase Bridge,GBJ,25,800,1,5,350,12.5,800,150
+MCC (Micro Commercial Components),GBJ2510,Active,R H,1-Phase Bridge,GBJ,25,1000,1,5,350,12.5,1000,150
+MCC (Micro Commercial Components),GBJ606,Active,R H,1-Phase Bridge,GBJ,6,600,1,5,170,3,600,150
+MCC (Micro Commercial Components),GBJ608,Active,R H,1-Phase Bridge,GBJ,6,800,1,5,170,3,800,150
+MCC (Micro Commercial Components),GBJ610,Active,R H,1-Phase Bridge,GBJ,6,1000,1,5,170,3,1000,150
+MCC (Micro Commercial Components),GBJ806,Active,R H,1-Phase Bridge,GBJ,8,600,1,5,170,4,600,150
+MCC (Micro Commercial Components),GBJ808,Active,R H,1-Phase Bridge,GBJ,8,800,1,5,170,4,800,150
+MCC (Micro Commercial Components),GBJ810,Active,R H,1-Phase Bridge,GBJ,8,1000,1,5,170,4,1000,150
+MCC (Micro Commercial Components),KBJ408G,Active,R H,1-Phase Bridge,KBJ,4,800,1,5,150,2,800,150
+MCC (Micro Commercial Components),KBJ406G,Active,R H,1-Phase Bridge,KBJ,4,600,1,5,150,2,600,150
+MCC (Micro Commercial Components),KBJ410G,Active,R H,1-Phase Bridge,KBJ,4,1000,1,5,150,2,1000,150
+MCC (Micro Commercial Components),KBP206G,Active,R H,1-Phase Bridge,GBP,2,600,1,5,60,1,600,150
+MCC (Micro Commercial Components),KBP208G,Active,R H,1-Phase Bridge,GBP,2,800,1,5,60,1,800,150
+MCC (Micro Commercial Components),KBP210G,Active,R H,1-Phase Bridge,GBP,2,1000,1,5,60,1,1000,150
+MCC (Micro Commercial Components),KBP306G,Active,R H,1-Phase Bridge,GBP,3,600,1,5,80,1.5,600,150
+MCC (Micro Commercial Components),KBP308G,Active,R H,1-Phase Bridge,GBP,3,800,1,5,80,1.5,800,150
+MCC (Micro Commercial Components),KBP310G,Active,R H,1-Phase Bridge,GBP,3,1000,1,5,80,1.5,1000,150
+MCC (Micro Commercial Components),RS405GL,Active,R,1-Phase Bridge,RS-4L,4,600,1.1,5,200,4,600,150
+MCC (Micro Commercial Components),RS406GL,Active,R,1-Phase Bridge,RS-4L,4,800,1.1,5,200,4,800,150
+MCC (Micro Commercial Components),RS407GL,Active,R,1-Phase Bridge,RS-4L,4,1000,1.1,5,200,4,1000,150
+MCC (Micro Commercial Components),GBJ3506,Active,R H,1-Phase Bridge,GBJ,35,600,1.05,10,400,17.5,600,150
+MCC (Micro Commercial Components),GBJ3508,Active,R H,1-Phase Bridge,GBJ,35,800,1.05,10,400,17.5,800,150
+MCC (Micro Commercial Components),GBJ3510,Active,R H,1-Phase Bridge,GBJ,35,1000,1.05,10,400,17.5,1000,150
+MCC (Micro Commercial Components),KBJ1006G,Active,R H,1-Phase Bridge,KBJ,10,600,1,5,175,5,600,150
+MCC (Micro Commercial Components),KBJ1008G,Active,R H,1-Phase Bridge,KBJ,10,800,1,5,175,5,800,150
+MCC (Micro Commercial Components),KBJ1010G,Active,R H,1-Phase Bridge,KBJ,10,1000,1,5,175,5,1000,150
+MCC (Micro Commercial Components),GBL206,Active,R H,1-Phase Bridge,GBL,2,600,1,5,90,1,600,150
+MCC (Micro Commercial Components),GBL208,Active,R H,1-Phase Bridge,GBL,2,800,1,5,90,1,800,150
+MCC (Micro Commercial Components),GBL210,Active,R H,1-Phase Bridge,GBL,2,1000,1,5,90,1,1000,150
+MCC (Micro Commercial Components),KBP406G,Active,R H,1-Phase Bridge,GBP,4,600,1,5,135,2,600,150
+MCC (Micro Commercial Components),KBP408G,Active,R H,1-Phase Bridge,GBP,4,800,1,5,135,2,800,150
+MCC (Micro Commercial Components),KBP410G,Active,R H,1-Phase Bridge,GBP,4,1000,1,5,135,2,1000,150
+MCC (Micro Commercial Components),GBJA1506,Active,R H,1-Phase Bridge,JA,15,600,1.05,10,220,7.5,600,150
+MCC (Micro Commercial Components),GBJA1508,Active,R H,1-Phase Bridge,JA,15,800,1.05,10,220,7.5,800,150
+MCC (Micro Commercial Components),GBJA1510,Active,R H,1-Phase Bridge,JA,15,1000,1.05,10,220,7.5,1000,150
+MCC (Micro Commercial Components),GBJA2506,Active,R H,1-Phase Bridge,JA,25,600,1,5,350,12.5,600,150
+MCC (Micro Commercial Components),GBJA2508,Active,R H,1-Phase Bridge,JA,25,800,1,5,350,12.5,800,150
+MCC (Micro Commercial Components),GBJA2510,Active,R H,1-Phase Bridge,JA,25,1000,1,5,350,12.5,1000,150
+MCC (Micro Commercial Components),KBJA406,Active,R H,1-Phase Bridge,JB,4,600,1,5,135,2,600,150
+MCC (Micro Commercial Components),KBJA408,Active,R H,1-Phase Bridge,JB,4,800,1,5,135,2,800,150
+MCC (Micro Commercial Components),KBJA410,Active,R H,1-Phase Bridge,JB,4,1000,1,5,135,2,1000,150
+MCC (Micro Commercial Components),KBJA606,Active,R H,1-Phase Bridge,JB,6,600,1,5,150,3,600,150
+MCC (Micro Commercial Components),KBJA608,Active,R H,1-Phase Bridge,JB,6,800,1,5,150,3,800,150
+MCC (Micro Commercial Components),KBJA610,Active,R H,1-Phase Bridge,JB,6,1000,1,5,150,3,1000,150
+MCC (Micro Commercial Components),KBJA806,Active,R H,1-Phase Bridge,JB,8,600,1,5,150,4,600,150
+MCC (Micro Commercial Components),KBJA808,Active,R H,1-Phase Bridge,JB,8,800,1,5,150,4,800,150
+MCC (Micro Commercial Components),KBJA810,Active,R H,1-Phase Bridge,JB,8,1000,1,5,150,4,1000,150
+MCC (Micro Commercial Components),KBJA1006,Active,R H,1-Phase Bridge,JB,10,600,1,5,150,5,600,150
+MCC (Micro Commercial Components),KBJA1008,Active,R H,1-Phase Bridge,JB,10,800,1,5,150,5,800,150
+MCC (Micro Commercial Components),KBJA1010,Active,R H,1-Phase Bridge,JB,10,1000,1,5,150,5,1000,150
+MCC (Micro Commercial Components),GBJ15L06,Active,R H,1-Phase Bridge,GBJ,15,600,0.92,5,250,7.5,600,150
+MCC (Micro Commercial Components),GBJ25L06,Active,R H,1-Phase Bridge,GBJ,25,600,0.92,5,360,12.5,600,150
+MCC (Micro Commercial Components),GBJ3508L,Active,R H,1-Phase Bridge,GBJ,35,800,0.95,5,450,17.5,800,150
+MCC (Micro Commercial Components),GBJ2510H,Active,R H,1-Phase Bridge,GBJ,25,1600,1.2,10,400,12.5,1600,150
+MCC (Micro Commercial Components),GBJ2508L,Active,R H,1-Phase Bridge,GBJ,25,800,0.92,5,550,12.5,800,150
+MCC (Micro Commercial Components),GBJ5006L,Active,R H,1-Phase Bridge,GBJ,50,600,0.97,5,420,25,600,150
+MCC (Micro Commercial Components),UD8KB60,Active,R H,1-Phase Bridge,D3K,8,600,0.95,5,175,4,600,150
+MCC (Micro Commercial Components),UD8KB80,Active,R H,1-Phase Bridge,D3K,8,800,0.95,5,175,4,800,150
+MCC (Micro Commercial Components),UD8KB100,Active,R H,1-Phase Bridge,D3K,8,1000,0.95,5,175,4,1000,150
+MCC (Micro Commercial Components),UD6KB60,Active,R H,1-Phase Bridge,D3K,6,600,1,5,170,3,600,150
+MCC (Micro Commercial Components),UD6KB80,Active,R H,1-Phase Bridge,D3K,6,800,1,5,170,3,800,150
+MCC (Micro Commercial Components),UD6KB100,Active,R H,1-Phase Bridge,D3K,6,1000,1,5,170,3,1000,150
+MCC (Micro Commercial Components),GBJ1506L,Active,R H,1-Phase Bridge,GBJ,15,600,0.92,5,380,7.5,600,150
+MCC (Micro Commercial Components),GBJ1508L,Active,R H,1-Phase Bridge,GBJ,15,800,0.92,5,380,7.5,800,150
+MCC (Micro Commercial Components),KBJA1506,Active,R H,1-Phase Bridge,JB,15,600,1,5,220,7.5,600,150
+MCC (Micro Commercial Components),KBJA1508,Active,R H,1-Phase Bridge,JB,15,800,1,5,220,7.5,800,150
+MCC (Micro Commercial Components),KBJA1510,Active,R H,1-Phase Bridge,JB,15,1000,1,5,220,7.5,1000,150
+MCC (Micro Commercial Components),GBU25L06,Active,R H,1-Phase Bridge,GBU,25,600,0.92,5,360,12.5,600,150
+MCC (Micro Commercial Components),GBJ1010S,Active,R H,1-Phase Bridge,GBJ,10,1000,1,5,175,5,1000,150
+MCC (Micro Commercial Components),GBJ1510S,Active,R H,1-Phase Bridge,GBJ,15,1000,1,5,250,7.5,1000,150
+MCC (Micro Commercial Components),GBJ2010S,Active,R H,1-Phase Bridge,GBJ,20,1000,1,5,280,10,1000,150
+MCC (Micro Commercial Components),GBJ2510S,Active,R H,1-Phase Bridge,GBJ,25,1000,1,5,320,12.5,1000,150
+MCC (Micro Commercial Components),GBJ3510S,Active,R H,1-Phase Bridge,GBJ,35,1000,1.05,5,350,17.5,1000,150
+MCC (Micro Commercial Components),GBJ5010S,Active,R H,1-Phase Bridge,GBJ,50,1000,1,5,500,25,1000,150
+MCC (Micro Commercial Components),GBL210S,Active,R H,1-Phase Bridge,GBL,2,1000,1,5,90,1,1000,150
+MCC (Micro Commercial Components),GBL410S,Active,R H,1-Phase Bridge,GBL,4,1000,1,5,135,2,1000,150
+MCC (Micro Commercial Components),GBL610S,Active,R H,1-Phase Bridge,GBL,6,1000,1,5,150,3,1000,150
+MCC (Micro Commercial Components),KBJ1010GS,Active,R H,1-Phase Bridge,KBJ,10,1000,1,5,175,5,1000,150
+MCC (Micro Commercial Components),KBJ1510GS,Active,R H,1-Phase Bridge,KBJ,15,1000,1,5,220,7.5,1000,150
+MCC (Micro Commercial Components),KBJ410GS,Active,R H,1-Phase Bridge,KBJ,4,1000,1,5,135,2,1000,150
+MCC (Micro Commercial Components),KBJ610GS,Active,R H,1-Phase Bridge,KBJ,6,1000,1,5,150,3,1000,150
+MCC (Micro Commercial Components),KBP210GS,Active,R H,1-Phase Bridge,GBP,2,1000,1,5,60,1,1000,150
+MCC (Micro Commercial Components),KBP310GS,Active,R H,1-Phase Bridge,GBP,3,1000,1,5,90,1.5,1000,150
+MCC (Micro Commercial Components),KBP410GS,Active,R H,1-Phase Bridge,GBP,4,1000,1,5,110,2,1000,150
+MCC (Micro Commercial Components),UD2KB60,Active,R H,1-Phase Bridge,D3K,2,600,1,5,60,1,600,150
+MCC (Micro Commercial Components),UD2KB80,Active,R H,1-Phase Bridge,D3K,2,800,1,5,60,1,800,150
+MCC (Micro Commercial Components),UD2KB100,Active,R H,1-Phase Bridge,D3K,2,1000,1,5,60,1,1000,150
+MCC (Micro Commercial Components),UD3KB60,Active,R H,1-Phase Bridge,D3K,3,600,1,5,90,1.5,600,150
+MCC (Micro Commercial Components),UD3KB80,Active,R H,1-Phase Bridge,D3K,3,800,1,5,90,1.5,800,150
+MCC (Micro Commercial Components),UD3KB100,Active,R H,1-Phase Bridge,D3K,3,1000,1,5,90,1.5,1000,150
+MCC (Micro Commercial Components),UD4KB60,Active,R H,1-Phase Bridge,D3K,4,600,1,5,130,2,600,150
+MCC (Micro Commercial Components),UD4KB80,Active,R H,1-Phase Bridge,D3K,4,800,1,5,130,2,800,150
+MCC (Micro Commercial Components),UD4KB100,Active,R H,1-Phase Bridge,D3K,4,1000,1,5,130,2,1000,150
+MCC (Micro Commercial Components),GBJ5006,Active,R H,1-Phase Bridge,GBJ,50,600,1,5,400,25,600,150
+MCC (Micro Commercial Components),GBJ5008,Active,R H,1-Phase Bridge,GBJ,50,800,1,5,400,25,800,150
+MCC (Micro Commercial Components),GBJ5010,Active,R H,1-Phase Bridge,GBJ,50,1000,1,5,400,25,1000,150
+MCC (Micro Commercial Components),GBL406-BPC01,Active,R H,1-Phase Bridge,GBL,4,600,1,5,150,2,600,150
+MCC (Micro Commercial Components),GBL408-BPC01,Active,R H,1-Phase Bridge,GBL,4,800,1,5,150,2,800,150
+MCC (Micro Commercial Components),GBL410-BPC01,Active,R H,1-Phase Bridge,GBL,4,1000,1,5,150,2,1000,150
+MCC (Micro Commercial Components),GBU2506,Active,R H,1-Phase Bridge,GBU,25,600,1,5,300,12.5,600,150
+MCC (Micro Commercial Components),GBU2508,Active,R H,1-Phase Bridge,GBU,25,800,1,5,300,12.5,800,150
+MCC (Micro Commercial Components),GBU2510,Active,R H,1-Phase Bridge,GBU,25,1000,1,5,300,12.5,1000,150
+MCC (Micro Commercial Components),GBL606,Active,R H,1-Phase Bridge,GBL,6,600,1,5,150,3,600,150
+MCC (Micro Commercial Components),GBL608,Active,R H,1-Phase Bridge,GBL,6,800,1,5,150,3,800,150
+MCC (Micro Commercial Components),GBL610,Active,R H,1-Phase Bridge,GBL,6,1000,1,5,150,3,1000,150
+MCC (Micro Commercial Components),GBJA606,Active,R H,1-Phase Bridge,JA,6,600,1,5,135,3,600,150
+MCC (Micro Commercial Components),GBJA608,Active,R H,1-Phase Bridge,JA,6,800,1,5,135,3,800,150
+MCC (Micro Commercial Components),GBJA610,Active,R H,1-Phase Bridge,JA,6,1000,1,5,135,3,1000,150
+MCC (Micro Commercial Components),GBJA806,Active,R H,1-Phase Bridge,JA,8,600,1,5,150,4,600,150
+MCC (Micro Commercial Components),GBJA808,Active,R H,1-Phase Bridge,JA,8,800,1,5,150,4,800,150
+MCC (Micro Commercial Components),GBJA810,Active,R H,1-Phase Bridge,JA,8,1000,1,5,150,4,1000,150
+MCC (Micro Commercial Components),GBJA1006,Active,R H,1-Phase Bridge,JA,10,600,1,5,150,5,600,150
+MCC (Micro Commercial Components),GBJA1008,Active,R H,1-Phase Bridge,JA,10,800,1,5,150,5,800,150
+MCC (Micro Commercial Components),GBJA1010,Active,R H,1-Phase Bridge,JA,10,1000,1,5,150,5,1000,150
+MCC (Micro Commercial Components),GBJA2006,Active,R H,1-Phase Bridge,JA,20,600,1,5,240,10,600,150
+MCC (Micro Commercial Components),GBJA2008,Active,R H,1-Phase Bridge,JA,20,800,1,5,240,10,800,150
+MCC (Micro Commercial Components),GBJA2010,Active,R H,1-Phase Bridge,JA,20,1000,1,5,240,10,1000,150
+MCC (Micro Commercial Components),PB2506,Active,R H,1-Phase Bridge,PB,25,600,1,5,350,12.5,600,150
+MCC (Micro Commercial Components),PB2508,Active,R H,1-Phase Bridge,PB,25,800,1,5,350,12.5,800,150
+MCC (Micro Commercial Components),PB2510,Active,R H,1-Phase Bridge,PB,25,1000,1,5,350,12.5,1000,150
+MCC (Micro Commercial Components),GBJ15L08,Active,R H,1-Phase Bridge,GBJ,15,800,0.92,5,250,7.5,800,150
+MCC (Micro Commercial Components),GBJ25L08,Active,R H,1-Phase Bridge,GBJ,25,800,0.92,5,360,12.5,800,150
+MCC (Micro Commercial Components),GBUA10M,Active,R H,1-Phase Bridge,JC,10,1000,1,5,175,5,1000,150
+MCC (Micro Commercial Components),GBUA4M,Active,R H,1-Phase Bridge,JC,4,1000,1,5,135,2,1000,150
+MCC (Micro Commercial Components),GBUA6M,Active,R H,1-Phase Bridge,JC,6,1000,1,5,150,3,1000,150
+MCC (Micro Commercial Components),KBJ2510G,Active,R H,1-Phase Bridge,KBJ,25,1000,1,5,300,12.5,1000,150
+MCC (Micro Commercial Components),EGBJ1006,Active,R H,1-Phase Bridge,GBJ,10,600,1.7,5,175,5,600,150
+MCC (Micro Commercial Components),EGBJ1506,Active,R H,1-Phase Bridge,GBJ,15,600,2,5,180,7.5,600,150
+MCC (Micro Commercial Components),EGBJ2006,Active,R H,1-Phase Bridge,GBJ,20,600,2,5,180,10,600,150
+MCC (Micro Commercial Components),EGBJ2506,Active,R H,1-Phase Bridge,GBJ,25,600,2,5,220,12.5,600,150
+MCC (Micro Commercial Components),EGBJ3506,Active,R H,1-Phase Bridge,GBJ,35,600,2,5,350,17.5,600,150
+MCC (Micro Commercial Components),EGBJ5006,Active,R H,1-Phase Bridge,GBJ,50,600,2,5,380,25,600,150
+MCC (Micro Commercial Components),EPB2506,Active,R,1-Phase Bridge,PB,25,600,2,5,220,12.5,600,150
+MCC (Micro Commercial Components),EPB3506,Active,R,1-Phase Bridge,PB,35,600,2,5,350,17.5,600,150
+MCC (Micro Commercial Components),EPB5006,Active,R,1-Phase Bridge,PB,50,600,2,5,380,25,600,150
+MCC (Micro Commercial Components),GBJ3516,Active,R H,1-Phase Bridge,GBJ,35,1600,1.1,5,350,17.5,1600,150
+MCC (Micro Commercial Components),GBJ5016,Active,R H,1-Phase Bridge,GBJ,50,1600,1.1,5,500,25,1600,150
+MCC (Micro Commercial Components),KBP810G,Active,R H,1-Phase Bridge,GBP,8,1000,1,5,170,4,1000,150
+MCC (Micro Commercial Components),RKBP410G,Active,R H,1-Phase Bridge,GBP,4,1000,1.3,5,130,2,1000,150
+MCC (Micro Commercial Components),RKBP810G,Active,R H,1-Phase Bridge,GBP,8,1000,1.3,5,170,4,1000,150
+MCC (Micro Commercial Components),RGBUA4M,Active,R H,1-Phase Bridge,JC,4,1000,1.3,5,135,2,1000,150
+MCC (Micro Commercial Components),RGBUA8M,Active,R H,1-Phase Bridge,JC,8,1000,1.3,5,160,4,1000,150
+MCC (Micro Commercial Components),PB3516,Active,R,1-Phase Bridge,PB,35,1600,1.1,5,400,17.5,1600,150
+MCC (Micro Commercial Components),PB5016,Active,R,1-Phase Bridge,PB,50,1600,1.1,5,500,25,1600,150
+MCC (Micro Commercial Components),GBUA15M,Active,R H,1-Phase Bridge,JC,15,1000,1,5,200,7.5,1000,150
+MCC (Micro Commercial Components),KBJA808L,Active,R H,1-Phase Bridge,JB,8,800,0.92,5,175,4,800,150
+MCC (Micro Commercial Components),GBJ2516,Active,R H,1-Phase Bridge,GBJ,25,1600,1.1,5,320,12.5,1600,150
+MCC (Micro Commercial Components),UD8KB80L,Active,R H,1-Phase Bridge,D3K,8,800,0.92,5,170,4,800,150
+MCC (Micro Commercial Components),GBJ25L08A,Active,R H,1-Phase Bridge,GBJ,25,800,0.9,5,380,12.5,800,150
+MCC (Micro Commercial Components),GBJ35L08,Active,R H,1-Phase Bridge,GBJ,35,800,0.92,5,400,17.5,800,150
+MCC (Micro Commercial Components),PBA2510,Active,R H,1-Phase Bridge,PB-A,25,1000,1,5,350,12.5,1000,150
+MCC (Micro Commercial Components),PBA3510,Active,R H,1-Phase Bridge,PB-A,35,1000,1,5,400,17.5,1000,150
+MCC (Micro Commercial Components),PBA3516,Active,R H,1-Phase Bridge,PB-A,35,1600,1.1,5,400,17.5,1600,150
+MCC (Micro Commercial Components),PBA5010,Active,R H,1-Phase Bridge,PB-A,50,1000,1.1,5,500,25,1000,150
+MCC (Micro Commercial Components),PBA5016,Active,R H,1-Phase Bridge,PB-A,50,1600,1.1,5,500,25,1600,150
+MCC (Micro Commercial Components),KBJ1016GS,Active,R H,1-Phase Bridge,KBJ,10,1600,1.05,5,160,5,1600,150

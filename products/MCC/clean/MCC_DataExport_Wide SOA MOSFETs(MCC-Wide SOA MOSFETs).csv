@@ -1,0 +1,27 @@
+﻿,,Wide SOA MOSFETs,,,,,,,,,,,,
+Manufacture,Product,Status,Compliance,Number of Functions,Channel,Package Type,"Drain-Source
+Voltage
+VDS (V)","Gate-Source
+Voltage
+VGS (V)","Drain
+Current
+ID (A)","RDS(ON)
+Max
+@VGS=10V
+(Ω)","Gate
+Threshold
+Voltage
+VGS(th) Min
+(V)","Gate
+Threshold
+Voltage
+VGS(th) Max
+(V)","ESD
+Diodes","Junction
+Temperature
+Tj [max]
+(°C)"
+,,,,,,,,,,,,,,
+MCC (Micro Commercial Components),MCTL2D0N10YHR,Active,R H,Single,N,TOLL-8L,100,±20,300,0.002,2.2,3.8,No,175
+MCC (Micro Commercial Components),MCB3D9N10YHR,Active,R H,Single,N,D2-PAK,100,±20,140,0.0039,2,4,No,175
+MCC (Micro Commercial Components),MCB2D8N10YHR,Active,R H,Single,N,D2-PAK,100,±20,250,0.0028,2.3,3.7,No,175

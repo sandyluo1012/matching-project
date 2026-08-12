@@ -1,0 +1,251 @@
+﻿,,Pre-Biased Transistors,,,,,,,,,,,
+Manufacture,Product,Status,Compliance,Number of Functions,Polarity,Package Type,IO(mA),R1 Typ (KΩ),R2 Typ (KΩ),VCC(V),fT(MHz),PD(mW),Tj [max] (°C)
+,,,,,,,,,,,,,
+MCC (Micro Commercial Components),UMH15NHE3,Preferred,A R H,Dual(R1/R2),NPN*2,SOT-363,100,4.7,4.7,50,250,150,150
+MCC (Micro Commercial Components),EMH9,Active,R H,Dual(R1/R2),NPN*2,SOT-563,100,10,47,50,200,150,150
+MCC (Micro Commercial Components),UMH31NS,Active,R H,Dual(R1/R2),NPN*2,SOT-363S,100,1,10,50,250,150,150
+MCC (Micro Commercial Components),EMH1,Active,R H,Dual(R1/R2),NPN*2,SOT-563,100,22,22,50,200,150,150
+MCC (Micro Commercial Components),IMH31N,Active,R H,Dual(R1/R2),NPN*2,SOT23-6L,100,1,10,50,200,300,150
+MCC (Micro Commercial Components),EMH10,Active,R H,Dual(R1/R2),NPN*2,SOT-563,100,2.2,47,50,250,150,150
+MCC (Micro Commercial Components),UMH1N,Active,R H,Dual(R1/R2),NPN*2,SOT-363,100,22,22,50,250,150,150
+MCC (Micro Commercial Components),UMH2N,Active,R H,Dual(R1/R2),NPN*2,SOT-363,100,47,47,50,250,150,150
+MCC (Micro Commercial Components),EMH11,Active,R H,Dual(R1/R2),NPN*2,SOT-563,100,10,10,50,250,150,150
+MCC (Micro Commercial Components),EMH13,Active,R H,Dual(R1/R2),NPN*2,SOT-563,100,4.7,47,50,250,150,150
+MCC (Micro Commercial Components),UMH10N,Active,R H,Dual(R1/R2),NPN*2,SOT-363,100,2.2,47,50,250,150,150
+MCC (Micro Commercial Components),UMH9N,Active,R H,Dual(R1/R2),NPN*2,SOT-363,100,10,47,50,250,150,150
+MCC (Micro Commercial Components),UMH11N,Active,R H,Dual(R1/R2),NPN*2,SOT-363,100,10,10,50,250,150,150
+MCC (Micro Commercial Components),UMH13N,Active,R H,Dual(R1/R2),NPN*2,SOT-363,100,4.7,47,50,250,150,150
+MCC (Micro Commercial Components),UMH11NHE3,Active,A R H,Dual(R1/R2),NPN*2,SOT-363,100,10,10,50,250,150,150
+MCC (Micro Commercial Components),UMH1NHE3,Active,A R H,Dual(R1/R2),NPN*2,SOT-363,100,22,22,50,250,150,150
+MCC (Micro Commercial Components),UMH9NHE3,Active,A R H,Dual(R1/R2),NPN*2,SOT-363,100,10,47,50,250,150,150
+MCC (Micro Commercial Components),UMH15N,Active,R H,Dual(R1/R2),NPN*2,SOT-363,100,4.7,4.7,50,250,150,150
+MCC (Micro Commercial Components),UMH13NHE3,Active,A R H,Dual(R1/R2),NPN*2,SOT-363,100,4.7,47,50,250,150,150
+MCC (Micro Commercial Components),UMD22NHE3,Active,A R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,4.7,47,50/-50,250,200,150
+MCC (Micro Commercial Components),UMD3NHE3,Active,A R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,10,10,50/-50,250,200,150
+MCC (Micro Commercial Components),UMD2NHE3,Active,A R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,22,22,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD2NHE3-TPQ2,Active,A R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,22,22,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD3N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,10,10,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD2N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,22,22,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD22N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,4.7,47,50/-50,250,150,150
+MCC (Micro Commercial Components),EMH4,Active,R H,Dual(R1),NPN*2,SOT-563,100,10,,50,250,150,150
+MCC (Micro Commercial Components),UMH3N,Active,R H,Dual(R1),NPN*2,SOT-363,100,4.7,,50,250,150,150
+MCC (Micro Commercial Components),EMD9-TPQ2,Active,R H,Dual(R1/R2),NPN+PNP,SOT-563,100/-100,10,47,50/-50,250,150,150
+MCC (Micro Commercial Components),EMD3,Active,R H,Dual(R1/R2),NPN+PNP,SOT-563,100/-100,10,10,50/-50,250,200,150
+MCC (Micro Commercial Components),EMD3-TPQ2,Active,R H,Dual(R1/R2),NPN+PNP,SOT-563,100/-100,10,10,50/-50,250,200,150
+MCC (Micro Commercial Components),UMD15N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,4.7,4.7,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD9N-TPQ2,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,10,47,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD10N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,2.2,47,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD9N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,10,47,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD12N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,47,47,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD9NHE3,Active,A R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,10,47,50/-50,250,200,150
+MCC (Micro Commercial Components),UMD12NHE3,Active,A R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,47,47,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD10NHE3,Active,A R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,2.2,47,50/-50,200,150,150
+MCC (Micro Commercial Components),UMD12N-TPQ2,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,47,47,50/-50,200,150,150
+MCC (Micro Commercial Components),UMD15NHE3,Active,A R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,4.7,4.7,50/-50,250,150,150
+MCC (Micro Commercial Components),EMD22,Active,R H,Dual(R1/R2),NPN+PNP,SOT-563,100/-100,4.7,47,50/-50,250,150,150
+MCC (Micro Commercial Components),EMD9,Active,R H,Dual(R1/R2),NPN+PNP,SOT-563,100/-100,10,47,50/-50,250,150,150
+MCC (Micro Commercial Components),EMD2,Active,R H,Dual(R1/R2),NPN+PNP,SOT-563,100/-100,22,22,50/-50,200,150,150
+MCC (Micro Commercial Components),UMD2NS,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363S,100/-100,22,22,50/-50,200,150,150
+MCC (Micro Commercial Components),UMD12NS,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363S,100/-100,47,47,50/-50,200,150,150
+MCC (Micro Commercial Components),EMD16,Active,R H,Dual(R1/R2),NPN+PNP,SOT-563,100/-100,22,47,50/-50,250,150,150
+MCC (Micro Commercial Components),UMD11N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,10,10,50/-50,200,150,150
+MCC (Micro Commercial Components),UMD13N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,4.7,47,50/-50,200,150,150
+MCC (Micro Commercial Components),UMD16N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,22,47,50/-50,200,150,150
+MCC (Micro Commercial Components),UMD18N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,4.7,10,50/-50,200,150,150
+MCC (Micro Commercial Components),UMB9N,Active,R H,Dual(R1/R2),PNP*2,SOT-363,-100,10,47,-50,200,150,150
+MCC (Micro Commercial Components),UMB9NHE3,Active,A R H,Dual(R1/R2),PNP*2,SOT-363,-100,10,47,-50,200,150,150
+MCC (Micro Commercial Components),UMB1NHE3,Active,A R H,Dual(R1/R2),PNP*2,SOT-363,-100,22,22,-50,200,150,150
+MCC (Micro Commercial Components),EMB9,Active,R H,Dual(R1/R2),PNP*2,SOT-563,-100,10,47,-50,200,150,150
+MCC (Micro Commercial Components),UMB2NS,Active,R H,Dual(R1/R2),PNP*2,SOT-363S,-100,47,47,-50,200,150,150
+MCC (Micro Commercial Components),EMB1,Active,R H,Dual(R1/R2),PNP*2,SOT-563,-100,22,22,-50,200,150,150
+MCC (Micro Commercial Components),EMB11,Active,R H,Dual(R1/R2),PNP*2,SOT-563,-100,10,10,-50,250,150,150
+MCC (Micro Commercial Components),UMB10N,Active,R H,Dual(R1/R2),PNP*2,SOT-363,-100,2.2,47,-50,200,150,150
+MCC (Micro Commercial Components),UMB1N,Active,R H,Dual(R1/R2),PNP*2,SOT-363,-100,22,22,-50,200,150,150
+MCC (Micro Commercial Components),UMB18N,Active,R H,Dual(R1/R2),PNP*2,SOT-363,-100,4.7,10,-50,200,150,150
+MCC (Micro Commercial Components),UMB11N,Active,R H,Dual(R1/R2),PNP*2,SOT-363,-100,10,10,-50,200,150,150
+MCC (Micro Commercial Components),UMB2N,Active,R H,Dual(R1/R2),PNP*2,SOT-363,-100,47,47,-50,200,150,150
+MCC (Micro Commercial Components),UMB13N,Active,R H,Dual(R1/R2),PNP*2,SOT-363,-100,4.7,47,-50,200,150,150
+MCC (Micro Commercial Components),IMH8N,Active,R,Dual(R1),NPN*2,SOT23-6L,100,10,,50,200,300,150
+MCC (Micro Commercial Components),UMB4N,Active,R H,Dual(R1),PNP*2,SOT-363,-100,10,,-50,250,150,150
+MCC (Micro Commercial Components),UMF21N,Active,R H,Dual(R1/R2),NPN+PNP,SOT-363,100/-100,10,10,50,250,150,150
+MCC (Micro Commercial Components),DTC143TCA,Active,R H,Single(R1),NPN,SOT-23,100,4.7,,50,250,200,150
+MCC (Micro Commercial Components),DTC124TUA,Active,R H,Single(R1),NPN,SOT-323,100,22,,50,250,200,150
+MCC (Micro Commercial Components),DTC144TCA,Active,R H,Single(R1),NPN,SOT-23,100,47,,50,250,200,150
+MCC (Micro Commercial Components),DTC114TCA,Active,R H,Single(R1),NPN,SOT-23,100,10,,50,250,200,150
+MCC (Micro Commercial Components),DTC124TCA,Active,R H,Single(R1),NPN,SOT-23,100,22,,50,250,200,150
+MCC (Micro Commercial Components),DTC114GUA,Active,R H,Single(R1),NPN,SOT-323,100,10,,50,250,200,150
+MCC (Micro Commercial Components),DTC143TUA,Active,R H,Single(R1),NPN,SOT-323,100,4.7,,50,250,200,150
+MCC (Micro Commercial Components),DTC144TUA,Active,R H,Single(R1),NPN,SOT-323,100,47,,50,250,200,150
+MCC (Micro Commercial Components),DTC114TUA,Active,R H,Single(R1),NPN,SOT-323,100,10,,50,250,200,150
+MCC (Micro Commercial Components),DTC143TE,Active,R H,Single(R1),NPN,SOT-523,100,4.7,,50,250,150,150
+MCC (Micro Commercial Components),DTC144TE,Active,R H,Single(R1),NPN,SOT-523,100,47,,50,250,150,150
+MCC (Micro Commercial Components),DTC114TE,Active,R H,Single(R1),NPN,SOT-523,100,10,,50,250,150,150
+MCC (Micro Commercial Components),DTC143TM,Active,R H,Single(R1),NPN,SOT-723,100,4.7,,50,250,100,150
+MCC (Micro Commercial Components),DTC124TE,Active,R H,Single(R1),NPN,SOT-523,100,22,,50,250,200,150
+MCC (Micro Commercial Components),DTC114YUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,10,47,50,250,200,150
+MCC (Micro Commercial Components),DTC124EUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,22,22,50,250,200,150
+MCC (Micro Commercial Components),DTC144WCA,Active,R H,Single(R1/R2),NPN,SOT-23,100,47,22,50,250,200,150
+MCC (Micro Commercial Components),DTC144WUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,47,22,50,250,200,150
+MCC (Micro Commercial Components),DTC143ZUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,4.7,47,50,250,200,150
+MCC (Micro Commercial Components),DTC113ZUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,1,10,50,250,200,150
+MCC (Micro Commercial Components),DTC144EUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,47,47,50,250,200,150
+MCC (Micro Commercial Components),DTC114EUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,10,10,50,250,200,150
+MCC (Micro Commercial Components),DTC114WUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,10,4.7,50,250,200,150
+MCC (Micro Commercial Components),DTC114WCA,Active,R H,Single(R1/R2),NPN,SOT-23,100,10,4.7,50,250,200,150
+MCC (Micro Commercial Components),DTC124ECA,Active,R H,Single(R1/R2),NPN,SOT-23,100,22,22,50,250,200,150
+MCC (Micro Commercial Components),DTC144ECA,Active,R H,Single(R1/R2),NPN,SOT-23,100,47,47,50,250,200,150
+MCC (Micro Commercial Components),DTC114ECA,Active,R H,Single(R1/R2),NPN,SOT-23,100,10,10,50,250,246,150
+MCC (Micro Commercial Components),DTC114YCA,Active,R H,Single(R1/R2),NPN,SOT-23,100,10,47,50,250,230,150
+MCC (Micro Commercial Components),DTC143ZCA,Active,R H,Single(R1/R2),NPN,SOT-23,100,4.7,47,50,250,246,150
+MCC (Micro Commercial Components),DTC123JCA,Active,R H,Single(R1/R2),NPN,SOT-23,100,2.2,47,50,250,200,150
+MCC (Micro Commercial Components),DTC123YUAHE3,Active,A R H,Single(R1/R2),NPN,SOT-323,100,2.2,10,50,200,200,150
+MCC (Micro Commercial Components),DDTC114EUA,Active,R H,Single(R1/R2),NPN,SOT-323,500,10,10,50,160,200,150
+MCC (Micro Commercial Components),DDTC143EUA,Active,R H,Single(R1/R2),NPN,SOT-323,500,4.7,4.7,50,160,200,150
+MCC (Micro Commercial Components),DDTC113ZUA,Active,R H,Single(R1/R2),NPN,SOT-323,500,1,10,50,200,200,150
+MCC (Micro Commercial Components),DDTC123EUA,Active,R H,Single(R1/R2),NPN,SOT-323,500,2.2,2.2,50,160,200,150
+MCC (Micro Commercial Components),DDTC123YUA,Active,R H,Single(R1/R2),NPN,SOT-323,500,2.2,10,50,160,200,150
+MCC (Micro Commercial Components),DTC143XCA,Active,R H,Single(R1/R2),NPN,SOT-23,100,4.7,10,50,200,200,150
+MCC (Micro Commercial Components),DTC124XUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,22,47,50,200,200,150
+MCC (Micro Commercial Components),DTC123JUAHE3,Active,A R H,Single(R1/R2),NPN,SOT-323,100,2.2,47,50,200,200,150
+MCC (Micro Commercial Components),DTC113ZCA,Active,R H,Single(R1/R2),NPN,SOT-23,100,1,10,50,250,200,150
+MCC (Micro Commercial Components),DTC143ECA,Active,R H,Single(R1/R2),NPN,SOT-23,100,4.7,4.7,50,250,200,150
+MCC (Micro Commercial Components),DTC123EUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,2.2,2.2,50,250,200,150
+MCC (Micro Commercial Components),DTC143ZUAHE3,Active,A R H,Single(R1/R2),NPN,SOT-323,100,4.7,47,50,250,200,150
+MCC (Micro Commercial Components),DTC114EUAHE3,Active,A R H,Single(R1/R2),NPN,SOT-323,100,10,10,50,250,200,150
+MCC (Micro Commercial Components),DTC124EUAHE3,Active,A R H,Single(R1/R2),NPN,SOT-323,100,22,22,50,250,200,150
+MCC (Micro Commercial Components),DTC143EUAHE3,Active,A R H,Single(R1/R2),NPN,SOT-323,100,4.7,4.7,50,250,200,150
+MCC (Micro Commercial Components),DTC144EUAHE3,Active,A R H,Single(R1/R2),NPN,SOT-323,100,47,47,50,250,200,150
+MCC (Micro Commercial Components),DTC114YUAHE3,Active,A R H,Single(R1/R2),NPN,SOT-323,100,10,47,50,250,200,150
+MCC (Micro Commercial Components),DTC123JUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,2.2,47,50,250,200,150
+MCC (Micro Commercial Components),DTC123YUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,2.2,10,50,250,200,150
+MCC (Micro Commercial Components),DTC143XUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,4.7,10,50,250,200,150
+MCC (Micro Commercial Components),DTC114EL3,Active,R H,Single(R1/R2),NPN,DFN1006-3,100,10,10,50,250,100,150
+MCC (Micro Commercial Components),DTC114YL3,Active,R H,Single(R1/R2),NPN,DFN1006-3,100,10,47,50,250,100,150
+MCC (Micro Commercial Components),DTC144EL3,Active,R H,Single(R1/R2),NPN,DFN1006-3,100,47,47,50,200,150,150
+MCC (Micro Commercial Components),DTC114YM,Active,R H,Single(R1/R2),NPN,SOT-723,100,10,47,50,250,200,150
+MCC (Micro Commercial Components),DTC143ZM,Active,R H,Single(R1/R2),NPN,SOT-723,100,4.7,47,50,250,100,150
+MCC (Micro Commercial Components),DTC123JM,Active,R H,Single(R1/R2),NPN,SOT-723,100,2.2,47,50,250,100,150
+MCC (Micro Commercial Components),DTC114EM,Active,R H,Single(R1/R2),NPN,SOT-723,100,10,10,50,250,150,150
+MCC (Micro Commercial Components),DTC144EM,Active,R H,Single(R1/R2),NPN,SOT-723,100,47,47,50,250,100,150
+MCC (Micro Commercial Components),DTC143EUA,Active,R H,Single(R1/R2),NPN,SOT-323,100,4.7,4.7,50,250,200,150
+MCC (Micro Commercial Components),DTC123YCA,Active,R H,Single(R1/R2),NPN,SOT-23,100,2.2,10,50,250,200,150
+MCC (Micro Commercial Components),DTC123ECA,Active,R H,Single(R1/R2),NPN,SOT-23,100,2.2,2.2,50,250,200,150
+MCC (Micro Commercial Components),DDTC113ZCA,Active,R H,Single(R1/R2),NPN,SOT-23,500,1,10,50,250,250,150
+MCC (Micro Commercial Components),DDTC123YCA,Active,R H,Single(R1/R2),NPN,SOT-23,500,2.2,10,50,200,200,150
+MCC (Micro Commercial Components),DTC114ECAHE3,Active,A R H,Single(R1/R2),NPN,SOT-23,100,10,10,50,250,200,150
+MCC (Micro Commercial Components),DTC114YCAHE3,Active,A R H,Single(R1/R2),NPN,SOT-23,100,10,47,50,250,200,150
+MCC (Micro Commercial Components),DTC124ECAHE3,Active,A R H,Single(R1/R2),NPN,SOT-23,100,22,22,50,250,200,150
+MCC (Micro Commercial Components),DTC143ZCAHE3,Active,A R H,Single(R1/R2),NPN,SOT-23,100,4.7,47,50,250,200,150
+MCC (Micro Commercial Components),DTC144ECAHE3,Active,A R H,Single(R1/R2),NPN,SOT-23,100,47,47,50,250,200,150
+MCC (Micro Commercial Components),DDTC143ECA,Active,R H,Single(R1/R2),NPN,SOT-23,500,4.7,4.7,50,160,200,150
+MCC (Micro Commercial Components),DDTC123ECA,Active,R H,Single(R1/R2),NPN,SOT-23,500,2.2,2.2,50,160,200,150
+MCC (Micro Commercial Components),DTC123YCAHE3,Active,A R H,Single(R1/R2),NPN,SOT-23,100,2.2,10,50,200,200,150
+MCC (Micro Commercial Components),DTC124XCA,Active,R H,Single(R1/R2),NPN,SOT-23,100,22,47,50,200,200,150
+MCC (Micro Commercial Components),DTC143ECAHE3,Active,A R H,Single(R1/R2),NPN,SOT-23,100,4.7,4.7,50,250,200,150
+MCC (Micro Commercial Components),DTC123JCAHE3,Active,A R H,Single(R1/R2),NPN,SOT-23,100,2.2,47,50,200,200,150
+MCC (Micro Commercial Components),DDTC114ECA,Active,R H,Single(R1/R2),NPN,SOT-23,500,10,10,50,160,200,150
+MCC (Micro Commercial Components),DTC143ZE,Active,R H,Single(R1/R2),NPN,SOT-523,100,4.7,47,50,250,150,150
+MCC (Micro Commercial Components),DTC114EE,Active,R H,Single(R1/R2),NPN,SOT-523,100,10,10,50,250,150,150
+MCC (Micro Commercial Components),DTC144WE,Active,R H,Single(R1/R2),NPN,SOT-523,100,47,22,50,250,150,150
+MCC (Micro Commercial Components),DTC123EE,Active,R H,Single(R1/R2),NPN,SOT-523,100,2.2,2.2,50,200,150,150
+MCC (Micro Commercial Components),DTC123YE,Active,R H,Single(R1/R2),NPN,SOT-523,100,2.2,10,50,200,150,150
+MCC (Micro Commercial Components),DTC143XE,Active,R H,Single(R1/R2),NPN,SOT-523,100,4.7,10,50,200,150,150
+MCC (Micro Commercial Components),DTC143EE,Active,R H,Single(R1/R2),NPN,SOT-523,100,4.7,4.7,50,250,150,150
+MCC (Micro Commercial Components),DTC123JE,Active,R H,Single(R1/R2),NPN,SOT-523,100,2.2,47,50,250,150,150
+MCC (Micro Commercial Components),DTC114YE,Active,R H,Single(R1/R2),NPN,SOT-523,100,10,47,50,250,150,150
+MCC (Micro Commercial Components),DTC124EE,Active,R H,Single(R1/R2),NPN,SOT-523,100,22,22,50,250,150,150
+MCC (Micro Commercial Components),DTC144EE,Active,R H,Single(R1/R2),NPN,SOT-523,100,47,47,50,250,150,150
+MCC (Micro Commercial Components),DTC114WE,Active,R H,Single(R1/R2),NPN,SOT-523,100,10,4.7,50,200,150,150
+MCC (Micro Commercial Components),DTC124XE,Active,R H,Single(R1/R2),NPN,SOT-523,100,22,47,50,200,150,150
+MCC (Micro Commercial Components),DTC113ZE,Active,R H,Single(R1/R2),NPN,SOT-523,100,1,10,50,250,150,150
+MCC (Micro Commercial Components),DTC124EM,Active,R H,Single(R1/R2),NPN,SOT-723,100,22,22,50,250,100,150
+MCC (Micro Commercial Components),DTC143XM,Active,R H,Single(R1/R2),NPN,SOT-723,100,4.7,10,50,250,100,150
+MCC (Micro Commercial Components),DTC115EM,Active,R H,Single(R1/R2),NPN,SOT-723,100,100,100,50,250,100,150
+MCC (Micro Commercial Components),DTC123EM,Active,R H,Single(R1/R2),NPN,SOT-723,100,2.2,2.2,50,250,100,150
+MCC (Micro Commercial Components),DTC143EM,Active,R H,Single(R1/R2),NPN,SOT-723,100,4.7,4.7,50,250,150,150
+MCC (Micro Commercial Components),DTC113ZM,Active,R H,Single(R1/R2),NPN,SOT-723,100,1,10,50,250,100,150
+MCC (Micro Commercial Components),DTC124XM,Active,R H,Single(R1/R2),NPN,SOT-723,100,22,47,50,200,100,150
+MCC (Micro Commercial Components),DTA143TM,Active,R H,Single(R1),PNP,SOT-723,-100,4.7,,-50,250,100,150
+MCC (Micro Commercial Components),DTA114TE,Active,R H,Single(R1),PNP,SOT-523,-100,10,,-50,250,150,150
+MCC (Micro Commercial Components),DTA143TE,Active,R H,Single(R1),PNP,SOT-523,-100,4.7,,-50,250,150,150
+MCC (Micro Commercial Components),DTA114TUA,Active,R H,Single(R1),PNP,SOT-323,-100,10,,-50,250,200,150
+MCC (Micro Commercial Components),DTA143TCA,Active,R H,Single(R1),PNP,SOT-23,-100,4.7,,-50,250,200,150
+MCC (Micro Commercial Components),DTA143TUA,Active,R H,Single(R1),PNP,SOT-323,-100,4.7,,-50,250,200,150
+MCC (Micro Commercial Components),DTA114TCA,Active,R H,Single(R1),PNP,SOT-23,-100,10,,-50,250,200,150
+MCC (Micro Commercial Components),DTA143XUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,4.7,10,-50,250,200,150
+MCC (Micro Commercial Components),DTA123YUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,2.2,10,-50,250,200,150
+MCC (Micro Commercial Components),DTA143ZUAHE3,Active,A R H,Single(R1/R2),PNP,SOT-323,-100,4.7,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA114EUAHE3,Active,A R H,Single(R1/R2),PNP,SOT-323,-100,10,10,-50,250,200,150
+MCC (Micro Commercial Components),DTA144EUAHE3,Active,A R H,Single(R1/R2),PNP,SOT-323,-100,47,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA114YUAHE3,Active,A R H,Single(R1/R2),PNP,SOT-323,-100,10,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA123EUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,2.2,2.2,-50,250,200,150
+MCC (Micro Commercial Components),DTA143XCA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,4.7,10,-50,250,200,150
+MCC (Micro Commercial Components),DTA113ZUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,1,10,-50,200,200,150
+MCC (Micro Commercial Components),DTA124EUAHE3,Active,A R H,Single(R1/R2),PNP,SOT-323,-100,22,22,-50,200,200,150
+MCC (Micro Commercial Components),DTA143EUAHE3,Active,A R H,Single(R1/R2),PNP,SOT-323,-100,4.7,4.7,-50,250,200,150
+MCC (Micro Commercial Components),DTA124XUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,22,47,-50,200,200,150
+MCC (Micro Commercial Components),DTA115EUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,100,100,-50,200,200,150
+MCC (Micro Commercial Components),DDTA113ZUA,Active,R H,Single(R1/R2),PNP,SOT-323,-500,1,10,-50,200,200,150
+MCC (Micro Commercial Components),DTA123JUAHE3,Active,A R H,Single(R1/R2),PNP,SOT-323,-100,2.2,47,-50,200,200,150
+MCC (Micro Commercial Components),DTA114YCA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,10,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA123JCA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,2.2,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA124ECA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,22,22,-50,250,200,150
+MCC (Micro Commercial Components),DTA143ECA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,4.7,4.7,-50,250,200,150
+MCC (Micro Commercial Components),DTA143ZCA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,4.7,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA144ECA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,47,47,-50,250,200,150
+MCC (Micro Commercial Components),DDTA114ECA,Active,R H,Single(R1/R2),PNP,SOT-23,-500,10,10,-50,200,200,150
+MCC (Micro Commercial Components),DDTA123EUA,Active,R H,Single(R1/R2),PNP,SOT-323,-500,2.2,2.2,-50,200,200,150
+MCC (Micro Commercial Components),DTA143ZUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,4.7,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA144EUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,47,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA124EUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,22,22,-50,250,200,150
+MCC (Micro Commercial Components),DTA143EUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,4.7,4.7,-50,250,200,150
+MCC (Micro Commercial Components),DDTA114EUA,Active,R H,Single(R1/R2),PNP,SOT-323,-500,10,10,-50,200,200,150
+MCC (Micro Commercial Components),DTA144VUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,47,10,-50,200,200,150
+MCC (Micro Commercial Components),DTA124EM,Active,R H,Single(R1/R2),PNP,SOT-723,-100,22,22,-50,250,100,150
+MCC (Micro Commercial Components),DTA143EM,Active,R H,Single(R1/R2),PNP,SOT-723,-100,4.7,4.7,-50,250,100,150
+MCC (Micro Commercial Components),DTA114YM,Active,R H,Single(R1/R2),PNP,SOT-723,-70,10,47,-50,250,100,150
+MCC (Micro Commercial Components),DTA113ZM,Active,R H,Single(R1/R2),PNP,SOT-723,-100,1,10,-50,250,100,150
+MCC (Micro Commercial Components),DTA123YM,Active,R H,Single(R1/R2),PNP,SOT-723,-100,2.2,10,-50,250,100,150
+MCC (Micro Commercial Components),DTA143XE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,4.7,10,-50,200,150,150
+MCC (Micro Commercial Components),DTA114YE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,10,47,-50,200,150,150
+MCC (Micro Commercial Components),DTA123EE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,2.2,2.2,-50,,150,150
+MCC (Micro Commercial Components),DTA123JE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,2.2,47,-50,250,150,150
+MCC (Micro Commercial Components),DTA143ZE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,4.7,47,-50,250,150,150
+MCC (Micro Commercial Components),DTA143EE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,4.7,4.7,-50,250,150,150
+MCC (Micro Commercial Components),DTA124EE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,22,22,-50,250,150,150
+MCC (Micro Commercial Components),DTA144EE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,47,47,-50,250,150,150
+MCC (Micro Commercial Components),DTA143ZM,Active,R H,Single(R1/R2),PNP,SOT-723,-100,4.7,47,-50,250,100,150
+MCC (Micro Commercial Components),DTA113ZE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,1,10,-50,200,150,150
+MCC (Micro Commercial Components),DTA144VE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,47,10,-50,200,150,150
+MCC (Micro Commercial Components),DTA115EE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,100,100,-50,250,150,150
+MCC (Micro Commercial Components),DTA114EE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,10,10,-50,250,150,150
+MCC (Micro Commercial Components),DDTA143ECA,Active,R H,Single(R1/R2),PNP,SOT-23,-500,4.7,4.7,-50,160,200,150
+MCC (Micro Commercial Components),DTA123JCAHE3,Active,A R H,Single(R1/R2),PNP,SOT-23,-100,2.2,47,-50,200,200,150
+MCC (Micro Commercial Components),DDTA113ZCA,Active,R H,Single(R1/R2),PNP,SOT-23,-500,1,10,-50,160,200,150
+MCC (Micro Commercial Components),DTA143ECAHE3,Active,A R H,Single(R1/R2),PNP,SOT-23,-100,4.7,4.7,-50,250,200,150
+MCC (Micro Commercial Components),DTA124ECAHE3,Active,A R H,Single(R1/R2),PNP,SOT-23,-100,22,22,-50,200,200,150
+MCC (Micro Commercial Components),DTA115ECA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,100,100,-50,200,200,150
+MCC (Micro Commercial Components),DTA124XCA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,22,47,-50,200,200,150
+MCC (Micro Commercial Components),DTA144VCA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,47,10,-50,200,200,150
+MCC (Micro Commercial Components),DDTA123ECA,Active,R H,Single(R1/R2),PNP,SOT-23,-500,2.2,2.2,-50,250,200,150
+MCC (Micro Commercial Components),DTA123JUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,2.2,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA114EUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,10,10,-50,250,200,150
+MCC (Micro Commercial Components),DTA144ECAHE3,Active,A R H,Single(R1/R2),PNP,SOT-23,-100,47,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA114ECAHE3,Active,A R H,Single(R1/R2),PNP,SOT-23,-100,10,10,-50,250,200,150
+MCC (Micro Commercial Components),DTA114YCAHE3,Active,A R H,Single(R1/R2),PNP,SOT-23,-100,10,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA143ZCAHE3,Active,A R H,Single(R1/R2),PNP,SOT-23,-100,4.7,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA123ECA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,2.2,2.2,-50,250,200,150
+MCC (Micro Commercial Components),DDTA123YCA,Active,R H,Single(R1/R2),PNP,SOT-23,-500,2.2,10,-50,200,200,150
+MCC (Micro Commercial Components),DTA113ZCA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,1,10,-50,250,200,150
+MCC (Micro Commercial Components),DTA123YCA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,2.2,10,-50,250,200,150
+MCC (Micro Commercial Components),DTA114YUA,Active,R H,Single(R1/R2),PNP,SOT-323,-100,10,47,-50,250,200,150
+MCC (Micro Commercial Components),DTA114YL3,Active,R H,Single(R1/R2),PNP,DFN1006-3,-100,10,47,-50,250,100,150
+MCC (Micro Commercial Components),DTA123JM,Active,R H,Single(R1/R2),PNP,SOT-723,-100,2.2,47,-50,250,100,150
+MCC (Micro Commercial Components),DTA144EM,Active,R H,Single(R1/R2),PNP,SOT-723,-100,47,47,-50,250,100,150
+MCC (Micro Commercial Components),DTA114EM,Active,R H,Single(R1/R2),PNP,SOT-723,-100,10,10,-50,250,100,150
+MCC (Micro Commercial Components),DTA114EL3,Active,R H,Single(R1/R2),PNP,DFN1006-3,-100,10,10,-50,145,150,150
+MCC (Micro Commercial Components),DTA124XE,Active,R H,Single(R1/R2),PNP,SOT-523,-100,22,47,-50,250,150,150
+MCC (Micro Commercial Components),DTA114ECA,Active,R H,Single(R1/R2),PNP,SOT-23,-100,10,10,-50,250,200,150
+MCC (Micro Commercial Components),UMH18N,Active,R H,Dual(R1/R2),NPN*2,SOT-363,100,4.7,10,50,250,200,150
+MCC (Micro Commercial Components),UMH10NHE3,Active,A R H,Dual(R1/R2),NPN*2,SOT-363,100,2.2,47,50,250,150,150
+MCC (Micro Commercial Components),UMH2NHE3,Active,A R H,Dual(R1/R2),NPN*2,SOT-363,100,47,47,50,200,150,150

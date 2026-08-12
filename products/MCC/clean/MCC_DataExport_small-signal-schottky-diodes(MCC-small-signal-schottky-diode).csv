@@ -1,0 +1,289 @@
+﻿,,Small Signal Schottky Diodes,,,,,,,,,,,
+Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,IF(AV)(A),VRWM (V),"VF
+(V) [max]@IF(A)","IR (uA) [max] @
+VR",VR (V),IF(A),Tj [max] (°C)
+,,,,,,,,,,,,,
+MCC (Micro Commercial Components),MBR0540C,Preferred,R H,Dual,Common Cathode,SOT-23,0.5,40,0.5,70,25,0.2,125
+MCC (Micro Commercial Components),SD101AWSHQ,Preferred,A R H,Single,,SOD-323,0.07,60,1.0,0.2,50,0.015,150
+MCC (Micro Commercial Components),SD101BWSHQ,Preferred,A R H,Single,,SOD-323,0.07,50,0.95,0.2,40,0.015,150
+MCC (Micro Commercial Components),SD101CWSHQ,Preferred,A R H,Single,,SOD-323,0.07,40,0.90,0.2,30,0.015,150
+MCC (Micro Commercial Components),SD101AWHQ,Preferred,A R H,Single,,SOD-123,0.07,60,1.0,0.2,50,0.015,150
+MCC (Micro Commercial Components),SD101BWHQ,Preferred,A R H,Single,,SOD-123,0.07,50,0.95,0.2,40,0.015,150
+MCC (Micro Commercial Components),SD101CWHQ,Preferred,A R H,Single,,SOD-123,0.07,40,0.90,0.2,30,0.015,150
+MCC (Micro Commercial Components),BAS70WXHQ,Preferred,A R H,Single,,SOD-323,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),BAT54WXHQ,Preferred,A R H,Single,,SOD-523,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAT54WXHE3,Active,A R H,Single,,SOD-523,0.2,30,1,2,25,0.1,125
+MCC (Micro Commercial Components),RB520S-40H,Active,R H,Single,,SOD-523,0.2,40,0.6,2,40,0.2,150
+MCC (Micro Commercial Components),RB400DS,Active,R H,Single,,SOT-23,0.5,40,0.55,50,30,0.5,125
+MCC (Micro Commercial Components),BAT720WT,Active,R H,Single,,SOT-323,0.5,40,0.55,100,35,0.5,125
+MCC (Micro Commercial Components),RB520S-40L2,Active,R H,Single,,DFN1006-2L,0.2,40,0.39,10,40,0.01,125
+MCC (Micro Commercial Components),BAT46L2,Active,R H,Single,,DFN1006-2L,0.2,100,1,0.1,50,0.2,125
+MCC (Micro Commercial Components),BAS40WXHQ,Active,A R H,Single,,SOD-323,0.2,40,1.0,0.5,30,0.04,150
+MCC (Micro Commercial Components),BAS40W,Active,R H,Single,,SOD-123,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),SD103ATW,Active,R H,Triple,,SOT-363,0.35,40,0.37,5,30,0.02,125
+MCC (Micro Commercial Components),BAS70TW,Active,R H,Triple,Isolated,SOT-363,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAT54TW,Active,R H,Triple,Isolated,SOT-363,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40TW,Active,R H,Triple,Isolated,SOT-363,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),MBR0545L2,Active,R H,Single,,DFN1006-2L,0.5,45,0.5,50,30,0.5,150
+MCC (Micro Commercial Components),MBR140P1Q,Active,A R H,Single,,DFN1608-2L,1,40,0.6,20,40,1,150
+MCC (Micro Commercial Components),BAT54L2,Active,R H,Single,,DFN1006-2L,0.2,30,0.5,2,25,0.03,125
+MCC (Micro Commercial Components),BAS40L2,Active,R H,Single,,DFN1006-2L,0.2,40,0.38,0.2,30,0.001,125
+MCC (Micro Commercial Components),BAS70L2,Active,R H,Single,,DFN1006-2L,0.07,70,0.41,0.2,50,0.001,150
+MCC (Micro Commercial Components),SM5819L2,Active,R H,Single,,DFN1006-2,1,40,0.6,60,40,1,150
+MCC (Micro Commercial Components),MBR0530L2,Active,R H,Single,,DFN1006-2,0.5,30,0.54,500,30,0.5,100
+MCC (Micro Commercial Components),RB751S-40DP,Active,R H,Single,,0201,0.03,40,0.37,0.5,30,0.001,125
+MCC (Micro Commercial Components),RB521S-30DP,Active,R H,Single,,0201,0.1,30,0.53,50,30,0.1,125
+MCC (Micro Commercial Components),RB520S-30DP,Active,R H,Single,,0201,0.1,30,0.56,20,30,0.1,125
+MCC (Micro Commercial Components),CSP522S-30DP,Active,R H,Single,,0201-A,0.1,30,0.65,5,30,0.1,125
+MCC (Micro Commercial Components),RB751S-40L2,Active,R H,Single,,DFN1006-2L,0.03,40,0.37,0.5,30,0.001,125
+MCC (Micro Commercial Components),RB520S-30L2,Active,R H,Single,,DFN1006-2L,0.1,30,0.45,0.5,10,0.01,125
+MCC (Micro Commercial Components),RB521S-30L2,Active,R H,Single,,DFN1006-2L,0.1,30,0.35,10,10,0.01,125
+MCC (Micro Commercial Components),MBR240P1,Active,R H,Single,,DFN1608-2L,2,40,0.56,50,40,1,125
+MCC (Micro Commercial Components),B5819P1L,Active,R H,Single,,DFN1608-2,1,40,0.54,100,40,1,125
+MCC (Micro Commercial Components),BAS70-06HQ,Active,A R H,Dual,Common Anode,SOT-23,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),BAT46A,Active,R H,Dual,Common Anode,SOT-23,0.2,100,1.0,0.1,50,0.2,150
+MCC (Micro Commercial Components),BAT64-06HE3,Active,A R H,Dual,Common Anode,SOT-23,0.225,40,0.43,2,25,0.01,150
+MCC (Micro Commercial Components),BAT54AHQ,Active,A R H,Dual,Common Anode,SOT-23,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40-06HQ,Active,A R H,Dual,Common Anode,SOT-23,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAR43A,Active,R H,Dual,Common Anode,SOT-23,0.2,30,0.33,0.5,25,0.002,125
+MCC (Micro Commercial Components),BAT54AH,Active,R H,Dual,Common Anode,SOT-23,0.3,40,0.9,1,30,0.1,150
+MCC (Micro Commercial Components),BAS40-06HE3,Active,A R H,Dual,Common Anode,SOT-23,0.2,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAT64-06,Active,R H,Dual,Common Anode,SOT-23,0.25,40,0.43,2,25,0.01,150
+MCC (Micro Commercial Components),BAS70-06HE3,Active,A R H,Dual,Common Anode,SOT-23,0.07,70,1,0.2,50,0.015,125
+MCC (Micro Commercial Components),BAT54A,Active,R H,Dual,Common Anode,SOT-23,0.2,30,0.4,2,25,0.01,125
+MCC (Micro Commercial Components),BAS40-06,Active,R H,Dual,Common Anode,SOT-23,0.2,40,1,0.01,30,0.04,125
+MCC (Micro Commercial Components),BAS70-06,Active,R H,Dual,Common Anode,SOT-23,0.07,70,1,0.01,50,0.015,125
+MCC (Micro Commercial Components),BAS70WT-06,Active,R H,Dual,Common Anode,SOT-323,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAS40WT-06,Active,R H,Dual,Common Anode,SOT-323,0.2,40,1,1,30,0.04,150
+MCC (Micro Commercial Components),BAT54AWTHE3,Active,A R H,Dual,Common Anode,SOT-323,0.2,30,0.8,2,25,0.1,125
+MCC (Micro Commercial Components),BAT54AWTHQ,Active,A R H,Dual,Common Anode,SOT-323,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40WT-06HQ,Active,A R H,Dual,Common Anode,SOT-323,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAT54AWT,Active,R H,Dual,Common Anode,SOT-323,0.2,30,0.8,2,25,0.1,125
+MCC (Micro Commercial Components),BAS40WT-06HE3,Active,A R H,Dual,Common Anode,SOT-323,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAS70WT-06HE3,Active,A R H,Dual,Common Anode,SOT-323,0.07,70,1,0.2,50,0.015,125
+MCC (Micro Commercial Components),BAT54AWTH,Active,R H,Dual,Common Anode,SOT-323,0.2,30,0.8,2,25,0.1,150
+MCC (Micro Commercial Components),BAS70WT-06HQ,Active,A R H,Dual,Common Anode,SOT-323,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),BAT54AHE3,Active,A R H,Dual,Common Anode,SOT-23,0.2,30,0.4,2,25,0.01,125
+MCC (Micro Commercial Components),BAS40-06T,Active,R H,Dual,Common Anode,SOT-523,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAT54AT,Active,R H,Dual,Common Anode,SOT-523,0.2,30,1,2,25,0.1,125
+MCC (Micro Commercial Components),BAS70-06T,Active,R H,Dual,Common Anode,SOT-523,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAT54CM,Active,R H,Dual,Common Cathode,SOT-723,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAT54CTH,Active,R H,Dual,Common Cathode,SOT-523,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAT54CT,Active,R H,Dual,Common Cathode,SOT-523,0.2,30,1,2,25,0.1,125
+MCC (Micro Commercial Components),BAS70WT-05HQ,Active,A R H,Dual,Common Cathode,SOT-323,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),BAS40-05T,Active,R H,Dual,Common Cathode,SOT-523,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAT54CHE3,Active,A R H,Dual,Common Cathode,SOT-23,0.2,30,0.4,2,25,0.01,125
+MCC (Micro Commercial Components),BAT54CWTHQ,Active,A R H,Dual,Common Cathode,SOT-323,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAT54CWTH,Active,R H,Dual,Common Cathode,SOT-323,0.2,30,0.8,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40WT-05HE3,Active,A R H,Dual,Common Cathode,SOT-323,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAS70WT-05HE3,Active,A R H,Dual,Common Cathode,SOT-323,0.07,70,1,0.2,50,0.015,125
+MCC (Micro Commercial Components),BAT54CWT,Active,R H,Dual,Common Cathode,SOT-323,0.2,30,0.8,2,25,0.1,125
+MCC (Micro Commercial Components),BAS40WT-05HQ,Active,A R H,Dual,Common Cathode,SOT-323,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAS70WT-05,Active,R H,Dual,Common Cathode,SOT-323,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAS40WT-05,Active,R H,Dual,Common Cathode,SOT-323,0.2,40,1,1,30,0.04,150
+MCC (Micro Commercial Components),BAT54CWTHE3,Active,A R H,Dual,Common Cathode,SOT-323,0.2,30,0.8,2,25,0.1,125
+MCC (Micro Commercial Components),BAS70-05HE3,Active,A R H,Dual,Common Cathode,SOT-23,0.07,70,1,0.2,50,0.015,125
+MCC (Micro Commercial Components),BAS70-05,Active,R H,Dual,Common Cathode,SOT-23,0.07,70,1,0.01,50,0.015,125
+MCC (Micro Commercial Components),BAT54C,Active,R H,Dual,Common Cathode,SOT-23,0.2,30,0.4,2,25,0.01,125
+MCC (Micro Commercial Components),BAT64-05,Active,R H,Dual,Common Cathode,SOT-23,0.25,40,0.43,2,25,0.01,150
+MCC (Micro Commercial Components),BAS40-05,Active,R H,Dual,Common Cathode,SOT-23,0.2,40,1,0.01,30,0.04,125
+MCC (Micro Commercial Components),BAT64-05HE3,Active,A R H,Dual,Common Cathode,SOT-23,0.225,40,0.43,2,25,0.01,150
+MCC (Micro Commercial Components),BAS40-05HE3,Active,A R H,Dual,Common Cathode,SOT-23,0.2,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAT54CH,Active,R H,Dual,Common Cathode,SOT-23,0.3,40,0.9,1,30,0.1,150
+MCC (Micro Commercial Components),BAR43C,Active,R H,Dual,Common Cathode,SOT-23,0.2,30,0.33,0.5,25,0.002,125
+MCC (Micro Commercial Components),BAT54CHQ,Active,A R H,Dual,Common Cathode,SOT-23,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),B0540WSHQ,Active,A R H,Single,,SOD-323,0.5,40,0.55,80,20,0.5,150
+MCC (Micro Commercial Components),BAS70WXHE3,Active,A R H,Single,,SOD-323,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),MBR160S,Active,R H,Single,,SOD-323,1,60,1,500,60,3,125
+MCC (Micro Commercial Components),BAT46WSHE3,Active,A R H,Single,,SOD-323,0.15,100,1,0.5,10,0.25,125
+MCC (Micro Commercial Components),BAS40WXHE3,Active,A R H,Single,,SOD-323,0.2,40,1,0.5,30,0.04,150
+MCC (Micro Commercial Components),BAT54WSHQ,Active,A R H,Single,,SOD-323,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAT165WS,Active,R H,Single,,SOD-323,0.75,40,0.74,8,40,0.75,150
+MCC (Micro Commercial Components),B05100WS,Active,R H,Single,,SOD-323,0.5,100,0.85,1,100,0.5,150
+MCC (Micro Commercial Components),SMD22WS,Active,R H,Single,,SOD-323,2,20,0.55,100,20,2,125
+MCC (Micro Commercial Components),MBRX0520L,Active,R H,Single,,SOD-323,0.5,20,0.39,250,20,0.5,125
+MCC (Micro Commercial Components),BSR106WS,Active,R H,Single,,SOD-323,1,60,0.7,100,60,1,125
+MCC (Micro Commercial Components),RB551V-30,Active,R H,Single,,SOD-323,0.5,30,0.47,100,20,0.5,125
+MCC (Micro Commercial Components),RB551V-30HE3,Active,A R H,Single,,SOD-323,0.5,30,0.47,100,20,0.5,125
+MCC (Micro Commercial Components),RB551V-30S,Active,R H,Single,,SOD-323,0.5,30,0.47,100,20,0.5,125
+MCC (Micro Commercial Components),RB551V-40,Active,R H,Single,,SOD-323,0.5,40,0.47,100,40,0.5,125
+MCC (Micro Commercial Components),RB751V-40,Active,R H,Single,,SOD-323,0.03,40,0.37,0.5,30,0.001,125
+MCC (Micro Commercial Components),RB751V-40HE3,Active,A R H,Single,,SOD-323,0.03,40,0.37,0.5,30,0.001,125
+MCC (Micro Commercial Components),BAT43WS,Active,R H,Single,,SOD-323,0.2,30,0.45,0.5,25,0.015,125
+MCC (Micro Commercial Components),BAT46WS,Active,R H,Single,,SOD-323,0.15,100,1,0.5,10,0.25,125
+MCC (Micro Commercial Components),BAT42WS,Active,R H,Single,,SOD-323,0.2,30,1,0.5,25,0.2,125
+MCC (Micro Commercial Components),BAT54WSHE3,Active,A R H,Single,,SOD-323,0.2,30,1,2,25,0.1,125
+MCC (Micro Commercial Components),BAT54WSH,Active,R H,Single,,SOD-323,0.3,40,0.9,1,30,0.1,150
+MCC (Micro Commercial Components),B5818WS,Active,R H,Single,,SOD-323,1,30,0.55,40,30,1,125
+MCC (Micro Commercial Components),B5818WSHE3,Active,A R H,Single,,SOD-323,1,30,0.55,40,30,1,125
+MCC (Micro Commercial Components),B5819WS,Active,R H,Single,,SOD-323,1,40,0.6,40,40,1,125
+MCC (Micro Commercial Components),B5819WSHE3,Active,A R H,Single,,SOD-323,1,40,0.6,40,40,1,125
+MCC (Micro Commercial Components),B5817WS,Active,R H,Single,,SOD-323,1,20,0.45,200,20,1,125
+MCC (Micro Commercial Components),B5817WSHE3,Active,A R H,Single,,SOD-323,1,20,0.45,200,20,1,125
+MCC (Micro Commercial Components),B0540WS,Active,R H,Single,,SOD-323,0.5,40,0.55,80,40,0.5,125
+MCC (Micro Commercial Components),B0540WSHE3,Active,A R H,Single,,SOD-323,0.5,40,0.55,80,40,0.5,125
+MCC (Micro Commercial Components),B0560WS,Active,R H,Single,,SOD-323,0.5,60,0.7,100,60,0.5,125
+MCC (Micro Commercial Components),SD101AWSHE3,Active,A R H,Single,,SOD-323,0.015,60,0.41,0.2,50,0.001,125
+MCC (Micro Commercial Components),SD101BWSHE3,Active,A R H,Single,,SOD-323,0.015,50,0.4,0.2,40,0.001,125
+MCC (Micro Commercial Components),SD101CWSHE3,Active,A R H,Single,,SOD-323,0.015,40,0.39,0.2,30,0.001,125
+MCC (Micro Commercial Components),SD103CWSHE3,Active,A R H,Single,,SOD-323,0.35,20,0.37,5,10,0.02,125
+MCC (Micro Commercial Components),SD103BWSHE3,Active,A R H,Single,,SOD-323,0.35,30,0.37,5,20,0.02,125
+MCC (Micro Commercial Components),SD103AWSHE3,Active,A R H,Single,,SOD-323,0.35,40,0.37,5,30,0.02,125
+MCC (Micro Commercial Components),B0530WSHE3,Active,A R H,Single,,SOD-323,0.5,30,0.55,300,30,0.5,125
+MCC (Micro Commercial Components),BAT54WS,Active,R H,Single,,SOD-323,0.2,30,1,2,25,0.1,125
+MCC (Micro Commercial Components),B0530WS,Active,R H,Single,,SOD-323,0.5,30,0.55,300,30,0.5,125
+MCC (Micro Commercial Components),BAT60B,Active,R H,Single,,SOD-323,3,10,0.3,15,5,0.01,150
+MCC (Micro Commercial Components),SD103AWS,Active,R H,Single,,SOD-323,0.35,40,0.37,5,30,0.02,125
+MCC (Micro Commercial Components),SD103BWS,Active,R H,Single,,SOD-323,0.35,30,0.37,5,20,0.02,125
+MCC (Micro Commercial Components),SD103CWS,Active,R H,Single,,SOD-323,0.35,20,0.37,5,10,0.02,125
+MCC (Micro Commercial Components),SD107WS,Active,R H,Single,,SOD-323,0.1,30,0.55,1,25,0.05,150
+MCC (Micro Commercial Components),SD101AWS,Active,R H,Single,,SOD-323,0.015,60,0.41,0.2,50,0.001,125
+MCC (Micro Commercial Components),SD101BWS,Active,R H,Single,,SOD-323,0.015,50,0.4,0.2,40,0.001,125
+MCC (Micro Commercial Components),SD101CWS,Active,R H,Single,,SOD-323,0.015,40,0.39,0.2,30,0.001,125
+MCC (Micro Commercial Components),BAS40WX,Active,R H,Single,,SOD-323,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAS70WX,Active,R H,Single,,SOD-323,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAT54WX,Active,R H,Single,,SOD-523,0.2,30,0.8,2,25,0.1,125
+MCC (Micro Commercial Components),SD103AX,Active,R H,Single,,SOD-523,0.35,40,0.6,5,30,0.2,125
+MCC (Micro Commercial Components),BAS40X,Active,R H,Single,,SOD-523,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAS70X,Active,R H,Single,,SOD-523,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),B5817X2,Active,R H,Single,,SOD-523,1,40,0.6,30,20,1,125
+MCC (Micro Commercial Components),BAT43X,Active,R H,Single,,SOD-523,0.2,30,1,0.5,25,0.2,125
+MCC (Micro Commercial Components),RB521S-30HE3,Active,A R H,Single,,SOD-523,0.2,30,0.5,30,10,0.2,125
+MCC (Micro Commercial Components),RB521S-40,Active,R H,Single,,SOD-523,0.2,40,0.54,90,40,0.2,125
+MCC (Micro Commercial Components),RB520S-40,Active,R H,Single,,SOD-523,0.2,40,0.55,1,10,0.1,125
+MCC (Micro Commercial Components),RB520S-40HE3,Active,A R H,Single,,SOD-523,0.25,40,0.55,1,10,0.1,125
+MCC (Micro Commercial Components),RB521S-30,Active,R H,Single,,SOD-523,0.2,30,0.5,30,10,0.2,125
+MCC (Micro Commercial Components),RB520S-30,Active,R H,Single,,SOD-523,0.2,30,0.6,1,10,0.2,125
+MCC (Micro Commercial Components),RB520S-30HE3,Active,A R H,Single,,SOD-523,0.2,30,0.6,1,10,0.2,125
+MCC (Micro Commercial Components),RB521S-40HE3,Active,A R H,Single,,SOD-523,0.2,40,0.59,90,40,0.2,125
+MCC (Micro Commercial Components),RB751S-40,Active,R H,Single,,SOD-523,0.03,40,0.37,0.5,30,0.001,125
+MCC (Micro Commercial Components),RB751S-40HE3,Active,A R H,Single,,SOD-523,0.03,40,0.37,0.5,30,0.001,150
+MCC (Micro Commercial Components),BAT46C,Active,R H,Dual,Common Cathode,SOT-23,0.2,100,1.0,0.1,50,0.2,150
+MCC (Micro Commercial Components),BAS70-05HQ,Active,A R H,Dual,Common Cathode,SOT-23,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),BAS40-05HQ,Active,A R H,Dual,Common Cathode,SOT-23,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAS70-05T,Active,R H,Dual,Common Cathode,SOT-523,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAT54DW,Active,R H,Dual-Dual,Series,SOT-363,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40V,Active,R H,Dual,Isolated (Alt.),SOT-563,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAT54V,Active,R H,Dual,Isolated,SOT-563,0.2,30,1,2,25,0.04,150
+MCC (Micro Commercial Components),BAT54STH,Active,R H,Dual,Series,SOT-523,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS70WT-04HQ,Active,A R H,Dual,Series,SOT-323,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),BAT54SWTHQ,Active,A R H,Dual,Series,SOT-323,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40-04T,Active,R H,Dual,Series,SOT-523,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAT54ST,Active,R H,Dual,Series,SOT-523,0.2,30,1,2,25,0.1,125
+MCC (Micro Commercial Components),BAS70-04T,Active,R H,Dual,Series,SOT-523,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAT54SHQ,Active,A R H,Dual,Series,SOT-23,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS70-04HQ,Active,A R H,Dual,Series,SOT-23,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),BAT46S,Active,R H,Dual,Series,SOT-23,0.2,100,1.0,0.1,50,0.2,150
+MCC (Micro Commercial Components),BAS40-04HQ,Active,A R H,Dual,Series,SOT-23,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAR43S,Active,R H,Dual,Series,SOT-23,0.2,30,0.33,0.5,25,0.002,125
+MCC (Micro Commercial Components),BAT64-04HE3,Active,A R H,Dual,Series,SOT-23,0.225,40,0.43,2,25,0.01,150
+MCC (Micro Commercial Components),BAT54SH,Active,R H,Dual,Series,SOT-23,0.3,40,0.9,1,30,0.1,150
+MCC (Micro Commercial Components),BAS40-04HE3,Active,A R H,Dual,Series,SOT-23,0.2,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAT54SHE3,Active,A R H,Dual,Series,SOT-23,0.2,30,0.4,2,25,0.01,125
+MCC (Micro Commercial Components),BAT64-04,Active,R H,Dual,Series,SOT-23,0.25,40,0.43,2,25,0.01,150
+MCC (Micro Commercial Components),BAS40-04,Active,R H,Dual,Series,SOT-23,0.2,40,1,0.01,30,0.04,125
+MCC (Micro Commercial Components),BAT54S,Active,R H,Dual,Series,SOT-23,0.2,30,0.4,2,25,0.01,125
+MCC (Micro Commercial Components),BAS70-04,Active,R H,Dual,Series,SOT-23,0.07,70,1,0.01,50,0.015,125
+MCC (Micro Commercial Components),BAS70-04HE3,Active,A R H,Dual,Series,SOT-23,0.07,70,1,0.2,50,0.015,125
+MCC (Micro Commercial Components),BAS40WT-04,Active,R H,Dual,Series,SOT-323,0.2,40,1,1,30,0.04,150
+MCC (Micro Commercial Components),BAS70WT-04,Active,R H,Dual,Series,SOT-323,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAT54SWTHE3,Active,A R H,Dual,Series,SOT-323,0.2,30,0.8,2,25,0.1,125
+MCC (Micro Commercial Components),RB706F-40,Active,R H,Dual,,SOT-323,0.03,40,0.37,1,10,0.001,150
+MCC (Micro Commercial Components),BAS40WT-04HQ,Active,A R H,Dual,Series,SOT-323,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAS40WT-04HE3,Active,A R H,Dual,Series,SOT-323,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAT54SWT,Active,R H,Dual,Series,SOT-323,0.2,30,0.8,2,25,0.1,125
+MCC (Micro Commercial Components),BAT64-04W,Active,R H,Dual,Series,SOT-323,0.25,40,0.52,2,30,0.03,150
+MCC (Micro Commercial Components),BAS70WT-04HE3,Active,A R H,Dual,Series,SOT-323,0.07,70,1,0.2,50,0.015,125
+MCC (Micro Commercial Components),BAT54SWTH,Active,R H,Dual,Series,SOT-323,0.2,30,0.8,2,25,0.1,150
+MCC (Micro Commercial Components),BAT64-06W,Active,R H,Dual,Common Anode,SOT-323,0.25,40,0.52,2,30,0.03,150
+MCC (Micro Commercial Components),BAT64-05W,Active,R H,Dual,Common Cathode,SOT-323,0.25,40,0.52,2,30,0.03,150
+MCC (Micro Commercial Components),BAS70DW-06,Active,R H,Dual,Common Anode,SOT-363,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAS40DW-06,Active,R H,Dual-Dual,Common Anode,SOT-363,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAT54ADW,Active,R H,Dual-Dual,Common Anode,SOT-363,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAT54CDW,Active,R H,Dual-Dual,Common Cathode,SOT-363,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40DW-05,Active,R H,Dual-Dual,Common Cathode,SOT-363,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAS70DW-05,Active,R H,Dual,Common Cathode,SOT-363,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAT54BRW,Active,R H,Dual-Dual,Series,SOT-363,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS70BRW,Active,R H,Dual-Dual,Series,SOT-363,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAS40BRW,Active,R H,Dual-Dual,Series,SOT-363,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),RB717F,Active,R H,Dual,,SOT-323,0.03,40,0.37,1,10,0.001,125
+MCC (Micro Commercial Components),BAT46X,Active,R H,Single,,SOD-523,0.2,100,1,0.1,50,0.2,125
+MCC (Micro Commercial Components),1SS388,Active,R H,Single,,SOD-523,0.1,45,0.36,5,10,0.01,125
+MCC (Micro Commercial Components),RB500V-40,Active,R H,Single,,SOD-323,0.1,40,0.45,1,10,0.01,125
+MCC (Micro Commercial Components),RB501V-40,Active,R H,Single,,SOD-323,0.1,40,0.34,30,10,0.01,125
+MCC (Micro Commercial Components),RB715F,Active,R H,Dual,,SOT-323,0.03,40,0.37,1,10,0.001,150
+MCC (Micro Commercial Components),RB495DS,Active,R H,Dual,,SOT-23,0.4,40,0.5,70,25,0.2,125
+MCC (Micro Commercial Components),RB715W,Active,R H,Dual,,SOT-523,0.03,40,0.37,1,10,0.001,150
+MCC (Micro Commercial Components),BAS70DW-04,Active,R H,Dual,Series,SOT-363,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAT54SDW,Active,R H,Dual-Dual,Series,SOT-363,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40DW-04,Active,R H,Dual-Dual,Series,SOT-363,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAT54HQ,Active,A R H,Single,,SOT-23,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40T,Active,R H,Single,,SOT-523,0.2,40,1,0.2,30,0.04,125
+MCC (Micro Commercial Components),BAS70T,Active,R H,Single,,SOT-523,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAT54T,Active,R H,Single,,SOT-523,0.2,30,1,2,25,0.1,125
+MCC (Micro Commercial Components),BAT54HE3,Active,A R H,Single,,SOT-23,0.2,30,0.4,2,25,0.01,125
+MCC (Micro Commercial Components),BAT54WTHQ,Active,A R H,Single,,SOT-323,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS70WTHQ,Active,A R H,Single,,SOT-323,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),BAT54WTH,Active,R H,Single,,SOT-323,0.2,30,0.8,2,25,0.1,150
+MCC (Micro Commercial Components),BAS70WTHE3,Active,A R H,Single,,SOT-323,0.07,70,1,0.2,50,0.015,125
+MCC (Micro Commercial Components),BAS40WTHE3,Active,A R H,Single,,SOT-323,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAS40WT,Active,R H,Single,,SOT-323,0.2,40,1,1,30,0.04,125
+MCC (Micro Commercial Components),BAS40WTHQ,Active,A R H,Single,,SOT-323,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAT54WTHE3,Active,A R H,Single,,SOT-323,0.2,30,0.8,2,25,0.1,125
+MCC (Micro Commercial Components),BAT54WT,Active,R H,Single,,SOT-323,0.2,30,0.8,2,25,0.1,125
+MCC (Micro Commercial Components),BAS70WT,Active,R H,Single,,SOT-323,0.07,70,1,0.1,50,0.015,125
+MCC (Micro Commercial Components),BAS40,Active,R H,Single,,SOT-23,0.2,40,1,0.01,30,0.04,125
+MCC (Micro Commercial Components),BAS70,Active,R H,Single,,SOT-23,0.07,70,1,0.01,50,0.015,125
+MCC (Micro Commercial Components),BAS70HE3,Active,A R H,Single,,SOT-23,0.07,70,1,0.2,50,0.015,125
+MCC (Micro Commercial Components),BAT54,Active,R H,Single,,SOT-23,0.2,30,0.4,2,25,0.01,125
+MCC (Micro Commercial Components),BAS40HE3,Active,A R H,Single,,SOT-23,0.2,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAT54H,Active,R H,Single,,SOT-23,0.3,40,0.9,1,30,0.1,150
+MCC (Micro Commercial Components),BAT720,Active,R H,Single,,SOT-23,0.5,40,0.55,100,35,0.5,125
+MCC (Micro Commercial Components),BAR43,Active,R H,Single,,SOT-23,0.2,30,0.33,0.5,25,0.002,125
+MCC (Micro Commercial Components),BAT46,Active,R H,Single,,SOT-23,0.2,100,1.0,0.1,50,0.2,150
+MCC (Micro Commercial Components),BAT750,Active,R H,Single,,SOT-23,0.75,40,0.45,60,30,0.75,125
+MCC (Micro Commercial Components),MMBD301,Active,R H,Single,,SOT-23,,30,0.52,0.2,25,0.01,125
+MCC (Micro Commercial Components),BAT54M,Active,R H,Single,,SOT-723,0.2,30,0.4,2,25,0.01,150
+MCC (Micro Commercial Components),BAT54TH,Active,R H,Single,,SOT-523,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),BAS40HQ,Active,A R H,Single,,SOT-23,0.12,40,1,0.2,30,0.04,150
+MCC (Micro Commercial Components),BAS70HQ,Active,A R H,Single,,SOT-23,0.07,70,1,0.2,50,0.015,150
+MCC (Micro Commercial Components),SD101AW,Active,R H,Single,,SOD-123,0.015,60,0.41,0.2,50,0.001,125
+MCC (Micro Commercial Components),SD101BW,Active,R H,Single,,SOD-123,0.015,50,0.4,0.2,40,0.001,125
+MCC (Micro Commercial Components),SD101CW,Active,R H,Single,,SOD-123,0.015,40,0.39,0.2,30,0.001,125
+MCC (Micro Commercial Components),SD103AW,Active,R H,Single,,SOD-123,0.35,40,0.37,5,30,0.02,125
+MCC (Micro Commercial Components),SD103BW,Active,R H,Single,,SOD-123,0.35,30,0.37,5,20,0.02,125
+MCC (Micro Commercial Components),SD103CW,Active,R H,Single,,SOD-123,0.35,20,0.37,5,10,0.02,125
+MCC (Micro Commercial Components),BAT54W,Active,R H,Single,,SOD-123,0.2,30,1,2,25,0.1,125
+MCC (Micro Commercial Components),SD101AWHE3,Active,A R H,Single,,SOD-123,0.015,60,0.41,0.2,50,0.001,125
+MCC (Micro Commercial Components),SD101BWHE3,Active,A R H,Single,,SOD-123,0.015,50,0.40,0.2,40,0.001,125
+MCC (Micro Commercial Components),SD101CWHE3,Active,A R H,Single,,SOD-123,0.015,40,0.39,0.2,30,0.001,125
+MCC (Micro Commercial Components),SD103AWHE3,Active,A R H,Single,,SOD-123,0.35,40,0.37,5,30,0.02,125
+MCC (Micro Commercial Components),SD103BWHE3,Active,A R H,Single,,SOD-123,0.35,30,0.37,5,20,0.02,125
+MCC (Micro Commercial Components),SD103CWHE3,Active,A R H,Single,,SOD-123,0.35,20,0.37,5,10,0.02,125
+MCC (Micro Commercial Components),BAT54WHE3,Active,A R H,Single,,SOD-123,0.2,30,1,2,25,0.1,125
+MCC (Micro Commercial Components),B0540W,Active,R H,Single,,SOD-123,0.5,40,0.55,80,40,0.5,150
+MCC (Micro Commercial Components),B0540WHE3,Active,A R H,Single,,SOD-123,0.5,40,0.55,80,40,0.5,150
+MCC (Micro Commercial Components),B5817W,Active,R H,Single,,SOD-123,1,20,0.45,200,20,1,125
+MCC (Micro Commercial Components),B5817WHE3,Active,A R H,Single,,SOD-123,1,20,0.45,200,20,1,125
+MCC (Micro Commercial Components),B5819W,Active,R H,Single,,SOD-123,1,40,0.6,40,40,1,125
+MCC (Micro Commercial Components),B5819WHE3,Active,A R H,Single,,SOD-123,1,40,0.6,40,40,1,125
+MCC (Micro Commercial Components),B5818W,Active,R H,Single,,SOD-123,1,30,0.55,40,30,1,125
+MCC (Micro Commercial Components),B5818WHE3,Active,A R H,Single,,SOD-123,1,30,0.55,40,30,1,125
+MCC (Micro Commercial Components),BAT42W,Active,R H,Single,,SOD-123,0.2,30,1,0.5,25,0.2,125
+MCC (Micro Commercial Components),BAT46W,Active,R H,Single,,SOD-123,0.15,100,1,5,75,0.25,125
+MCC (Micro Commercial Components),BAT46WHE3,Active,A R H,Single,,SOD-123,0.15,100,1,2,75,0.25,125
+MCC (Micro Commercial Components),BAT43W,Active,R H,Single,,SOD-123,0.2,30,0.45,0.5,25,0.015,125
+MCC (Micro Commercial Components),MBR0520,Active,R H,Single,,SOD-123,0.5,20,0.45,100,20,0.5,125
+MCC (Micro Commercial Components),MBR0520L,Active,R H,Single,,SOD-123,0.5,20,0.385,250,20,0.5,125
+MCC (Micro Commercial Components),MBR0530,Active,R H,Single,,SOD-123,0.5,30,0.55,100,30,0.5,125
+MCC (Micro Commercial Components),MBR0530L,Active,R H,Single,,SOD-123,0.5,30,0.43,130,30,0.5,125
+MCC (Micro Commercial Components),MBR0540,Active,R H,Single,,SOD-123,0.5,40,0.55,100,40,0.5,125
+MCC (Micro Commercial Components),MBR0540L,Active,R H,Single,,SOD-123,0.5,40,0.51,20,40,0.5,125
+MCC (Micro Commercial Components),MBR0560,Active,R H,Single,,SOD-123,0.5,60,0.7,100,60,0.5,125
+MCC (Micro Commercial Components),MBR0580,Active,R H,Single,,SOD-123,0.5,80,0.8,100,80,0.5,125
+MCC (Micro Commercial Components),B05100W,Active,R H,Single,,SOD-123,0.5,100,0.85,1,100,0.5,150
+MCC (Micro Commercial Components),BAT54WHQ,Active,A R H,Single,,SOD-123,0.2,30,1,2,25,0.1,150
+MCC (Micro Commercial Components),B0530WHE3,Active,A R H,Single,,SOD-123,0.5,30,0.55,100,30,0.5,125
+MCC (Micro Commercial Components),BAS70W,Active,R H,Single,,SOD-123,0.07,70,1,0.2,50,0.015,125
+MCC (Micro Commercial Components),RB521CS-30,Active,R H,Single,,SOD-923,0.1,30,0.35,50,30,0.01,125
+MCC (Micro Commercial Components),RB520CS-30,Active,R H,Single,,SOD-923,0.1,30,0.45,0.5,10,0.01,125

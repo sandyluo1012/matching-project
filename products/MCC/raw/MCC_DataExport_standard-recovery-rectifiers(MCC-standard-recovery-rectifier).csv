@@ -1,0 +1,206 @@
+﻿,,Standard Recovery Rectifiers,,,,,,,,,,,,,
+Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,IF(AV)(A),VRWM (V),"VF
+(V) [max]@IF(A)","IR (uA)  [max] @
+VR",TRR (μs),IFSM (A),IF(A),VR (V),"Tj [max]
+(°C)"
+,,,,,,,,,,,,,,,
+MCC (Micro Commercial Components),SM4004PL,Active,R H,Single,,SOD-123FL,1,400,1.1,5,3,30,1,400,150
+MCC (Micro Commercial Components),SM4005PL,Active,R H,Single,,SOD-123FL,1,600,1.1,5,3,30,1,600,150
+MCC (Micro Commercial Components),SM4006PL,Active,R H,Single,,SOD-123FL,1,800,1.1,5,3,30,1,800,150
+MCC (Micro Commercial Components),SM4007PL,Active,R H,Single,,SOD-123FL,1,1000,1.1,5,3,30,1,1000,150
+MCC (Micro Commercial Components),SM5397PL,Active,R H,Single,,SOD-123FL,1.5,600,1.1,5,2,50,1.5,600,150
+MCC (Micro Commercial Components),SM5398PL,Active,R H,Single,,SOD-123FL,1.5,800,1.1,5,2,50,1.5,800,150
+MCC (Micro Commercial Components),SM5399PL,Active,R H,Single,,SOD-123FL,1.5,1000,1.1,5,2,50,1.5,1000,150
+MCC (Micro Commercial Components),SM4002PLHE3,Active,A R H,Single,,SOD-123FL,1,100,1.1,1,3,30,1,100,150
+MCC (Micro Commercial Components),SM4003PLHE3,Active,A R H,Single,,SOD-123FL,1,200,1.1,1,3,30,1,200,150
+MCC (Micro Commercial Components),SM4004PLHE3,Active,A R H,Single,,SOD-123FL,1,400,1.1,1,3,30,1,400,150
+MCC (Micro Commercial Components),SM4007PLHE3,Active,A R H,Single,,SOD-123FL,1,1000,1.1,1,3,30,1,1000,150
+MCC (Micro Commercial Components),SM4004PLQ,Active,A R H,Single,,SOD-123FL,1,400,1.1,5,1.7,30,1,400,175
+MCC (Micro Commercial Components),SM4005PLQ,Active,A R H,Single,,SOD-123FL,1,600,1.1,5,1.7,30,1,600,175
+MCC (Micro Commercial Components),GS1JLF,Active,R H,Single,,SOD-323HL,1,600,1.1,5,1.2,18,1,600,150
+MCC (Micro Commercial Components),GS1MLF,Active,R H,Single,,SOD-323HL,1,1000,1.1,5,1.2,18,1,1000,150
+MCC (Micro Commercial Components),GS1MHL,Active,R H,Single,,SOD-123HL,1,1000,1.1,5,,30,1,1000,150
+MCC (Micro Commercial Components),GS2MHL,Active,R H,Single,,SOD-123HL,2,1000,1.1,5,,50,2,1000,150
+MCC (Micro Commercial Components),M4FL,Active,R H,Single,,DO-221AC,1,400,1.1,5,,30,1,400,150
+MCC (Micro Commercial Components),M7FL,Active,R H,Single,,DO-221AC,1,1000,1.1,5,,30,1,1000,150
+MCC (Micro Commercial Components),GS1ZFL,Active,R H,Single,,DO-221AC,1,2000,1.15,1,2.5,30,1,2000,150
+MCC (Micro Commercial Components),GS1JPBQ,Active,A R H,Single,,SOD-323HE-B,1,600,1.15,5,,18,1,600,175
+MCC (Micro Commercial Components),GS1MFLHE3,Active,A R H,Single,,DO-221AC,1,1000,1.1,5,,40,1,1000,150
+MCC (Micro Commercial Components),GS2MFLHE3,Active,A R H,Single,,DO-221AC,2,1000,1.15,5,,50,2,1000,150
+MCC (Micro Commercial Components),GS1JPB,Active,R H,Single,,SOD-323HE-B,1,600,1.1,5,,18,1,600,125
+MCC (Micro Commercial Components),GS1GFLQ,Active,A R H,Single,,DO-221AC,1,400,1.1,5,2,40,1,400,175
+MCC (Micro Commercial Components),GS1JFLQ,Active,A R H,Single,,DO-221AC,1,600,1.1,5,2,40,1,600,175
+MCC (Micro Commercial Components),GS2GFLQ,Active,A R H,Single,,DO-221AC,2,400,1.15,5,2.5,50,2,400,175
+MCC (Micro Commercial Components),GS2JFLQ,Active,A R H,Single,,DO-221AC,2,600,1.15,5,2.5,50,2,600,175
+MCC (Micro Commercial Components),GS1JFL,Active,R H,Single,,DO-221AC,1,600,1,5,,30,1,600,150
+MCC (Micro Commercial Components),GS1MFL,Active,R H,Single,,DO-221AC,1,1000,1,5,,30,1,1000,150
+MCC (Micro Commercial Components),GS2JFL,Active,R H,Single,,DO-221AC,2,600,1.1,5,2.1,50,2,600,150
+MCC (Micro Commercial Components),GS2KFL,Active,R H,Single,,DO-221AC,2,800,1.1,5,2.1,50,2,800,150
+MCC (Micro Commercial Components),GS2MFL,Active,R H,Single,,DO-221AC,2,1000,1.1,5,2.1,50,2,1000,150
+MCC (Micro Commercial Components),GSU8M,Active,R H,Single,,TO-277,8,1000,1.1,5,4.3,200,8,1000,150
+MCC (Micro Commercial Components),GSU10M,Active,R H,Single,,TO-277,10,1000,1.2,5,4.3,230,10,1000,150
+MCC (Micro Commercial Components),RL257GPL,Active,R,Single,,DO-15,2.5,1000,1.1,2.5,,120,2.5,1000,150
+MCC (Micro Commercial Components),BY133GP,Active,R,Single,,DO-41,1,1300,1.1,5,,30,1,1300,150
+MCC (Micro Commercial Components),1N5413GP,Active,R,Single,,DO-201AD,3,1300,1.1,5,,100,3,1300,150
+MCC (Micro Commercial Components),1N5416GP,Active,R,Single,,DO-201AD,3,1600,1.2,5,,100,3,1600,150
+MCC (Micro Commercial Components),EM513GP,Active,R,Single,,DO-41,1,1600,1.25,5,,25,1,1600,150
+MCC (Micro Commercial Components),EM516GP,Active,R,Single,,DO-41,1,1800,1.25,5,,25,1,1800,150
+MCC (Micro Commercial Components),EM518GP,Active,R,Single,,DO-41,1,2000,1.25,5,,25,1,2000,150
+MCC (Micro Commercial Components),F1200D,Active,R,Single,,R-6,12,150,0.87,5,,390,12,150,200
+MCC (Micro Commercial Components),R4000GPS,Active,R,Single,,DO-41,0.2,4000,3.5,5,>1.2,15,0.5,4000,150
+MCC (Micro Commercial Components),10A04GP,Active,R,Single,,R-6,10,400,1,5,,300,10,400,150
+MCC (Micro Commercial Components),10A05GP,Active,R,Single,,R-6,10,600,1,5,,300,10,600,150
+MCC (Micro Commercial Components),10A06GP,Active,R,Single,,R-6,10,800,1,5,,300,10,800,150
+MCC (Micro Commercial Components),10A07GP,Active,R,Single,,R-6,10,1000,1,5,,300,10,1000,150
+MCC (Micro Commercial Components),1N4004,Active,R,Single,,DO-41,1,400,1,5,2,30,1,400,150
+MCC (Micro Commercial Components),1N4004GP,Active,R,Single,,DO-41,1,400,1.1,5,2,30,1,400,175
+MCC (Micro Commercial Components),1N4005,Active,R,Single,,DO-41,1,600,1,5,2,30,1,600,150
+MCC (Micro Commercial Components),1N4006,Active,R,Single,,DO-41,1,800,1,5,2,30,1,800,150
+MCC (Micro Commercial Components),1N4007,Active,R,Single,,DO-41,1,1000,1,5,2,30,1,1000,150
+MCC (Micro Commercial Components),1N4007GP,Active,R,Single,,DO-41,1,1000,1.1,5,2,30,1,1000,175
+MCC (Micro Commercial Components),1N5395GP,Active,R,Single,,DO-15,1.5,400,1.4,5,,50,1.5,400,150
+MCC (Micro Commercial Components),1N5397GP,Active,R,Single,,DO-15,1.5,600,1.4,5,,50,1.5,600,150
+MCC (Micro Commercial Components),1N5398GP,Active,R,Single,,DO-15,1.5,800,1.4,5,,50,1.5,800,150
+MCC (Micro Commercial Components),1N5399GP,Active,R,Single,,DO-15,1.5,1000,1.4,5,,50,1.5,1000,150
+MCC (Micro Commercial Components),1N5404GP,Active,R,Single,,DO-201AD,3,400,1.1,5,,200,3,400,150
+MCC (Micro Commercial Components),1N5406GP,Active,R,Single,,DO-201AD,3,600,1.1,5,,200,3,600,150
+MCC (Micro Commercial Components),1N5407GP,Active,R,Single,,DO-201AD,3,800,1.1,5,,200,3,800,150
+MCC (Micro Commercial Components),1N5408GP,Active,R,Single,,DO-201AD,3,1000,1.1,5,,200,3,1000,150
+MCC (Micro Commercial Components),RL105,Active,R,Single,,A-405,1,600,1.1,5,,30,1,600,150
+MCC (Micro Commercial Components),RL105GP,Active,R,Single,,A-405,1,600,1.1,5,,30,1,600,150
+MCC (Micro Commercial Components),RL106,Active,R,Single,,A-405,1,800,1.1,5,,30,1,800,150
+MCC (Micro Commercial Components),RL106GP,Active,R,Single,,A-405,1,800,1.1,5,,30,1,800,150
+MCC (Micro Commercial Components),RL107,Active,R,Single,,A-405,1,1000,1.1,5,,30,1,1000,150
+MCC (Micro Commercial Components),RL107GP,Active,R,Single,,A-405,1,1000,1.1,5,,30,1,1000,150
+MCC (Micro Commercial Components),RL205GP,Active,R,Single,,DO-15,2,600,1,5,,70,2,600,150
+MCC (Micro Commercial Components),RL206GP,Active,R,Single,,DO-15,2,800,1,5,,70,2,800,150
+MCC (Micro Commercial Components),RL207GP,Active,R,Single,,DO-15,2,1000,1,5,,70,2,1000,150
+MCC (Micro Commercial Components),RL255GP,Active,R,Single,,R-3,2.5,600,1.1,5,,70,2.5,600,150
+MCC (Micro Commercial Components),RL256GP,Active,R,Single,,R-3,2.5,800,1.1,5,,70,2.5,800,150
+MCC (Micro Commercial Components),RL257GP,Active,R,Single,,R-3,2.5,1000,1.1,5,,70,2.5,1000,150
+MCC (Micro Commercial Components),DR756,Active,R,Single,,R-6,6,600,1.1,10,,200,6,600,150
+MCC (Micro Commercial Components),DR758,Active,R,Single,,R-6,6,800,1.1,10,,200,6,800,150
+MCC (Micro Commercial Components),DR7510,Active,R,Single,,R-6,6,1000,1.1,10,,200,6,1000,150
+MCC (Micro Commercial Components),60S10,Active,R,Single,,DO-201AD,6,1000,1,5,,200,6,1000,150
+MCC (Micro Commercial Components),60S6,Active,R,Single,,DO-201AD,6,600,1,5,,200,6,600,150
+MCC (Micro Commercial Components),60S8,Active,R,Single,,DO-201AD,6,800,1,5,,200,6,800,150
+MCC (Micro Commercial Components),6A6G,Active,R,Single,,R-6,6,600,1,10,,200,6,600,150
+MCC (Micro Commercial Components),6A8G,Active,R,Single,,R-6,6,800,1,10,,200,6,800,150
+MCC (Micro Commercial Components),6A10G,Active,R,Single,,R-6,6,1000,1,10,,200,6,1000,150
+MCC (Micro Commercial Components),GPBF2006C,Active,R H,Single,,TO-263AC,20,600,1.1,10,1.2,150,20,600,175
+MCC (Micro Commercial Components),GPBF2506C,Active,R H,Single,,TO-263AC,25,600,1.15,10,1.28,180,25,600,175
+MCC (Micro Commercial Components),GPB2506C,Active,R H,Single,,D2-PAK,25,600,1.1,5,,300,25,600,175
+MCC (Micro Commercial Components),GS2Z-L,Active,R H,Single,,SMA,2,2000,1.3,5,,40,2,2000,150
+MCC (Micro Commercial Components),GS5Z,Active,R H,Single,,SMC,5,2000,1.1,5,,200,5,2000,150
+MCC (Micro Commercial Components),GS1ZS-L,Active,R H,Single,,SMA,1,2000,1.15,5,2.5,30,1,2000,150
+MCC (Micro Commercial Components),GS2ZL-L,Active,R H,Single,,SMA,2,2000,1.2,5,,50,2,2000,150
+MCC (Micro Commercial Components),GS1D-L,Active,R H,Single,,SMA,1,200,1,5,2,30,1,200,150
+MCC (Micro Commercial Components),GS1G-L,Active,R H,Single,,SMA,1,400,1,5,2,30,1,400,150
+MCC (Micro Commercial Components),GS1J-L,Active,R H,Single,,SMA,1,600,1,5,2,30,1,600,150
+MCC (Micro Commercial Components),GS1K-L,Active,R H,Single,,SMA,1,800,1,5,2,30,1,800,150
+MCC (Micro Commercial Components),GS1M-L,Active,R H,Single,,SMA,1,1000,1,5,2,30,1,1000,150
+MCC (Micro Commercial Components),GS2A-L,Active,R H,Single,,SMA,2,50,1.1,5,2.1,50,2,50,150
+MCC (Micro Commercial Components),GS2J-L,Active,R H,Single,,SMA,2,600,1.1,5,2.1,50,2,600,150
+MCC (Micro Commercial Components),GS2K-L,Active,R H,Single,,SMA,2,800,1.1,5,2.1,50,2,800,150
+MCC (Micro Commercial Components),GS2M-L,Active,R H,Single,,SMA,2,1000,1.1,5,2.1,50,2,1000,150
+MCC (Micro Commercial Components),S2B-L,Active,R H,Single,,SMB,2,100,1.1,5, ,50,2,100,150
+MCC (Micro Commercial Components),S2J-L,Active,R H,Single,,SMB,2,600,1.1,5,,50,2,600,150
+MCC (Micro Commercial Components),S2K-L,Active,R H,Single,,SMB,2,800,1.1,5,,50,2,800,150
+MCC (Micro Commercial Components),S2M-L,Active,R H,Single,,SMB,2,1000,1.1,5,,50,2,1000,150
+MCC (Micro Commercial Components),S3AB,Active,R H,Single,,SMB,3,50,1.1,5,,100,3,50,150
+MCC (Micro Commercial Components),S3DB,Active,R H,Single,,SMB,3,200,1.1,5,,100,3,200,150
+MCC (Micro Commercial Components),S3GB,Active,R H,Single,,SMB,3,400,1.1,5,,100,3,400,150
+MCC (Micro Commercial Components),S3JB,Active,R H,Single,,SMB,3,600,1.1,5,,100,3,600,150
+MCC (Micro Commercial Components),S3KB,Active,R H,Single,,SMB,3,800,1.1,5,,100,3,800,150
+MCC (Micro Commercial Components),S3MB,Active,R H,Single,,SMB,3,1000,1.1,5,,100,3,1000,150
+MCC (Micro Commercial Components),S1J-L,Active,R H,Single,,SMB,1,600,1.1,5,2,30,1,600,150
+MCC (Micro Commercial Components),S1K-L,Active,R H,Single,,SMB,1,800,1.1,5,2,30,1,800,150
+MCC (Micro Commercial Components),S1M-L,Active,R H,Single,,SMB,1,1000,1.1,5,2,30,1,1000,150
+MCC (Micro Commercial Components),GS1AE,Active,R H,Single,,SMA,1,50,1.1,5,2,30,1,50,150
+MCC (Micro Commercial Components),GS1GE,Active,R H,Single,,SMA,1,400,1.1,5,2,30,1,400,150
+MCC (Micro Commercial Components),GS1JE,Active,R H,Single,,SMA,1,600,1.1,5,2,30,1,600,150
+MCC (Micro Commercial Components),GS1KE,Active,R H,Single,,SMA,1,800,1.1,5,2,30,1,800,150
+MCC (Micro Commercial Components),GS1ME,Active,R H,Single,,SMA,1,1000,1.1,5,2,30,1,1000,150
+MCC (Micro Commercial Components),SMLJ60S6,Active,R H,Single,,SMC,6,600,1,5,,200,6,600,150
+MCC (Micro Commercial Components),SMLJ60S8,Active,R H,Single,,SMC,6,800,1,5,,200,6,800,150
+MCC (Micro Commercial Components),SMLJ60S10,Active,R H,Single,,SMC,6,1000,1,5,,200,6,1000,150
+MCC (Micro Commercial Components),S5JL,Active,R H,Single,,SMC,5,600,1.1,5,,100,5,600,150
+MCC (Micro Commercial Components),S5KL,Active,R H,Single,,SMC,5,800,1.1,5,,100,5,800,150
+MCC (Micro Commercial Components),S5ML,Active,R H,Single,,SMC,5,1000,1.1,5,,100,5,1000,150
+MCC (Micro Commercial Components),S3A,Active,R H,Single,,SMC,3,50,1.2,10,,100,3,50,150
+MCC (Micro Commercial Components),S3B,Active,R H,Single,,SMC,3,100,1.2,10,,100,3,100,150
+MCC (Micro Commercial Components),S3J,Active,R H,Single,,SMC,3,600,1.2,10,,100,3,600,150
+MCC (Micro Commercial Components),S3K,Active,R H,Single,,SMC,3,800,1.2,10,,100,3,800,150
+MCC (Micro Commercial Components),S3M,Active,R H,Single,,SMC,3,1000,1.2,10,,100,3,1000,150
+MCC (Micro Commercial Components),S8ML,Active,R H,Single,,SMC,8,1000,1.05,5,,200,8,1000,150
+MCC (Micro Commercial Components),S8JL,Active,R H,Single,,SMC,8,600,1.05,5,,200,8,600,150
+MCC (Micro Commercial Components),S8KL,Active,R H,Single,,SMC,8,800,1.05,5,,200,8,800,150
+MCC (Micro Commercial Components),S10AL,Active,R H,Single,,SMC,10,50,1.1,5,,200,10,50,150
+MCC (Micro Commercial Components),S10DL,Active,R H,Single,,SMC,10,200,1.1,5,,200,10,200,150
+MCC (Micro Commercial Components),S10GL,Active,R H,Single,,SMC,10,400,1.1,5,,200,10,400,150
+MCC (Micro Commercial Components),S10JL,Active,R H,Single,,SMC,10,600,1.1,5,,200,10,600,150
+MCC (Micro Commercial Components),S10KL,Active,R H,Single,,SMC,10,800,1.1,5,,200,10,800,150
+MCC (Micro Commercial Components),S10ML,Active,R H,Single,,SMC,10,1000,1.1,5,,200,10,1000,150
+MCC (Micro Commercial Components),S10DLHE3,Active,A R H,Single,,SMC,10,200,1,5,,200,10,200,150
+MCC (Micro Commercial Components),S2JBFL,Active,R H,Single,,SMBF,2,600,1.1,5,,50,2,600,150
+MCC (Micro Commercial Components),S2MBFL,Active,R H,Single,,SMBF,2,1000,1.1,5,,50,2,1000,150
+MCC (Micro Commercial Components),S3JBFL,Active,R H,Single,,SMBF,3,600,1.1,5,,100,3,600,150
+MCC (Micro Commercial Components),S3MBFL,Active,R H,Single,,SMBF,3,1000,1.1,5,,100,3,1000,150
+MCC (Micro Commercial Components),S5MB,Active,R H,Single,,SMB,5,1000,1.1,5,,150,5,1000,150
+MCC (Micro Commercial Components),GS3Z,Active,R H,Single,,SMC,3,2000,1.2,10,,100,3,2000,150
+MCC (Micro Commercial Components),GS1GQ-L,Active,A R H,Single,,SMA,1,400,1.1,5,2,40,1,400,175
+MCC (Micro Commercial Components),GS1JQ-L,Active,A R H,Single,,SMA,1,600,1.1,5,2,40,1,600,175
+MCC (Micro Commercial Components),GS2GQ-L,Active,A R H,Single,,SMA,2,400,1.1,5,2.5,50,2,400,175
+MCC (Micro Commercial Components),GS2JQ-L,Active,A R H,Single,,SMA,2,600,1.1,5,2.5,50,2,600,175
+MCC (Micro Commercial Components),S2GQ-L,Active,A R H,Single,,SMB,2,400,1.1,5,2.5,50,2,400,175
+MCC (Micro Commercial Components),S2JQ-L,Active,A R H,Single,,SMB,2,600,1.1,5,2.5,50,2,600,175
+MCC (Micro Commercial Components),S3GBQ,Active,A R H,Single,,SMB,3,400,1.1,5,3,100,3,400,175
+MCC (Micro Commercial Components),S3GQ,Active,A R H,Single,,SMC,3,400,1.1,5,3,100,3,400,175
+MCC (Micro Commercial Components),S3JBQ,Active,A R H,Single,,SMB,3,600,1.1,5,3,100,3,600,175
+MCC (Micro Commercial Components),S3JQ,Active,A R H,Single,,SMC,3,600,1.1,5,3,100,3,600,175
+MCC (Micro Commercial Components),S5GLQ,Active,A R H,Single,,SMC,5,400,1.1,5,3.5,120,5,400,175
+MCC (Micro Commercial Components),S5JLQ,Active,A R H,Single,,SMC,5,600,1.1,5,3.5,120,5,600,175
+MCC (Micro Commercial Components),S8GLQ,Active,A R H,Single,,SMC,8,400,1.1,5,4,200,8,400,175
+MCC (Micro Commercial Components),S8JLQ,Active,A R H,Single,,SMC,8,600,1.1,5,4,200,8,600,175
+MCC (Micro Commercial Components),GS1AHE3-L,Active,A R H,Single,,SMA,1,50,1,1,2,40,1,50,150
+MCC (Micro Commercial Components),GS1DHE3-L,Active,A R H,Single,,SMA,1,200,1,1,2,40,1,200,150
+MCC (Micro Commercial Components),GS1GHE3-L,Active,A R H,Single,,SMA,1,400,1,1,2,40,1,400,150
+MCC (Micro Commercial Components),GS1JHE3-L,Active,A R H,Single,,SMA,1,600,1,1,2,40,1,600,150
+MCC (Micro Commercial Components),GS1MHE3-L,Active,A R H,Single,,SMA,1,1000,1,1,2,40,1,1000,150
+MCC (Micro Commercial Components),GS2DHE3-L,Active,A R H,Single,,SMA,2,200,1.1,5,4,50,2,200,150
+MCC (Micro Commercial Components),GS2GHE3-L,Active,A R H,Single,,SMA,2,400,1.1,5,4,50,2,400,150
+MCC (Micro Commercial Components),GS2JHE3-L,Active,A R H,Single,,SMA,2,600,1.1,5,4,50,2,600,150
+MCC (Micro Commercial Components),GS2MHE3-L,Active,A R H,Single,,SMA,2,1000,1.1,5,4,50,2,1000,150
+MCC (Micro Commercial Components),S2GHE3-L,Active,A R H,Single,,SMB,2,400,1.1,5,,50,2,400,150
+MCC (Micro Commercial Components),S2JHE3-L,Active,A R H,Single,,SMB,2,600,1.1,5,,50,2,600,150
+MCC (Micro Commercial Components),S2MHE3-L,Active,A R H,Single,,SMB,2,1000,1.1,5,,50,2,1000,150
+MCC (Micro Commercial Components),S3BHE3,Active,A R H,Single,,SMC,3,100,1.2,10,,100,3,100,150
+MCC (Micro Commercial Components),S3GBHE3,Active,A R H,Single,,SMB,3,400,1.15,10,,100,3,400,150
+MCC (Micro Commercial Components),S3GHE3,Active,A R H,Single,,SMC,3,400,1.2,10,,100,3,400,150
+MCC (Micro Commercial Components),S3JBHE3,Active,A R H,Single,,SMB,3,600,1.15,10,,100,3,600,150
+MCC (Micro Commercial Components),S3JHE3,Active,A R H,Single,,SMC,3,600,1.2,10,,100,3,600,150
+MCC (Micro Commercial Components),S3MBHE3,Active,A R H,Single,,SMB,3,1000,1.15,10,,100,3,1000,150
+MCC (Micro Commercial Components),S3MHE3,Active,A R H,Single,,SMC,3,1000,1.2,10,,100,3,1000,150
+MCC (Micro Commercial Components),S5GLHE3,Active,A R H,Single,,SMC,5,400,1.15,5,,100,5,400,150
+MCC (Micro Commercial Components),S5JLHE3,Active,A R H,Single,,SMC,5,600,1.15,5,,100,5,600,150
+MCC (Micro Commercial Components),S5MLHE3,Active,A R H,Single,,SMC,5,1000,1.15,5,,100,5,1000,150
+MCC (Micro Commercial Components),S8GLHE3,Active,A R H,Single,,SMC,8,400,1.05,5,,200,8,400,150
+MCC (Micro Commercial Components),S8JLHE3,Active,A R H,Single,,SMC,8,600,1.05,5,,200,8,600,150
+MCC (Micro Commercial Components),S8MLHE3,Active,A R H,Single,,SMC,8,1000,1.05,5,,200,8,1000,150
+MCC (Micro Commercial Components),S2Y-L,Active,R H,Single,,SMB,1.5,1600,1.15,5,4,30,1.5,1600,150
+MCC (Micro Commercial Components),GS2Y-L,Active,R H,Single,,SMA,1.5,1600,1.15,3,4,30,1.5,1600,150
+MCC (Micro Commercial Components),S1YA,Active,R H,Single,,SMA,1,1600,1.25,5,2,30,1,1600,150
+MCC (Micro Commercial Components),S3Q,Active,R H,Single,,SMC,3,1200,1.2,10,,100,3,1200,150
+MCC (Micro Commercial Components),S1Z-L,Active,R H,Single,,SMB,1,2000,1.2,5,2.5,35,1,2000,150
+MCC (Micro Commercial Components),GS1R-L,Active,R H,Single,,SMA,1,1300,1,5,,30,1,1300,150
+MCC (Micro Commercial Components),GS1Z-L,Active,R H,Single,,SMA,1,2000,1.15,1,2.5,35,1,2000,150
+MCC (Micro Commercial Components),GS1Y-L,Active,R H,Single,,SMA,1,1600,1.25,5,2,30,1,1600,150
+MCC (Micro Commercial Components),GPB3016,Active,R H,Single,,D2-PAK,30,1600,1.3,5,,275,30,1600,150
+MCC (Micro Commercial Components),GPD2006C,Active,R H,Single,,DPAK,20,600,1,5,,250,20,600,175
+MCC (Micro Commercial Components),GP1510,Active,R,Single,,TO-220AC,15,1000,1.03,5,,220,15,1000,150
+MCC (Micro Commercial Components),GP1515,Active,R,Single,,TO-220AC,15,1500,1.2,5,,200,15,1500,150
+MCC (Micro Commercial Components),GP3016,Active,R,Single,,TO-220AC,30,1600,1.2,5,,275,30,1600,150
+MCC (Micro Commercial Components),GP60160B,Active,R,Single,,TO-247AD,60,1600,1.3,5,,950,60,1600,150
+MCC (Micro Commercial Components),GP45160B,Active,R,Single,,TO-247AD,45,1600,1.4,10,,600,45,1600,150
+MCC (Micro Commercial Components),GP60220B,Allocation,R,Single,,TO-247AD,60,2200,1.3,5,,800,30,2200,150
+MCC (Micro Commercial Components),GPB1510,Allocation,R H,Single,,D2-PAK,15,1000,1.1,5,,220,15,1000,150

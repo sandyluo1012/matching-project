@@ -1,0 +1,10 @@
+﻿,,Programmable Thyristor Surge Suppressor,,,,,,,
+Manufacture,Product,Status,Compliance,Package Type,"Maximum
+Voltage
+(Gate to Line) VMGL|(V)","Gate triggering
+current IGT|(mA)","Peak pulse
+current IPP|(A)","Holding
+current IH|(mA)","Junction
+Temperature Tj|(<sup>o</sup>C)"
+,,,,,,,,,
+MCC (Micro Commercial Components),P61089B,Active,R H,SOP-8,-167,5,50,150,150

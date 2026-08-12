@@ -1,0 +1,59 @@
+# Python 字节码与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 构建与打包产物
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# 测试、覆盖率和类型检查缓存
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Jupyter 临时文件（Notebook 本身保留）
+.ipynb_checkpoints/
+
+# 环境变量、API Key 和本地密钥
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 日志、临时文件和本地数据库
+*.log
+*.tmp
+*.temp
+*.bak
+*.sqlite
+*.sqlite3
+*.db
+
+# 编辑器与操作系统文件
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 本地导出的匹配结果
+匹配结果*.csv
+
+# products/MCC/raw 和 products/MCC/clean 是项目数据，故意纳入版本控制。
