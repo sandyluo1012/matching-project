@@ -1,25 +1,4 @@
-﻿,,TVS,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Configuration,Package Type,"Peak Pulse
-Power
-Dissipation
-PPPM (W)","Reverse
-Standoff
-Voltage
-VRWM(V)","Reverse
-Leakage
-IR(uA)","Max.
-Clamping
-Voltage
-VC (V)","Peak Pulse
-Current
-IPP(A) ","Breakdown
-Voltage
-Min VBR(V)","Breakdown
-Voltage
-Max VBR(V)","Junction
-Temperature
-Tj [max] (°C)"
-,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Configuration,Package Type,Peak Pulse Power Dissipation PPPM (W),Reverse Standoff Voltage VRWM(V),Reverse Leakage IR(uA),Max. Clamping Voltage VC (V),Peak Pulse Current IPP(A),Breakdown Voltage Min VBR(V),Breakdown Voltage Max VBR(V),Junction Temperature Tj [max] (°C)
 MCC (Micro Commercial Components),SMHE60AHE3,Preferred,A R H,Unidirectional,SOD-323HE-B,150,60,1,96.8,1.54,66.7,73.7,150
 MCC (Micro Commercial Components),SMHE5.0AHE3,Preferred,A R H,Unidirectional,SOD-323HE-B,150,5,400,9.2,16.3,6.4,7.07,150
 MCC (Micro Commercial Components),SMHE15AHE3,Preferred,A R H,Unidirectional,SOD-323HE-B,150,15,1,24.4,6.15,16.7,18.5,150

@@ -1,9 +1,4 @@
-﻿,,Standard Recovery Rectifiers,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Package Type,IF(AV)(A),VRWM (V),"VF
-(V) [max]@IF(A)","IR (uA)  [max] @
-VR",TRR (μs),IFSM (A),IF(A),VR (V),"Tj [max]
-(°C)"
-,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Package Type,IF(AV)(A),VRWM (V),VF (V) [max]@IF(A),IR (uA) [max] @ VR,TRR (μs),IFSM (A),IF(A),VR (V),Tj [max] (°C)
 MCC (Micro Commercial Components),SM4004PL,Active,R H,Single,SOD-123FL,1,400,1.1,5,3,30,1,400,150
 MCC (Micro Commercial Components),SM4005PL,Active,R H,Single,SOD-123FL,1,600,1.1,5,3,30,1,600,150
 MCC (Micro Commercial Components),SM4006PL,Active,R H,Single,SOD-123FL,1,800,1.1,5,3,30,1,800,150

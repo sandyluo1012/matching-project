@@ -1,9 +1,4 @@
-﻿,,Schottky Barrier Rectifiers,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,IF(AV)(A),VRWM (V),"VF
-(V) [max]@IF(A)","IR (uA)  [max] @
-VR",IFSM (A),VR (V),IF(A),"Tj [max]
-(°C)"
-,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,IF(AV)(A),VRWM (V),VF (V) [max]@IF(A),IR (uA) [max] @ VR,IFSM (A),VR (V),IF(A),Tj [max] (°C)
 MCC (Micro Commercial Components),SMD14HT,Preferred,R H,Single,,SOD-323HT,1,40,0.55,100,30,40,1,125
 MCC (Micro Commercial Components),SMD22HT,Preferred,R H,Single,,SOD-323HT,2,20,0.55,200,30,20,2,125
 MCC (Micro Commercial Components),SMD115HTQ,Preferred,A R H,Single,,SOD-323HT,1,150,0.90,1,25,150,1,150

@@ -1,42 +1,4 @@
-﻿,,Power MOSFETS,,,,,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Channel,Package Type,"Drain-Source
-Voltage
-VDS (V)","Gate-Source
-Voltage
-VGS (V)","Drain
-Current
-ID (A)","Drain-Source
-On-Resistance
-RDS(ON)
-Max
-@VGS=10V (Ω)","Drain-Source
-On-Resistance
-RDS(ON)
-Max
-@VGS=4.5V (Ω)","Drain-Source
-On-Resistance
-RDS(ON)
-Max
-@VGS=2.5V (Ω)","Gate
-Threshold
-Voltage
-VGS(th)
-Min
-(V)","Gate
-Threshold
-Voltage
-VGS(th) Max
-(V)","ESD
-Diodes","Junction
-Temperature
-Tj [max]
-(°C)","Single Pulsed
-Avalanche
-Energy
-EAS(mJ)","Pulsed Drain
-Current
-IDM(A)"
-,,,,,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Channel,Package Type,Drain-Source Voltage VDS (V),Gate-Source Voltage VGS (V),Drain Current ID (A),Drain-Source On-Resistance RDS(ON) Max @VGS=10V (Ω),Drain-Source On-Resistance RDS(ON) Max @VGS=4.5V (Ω),Drain-Source On-Resistance RDS(ON) Max @VGS=2.5V (Ω),Gate Threshold Voltage VGS(th) Min (V),Gate Threshold Voltage VGS(th) Max (V),ESD Diodes,Junction Temperature Tj [max] (°C),Single Pulsed Avalanche Energy EAS(mJ),Pulsed Drain Current IDM(A)
 MCC (Micro Commercial Components),MCACD018N10YLQ,Preferred,A R H,Dual,N+N,PDFN5060-8D,100,±20,40,0.018,0.023,,1.3,2.3,No,175,51,160
 MCC (Micro Commercial Components),MCACD5D2N04YLHE3,Preferred,A R H,Dual,N+N,PDFN5060-8D,40,±20,90,0.0052,0.0092,,1.2,2.5,No,175,56,240
 MCC (Micro Commercial Components),MCACD014N10YHE3,Preferred,A R H,Dual,N+N,PDFN5060-8D,100,±20,50,0.014,,,1.0,3.0,No,150,49,200

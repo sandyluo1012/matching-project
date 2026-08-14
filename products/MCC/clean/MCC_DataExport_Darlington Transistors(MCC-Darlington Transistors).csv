@@ -1,7 +1,4 @@
-﻿,,Darlington Transistors,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Polarity,Package Type,PD (W),VCEO(V),IC (A),HFE [min],HFE [max],"VCE(sat) [max]
-(V)",fT(MHz),Tj [max] (°C)
-,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Polarity,Package Type,PD (W),VCEO(V),IC (A),HFE [min],HFE [max],VCE(sat) [max] (V),fT(MHz),Tj [max] (°C)
 MCC (Micro Commercial Components),MMBTA13,Active,R H,Single,NPN,SOT-23,0.225,30,0.3,5000,,1.5,125,150
 MCC (Micro Commercial Components),MMBTA14,Active,R H,Single,NPN,SOT-23,0.225,30,0.3,10000,,1.5,125,150
 MCC (Micro Commercial Components),MMBTA28,Active,R H,Single,NPN,SOT-23,0.2,80,0.5,10000,,1.5,125,150

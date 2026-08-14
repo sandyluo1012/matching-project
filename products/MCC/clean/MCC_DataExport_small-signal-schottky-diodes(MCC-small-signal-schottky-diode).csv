@@ -1,8 +1,4 @@
-﻿,,Small Signal Schottky Diodes,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,IF(AV)(A),VRWM (V),"VF
-(V) [max]@IF(A)","IR (uA) [max] @
-VR",VR (V),IF(A),Tj [max] (°C)
-,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,IF(AV)(A),VRWM (V),VF (V) [max]@IF(A),IR (uA) [max] @ VR,VR (V),IF(A),Tj [max] (°C)
 MCC (Micro Commercial Components),MBR0540C,Preferred,R H,Dual,Common Cathode,SOT-23,0.5,40,0.5,70,25,0.2,125
 MCC (Micro Commercial Components),SD101AWSHQ,Preferred,A R H,Single,,SOD-323,0.07,60,1.0,0.2,50,0.015,150
 MCC (Micro Commercial Components),SD101BWSHQ,Preferred,A R H,Single,,SOD-323,0.07,50,0.95,0.2,40,0.015,150

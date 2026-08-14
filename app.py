@@ -8,7 +8,21 @@ from tkinter import filedialog, messagebox, ttk
 
 import pandas as pd
 
-from matching_model import critical_features, discover_catalogs, infer_features, load_catalog, options, recommend
+from matching_model import (
+    critical_features,
+    discover_catalogs,
+    infer_features,
+    load_catalog,
+    options,
+    preference_features,
+    recommend,
+)
+
+
+def _is_esd_discharge_field(column: str) -> bool:
+    """识别 ESD 的 IEC 空气/接触放电规格列。"""
+    normalized = "".join(column.casefold().split())
+    return "iec61000-4-2" in normalized and "air/contact" in normalized
 
 
 class MatchingApp(tk.Tk):
@@ -20,6 +34,7 @@ class MatchingApp(tk.Tk):
         self.catalogs = discover_catalogs()
         self.df = pd.DataFrame()
         self.inputs: dict[str, tk.StringVar] = {}
+        self.input_defaults: dict[str, str] = {}
         self.results = pd.DataFrame()
         self._style()
         self._layout()
@@ -89,6 +104,7 @@ class MatchingApp(tk.Tk):
         action = ttk.Frame(right)
         action.pack(fill="x", pady=(0, 8))
         ttk.Button(action, text="开始匹配", style="Accent.TButton", command=self.run_match).pack(side="left")
+        ttk.Button(action, text="清空输入", command=self.clear_inputs).pack(side="left", padx=(8, 0))
         ttk.Button(action, text="导出结果 CSV", command=self.export_results).pack(side="left", padx=8)
         self.status_var = tk.StringVar(value="请填写参数后开始匹配")
         ttk.Label(action, textvariable=self.status_var, style="Sub.TLabel").pack(side="right")
@@ -113,30 +129,55 @@ class MatchingApp(tk.Tk):
         for widget in self.form.winfo_children():
             widget.destroy()
         self.inputs.clear()
+        self.input_defaults.clear()
         numeric, categorical = infer_features(self.df)
         critical = critical_features(self.df)
+        preferred = preference_features(self.df)
         fields = ["Package Type", *categorical, *numeric]
         for index, column in enumerate(fields):
+            is_esd_discharge = _is_esd_discharge_field(column)
             if column == "Package Type":
                 suffix = "  * 必填"
             elif column in categorical:
                 suffix = "  [硬约束]"
             elif column in critical:
                 suffix = "  [关键]"
+            elif column in preferred:
+                suffix = "  [方向偏好]"
             else:
                 suffix = ""
+            if is_esd_discharge:
+                suffix += "  [可选择/可输入]"
             label = column + suffix
             ttk.Label(self.form, text=label).grid(row=index * 2, column=0, sticky="w", pady=(7, 2))
             var = tk.StringVar()
+            default_value = "±" if is_esd_discharge else ""
+            var.set(default_value)
             self.inputs[column] = var
+            self.input_defaults[column] = default_value
             values = options(self.df, column) if column == "Package Type" or column in categorical else []
-            if values:
+            if is_esd_discharge:
+                widget = ttk.Combobox(
+                    self.form,
+                    textvariable=var,
+                    values=options(self.df, column),
+                    state="normal",
+                    width=39,
+                )
+            elif values:
                 widget = ttk.Combobox(self.form, textvariable=var, values=values, state="readonly", width=39)
             else:
                 widget = ttk.Entry(self.form, textvariable=var, width=42)
             widget.grid(row=index * 2 + 1, column=0, sticky="ew")
         self.count_label.configure(text=f"数据库：{len(self.df):,} 个物料 · {len(numeric)} 个电气参数")
         self._show(pd.DataFrame())
+
+    def clear_inputs(self) -> None:
+        """清空当前类别的客户输入，并保留已经显示的匹配结果。"""
+        self.product_var.set("")
+        for column, var in self.inputs.items():
+            var.set(self.input_defaults.get(column, ""))
+        self.status_var.set("输入已清空；当前匹配结果已保留")
 
     def run_match(self) -> None:
         query = {column: var.get().strip() for column, var in self.inputs.items()}
@@ -166,7 +207,7 @@ class MatchingApp(tk.Tk):
         for _, row in data.iterrows():
             values = []
             for col, value in row.items():
-                if col in {"综合得分", "已知参数匹配度", "参数覆盖率"}:
+                if col in {"综合得分", "已知参数匹配度", "参数覆盖率", "方向偏好得分"}:
                     values.append(f"{float(value):.1f}%")
                 elif isinstance(value, float):
                     values.append("" if pd.isna(value) else f"{value:g}")

@@ -1,6 +1,4 @@
-﻿,,Pre-Biased Transistors,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Polarity,Package Type,IO(mA),R1 Typ (KΩ),R2 Typ (KΩ),VCC(V),fT(MHz),PD(mW),Tj [max] (°C)
-,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Polarity,Package Type,IO(mA),R1 Typ (KΩ),R2 Typ (KΩ),VCC(V),fT(MHz),PD(mW),Tj [max] (°C)
 MCC (Micro Commercial Components),UMH15NHE3,Preferred,A R H,Dual(R1/R2),NPN*2,SOT-363,100,4.7,4.7,50,250,150,150
 MCC (Micro Commercial Components),EMH9,Active,R H,Dual(R1/R2),NPN*2,SOT-563,100,10,47,50,200,150,150
 MCC (Micro Commercial Components),UMH31NS,Active,R H,Dual(R1/R2),NPN*2,SOT-363S,100,1,10,50,250,150,150

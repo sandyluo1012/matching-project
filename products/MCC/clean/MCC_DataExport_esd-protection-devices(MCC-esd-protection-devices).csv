@@ -1,30 +1,4 @@
-﻿,,ESD Protection Devices,,,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,"Reverse
-Standoff
-Voltage
-VRWM(V)","Peak Pulse
-Current
-IPP(A)","Max.
-Clamping
-Voltage
-VC (V)","Junction
-Capacitance
-CJ(pF)","Peak Pluse
-Power
-Dissipation
-PPPK (W)","Maximum
-Reverse
-Leakage
-IR (uA)","Breakdown
-Voltage
-Min VBR(V)","Breakdown
-Voltage
-Max VBR(V)","Junction
-Temperature
-Tj [max] (°C)","VESDIEC61000-4-2
-Air/Contact
-(kV)"
-,,,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,Reverse Standoff Voltage VRWM(V),Peak Pulse Current IPP(A),Max. Clamping Voltage VC (V),Junction Capacitance CJ(pF),Peak Pluse Power Dissipation PPPK (W),Maximum Reverse Leakage IR (uA),Breakdown Voltage Min VBR(V),Breakdown Voltage Max VBR(V),Junction Temperature Tj [max] (°C),VESDIEC61000-4-2 Air/Contact (kV)
 MCC (Micro Commercial Components),MMBZ12VAQ,Preferred,A R H,2,Unidirectional,SOT-23,12,2.35,17,113,40,0.2,11.4,12.6,150,±30
 MCC (Micro Commercial Components),MMBZ5V6AQ,Preferred,A R H,2,Unidirectional,SOT-23,5.6,3,8,320,24,5,5.32,5.88,150,±30
 MCC (Micro Commercial Components),MMBZ9V1AQ,Preferred,A R H,2,Unidirectional,SOT-23,9.1,1.7,14,183,24,0.3,8.65,9.56,150,±30

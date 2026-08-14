@@ -1,9 +1,4 @@
-﻿,,Fast Recovery Rectifiers,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Package Type,IF(AV)(A),VRWM (V),"VF
-(V) [max]@IF(A)","IR (uA)  [max] @
-VR",TRR (μs),IFSM (A),IF(A),VR (V),"Tj [max]
-(°C)"
-,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Package Type,IF(AV)(A),VRWM (V),VF (V) [max]@IF(A),IR (uA) [max] @ VR,TRR (μs),IFSM (A),IF(A),VR (V),Tj [max] (°C)
 MCC (Micro Commercial Components),FR2MHE3-L,Preferred,A R H,Single,SMB,2,1000,1.3,5,0.5,50,2,1000,150
 MCC (Micro Commercial Components),FR3JBHE3,Preferred,A R H,Single,SMB,3,600,1.3,5,0.25,100,3,600,150
 MCC (Micro Commercial Components),FR3MBHE3,Preferred,A R H,Single,SMB,3,1000,1.3,5,0.5,100,3,1000,150

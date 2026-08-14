@@ -1,8 +1,4 @@
-﻿,,Bridge Rectifiers,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Package Type,IF(AV)(A),VRWM (V),"VF
-(V) [max]@IF(A)","IR (uA)  [max] @
-VR",IFSM (A),IF(A),VR (V),Tj [max] (°C)
-,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Package Type,IF(AV)(A),VRWM (V),VF (V) [max]@IF(A),IR (uA) [max] @ VR,IFSM (A),IF(A),VR (V),Tj [max] (°C)
 MCC (Micro Commercial Components),GBU1016,Preferred,R H,1-Phase Bridge,GBU,10,1600,1.05,5,150,5,1600,150
 MCC (Micro Commercial Components),GBU2516,Preferred,R H,1-Phase Bridge,GBU,25,1600,1.1,5,280,12.5,1600,150
 MCC (Micro Commercial Components),GBU3516,Preferred,R H,1-Phase Bridge,GBU,35,1600,1.05,5,450,17.5,1600,150

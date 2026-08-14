@@ -1,8 +1,4 @@
-﻿,,Switching Diodes,,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,IF(AV)(A),VRWM(V),"VF
-(V) [max]@IF(A)","IR(uA) [max] @
-VR",TRR (μs),VR (V),IF(A),PD (mW),Tj [max] (°C)
-,,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Configuration,Package Type,IF(AV)(A),VRWM(V),VF (V) [max]@IF(A),IR(uA) [max] @ VR,TRR (μs),VR (V),IF(A),PD (mW),Tj [max] (°C)
 MCC (Micro Commercial Components),BAS16WHQ,Preferred,A R H,Single,,SOD-123,0.3,75,1.25,1.0,0.006,75,0.15,300,150
 MCC (Micro Commercial Components),BAV20WSHE3,Active,A R H,Single,,SOD-323,0.2,200,1.25,0.1,0.05,150,0.2,250,150
 MCC (Micro Commercial Components),BAS416,Active,R H,Single,,SOD-323,0.2,100,1,0.005,3,75,0.01,250,150

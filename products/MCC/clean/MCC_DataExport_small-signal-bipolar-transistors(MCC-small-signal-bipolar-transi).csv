@@ -1,7 +1,4 @@
-﻿,,Small Signal Bipolar Transistors,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Polarity,Package Type,PD (W),VCEO(V),IC (A),HFE [min],HFE [max],"VCE(sat) [max]
-(V)",fT(MHz),Tj [max] (°C)
-,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Polarity,Package Type,PD (W),VCEO(V),IC (A),HFE [min],HFE [max],VCE(sat) [max] (V),fT(MHz),Tj [max] (°C)
 MCC (Micro Commercial Components),BC846BQ,Preferred,A R H,Single,NPN,SOT-23,0.3,65,0.1,200,450,0.5,100,150
 MCC (Micro Commercial Components),BC847BQ,Preferred,A R H,Single,NPN,SOT-23,0.3,45,0.1,200,450,0.5,100,150
 MCC (Micro Commercial Components),FMMT8110,Preferred,R H,Single,NPN,SOT-23,0.3,100,1,150,500,0.2,,150

@@ -4,12 +4,19 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 import pandas as pd
+
+from matching_rules import (
+    SOFT_DIRECTION_INFLUENCE,
+    get_rule,
+    passes_rule,
+    preference_score,
+    requirement_text,
+)
 
 
 DATA_DIR = Path(__file__).resolve().parent / "products" / "MCC" / "clean"
@@ -22,16 +29,6 @@ NON_FEATURE_COLUMNS = {
 }
 MISSING_MARKERS = {"", "-", "—", "nan", "none", "n/a", "na", "null"}
 MIN_COVERAGE = 0.50
-
-
-@dataclass(frozen=True)
-class CriticalRule:
-    """关键参数验证规则。mode: min/max/band/required。"""
-
-    mode: str
-    tolerance: float = 0.0
-    condition_key: str | None = None
-
 
 def clean_column(name: str) -> str:
     """合并 CSV 表头中的换行和不间断空格。"""
@@ -76,7 +73,7 @@ def discover_catalogs(data_dir: Path = DATA_DIR) -> dict[str, Path]:
 
 def load_catalog(path: str | Path) -> pd.DataFrame:
     source = Path(path)
-    df = pd.read_csv(source, header=0, skiprows=[0, 2])
+    df = pd.read_csv(source)
     df.columns = [clean_column(column) for column in df.columns]
     df = df.loc[:, ~df.columns.str.startswith("Unnamed")].copy()
     if "Product" in df:
@@ -104,8 +101,21 @@ def infer_features(df: pd.DataFrame) -> tuple[list[str], list[str]]:
 def critical_features(df: pd.DataFrame) -> set[str]:
     """返回当前产品类别中受关键方向/窗口规则约束的数值字段。"""
     numeric, _ = infer_features(df)
-    family = _family(list(df.columns))
-    return {column for column in numeric if _critical_rule(column, family) is not None}
+    family = _family(list(df.columns), str(df.attrs.get("source_name", "")))
+    return {
+        column for column in numeric
+        if (rule := get_rule(family, _field_key(column))) is not None and rule.critical
+    }
+
+
+def preference_features(df: pd.DataFrame) -> set[str]:
+    """返回当前产品类别中配置为非关键方向偏好的字段。"""
+    numeric, _ = infer_features(df)
+    family = _family(list(df.columns), str(df.attrs.get("source_name", "")))
+    return {
+        column for column in numeric
+        if (rule := get_rule(family, _field_key(column))) is not None and not rule.critical
+    }
 
 
 def options(df: pd.DataFrame, column: str) -> list[str]:
@@ -121,14 +131,32 @@ def product_values(df: pd.DataFrame, product: str) -> dict[str, Any] | None:
     return None if rows.empty else rows.iloc[0].to_dict()
 
 
-def _family(columns: list[str]) -> str:
+def _family(columns: list[str], source_name: str = "") -> str:
+    source = source_name.casefold().replace("_", "-")
+    if "switching-diodes" in source:
+        return "switching_diode"
+    if "schottky-barrier" in source or "small-signal-schottky" in source:
+        return "sbd"
+    if "fast-recovery-rectifiers" in source:
+        return "fred"
+    if "darlington" in source or "bipolar-transistors" in source:
+        return "transistor"
+    if "zener" in source:
+        return "zener"
+    if "tvs" in source:
+        return "tvs"
+    if "esd-protection" in source:
+        return "esd"
+    if "mosfet" in source:
+        return "mosfet"
+
     keys = {_field_key(column) for column in columns}
     if any("vznom" in key for key in keys):
         return "zener"
     if any("drainsourcevoltagevds" in key for key in keys):
         return "mosfet"
     if any("vceo" in key for key in keys):
-        return "bjt"
+        return "transistor"
     if any(key.startswith("r1typ") for key in keys):
         return "prebiased"
     if any("junctioncapacitancecj" in key for key in keys):
@@ -137,63 +165,7 @@ def _family(columns: list[str]) -> str:
         return "tvs"
     if any("maximumvoltagegatetoline" in key for key in keys):
         return "thyristor"
-    if any(key.startswith("ifav") for key in keys):
-        return "rectifier"
     return "generic"
-
-
-def _critical_rule(column: str, family: str) -> CriticalRule | None:
-    key = _field_key(column)
-
-    # 保护器件的工作/击穿窗口不能简单理解成越高越好。
-    if "vznom" in key:
-        return CriticalRule("band", tolerance=0.10)
-    if key.startswith("r1typ") or key.startswith("r2typ"):
-        return CriticalRule("band", tolerance=0.10)
-    if "breakdownvoltage" in key and ("vbr" in key):
-        return CriticalRule("band", tolerance=0.20)
-    if "vrwm" in key:
-        return CriticalRule("min")
-
-    # 额定能力：候选值至少不能低于客户器件。
-    minimum_patterns = (
-        "ifav", "ifsm", "drainsourcevoltagevds", "gatesourcevoltagevgs",
-        "draincurrentid", "vceo", "ioa", "iom", "vcc", "peakpulsecurrentipp",
-        "peakpulsepowerdissipation", "peakplusepowerdissipation", "singlepulsedavalancheenergyeas",
-        "pulseddraincurrentidm", "junctiontemperaturetj", "vesdiec",
-    )
-    if any(pattern in key for pattern in minimum_patterns) and "threshold" not in key:
-        return CriticalRule("min")
-    if key in {"ica", "pdw", "pdmw"} or key.startswith("pd"):
-        return CriticalRule("min")
-    if key.startswith("tj") and "max" in key:
-        return CriticalRule("min")
-    if family == "thyristor" and ("maximumvoltagegatetoline" in key or "peakpulsecurrentipp" in key):
-        return CriticalRule("min")
-
-    # 损耗、泄漏、钳位和恢复时间：候选上限不能更差。
-    if "rdson" in key or "vcesat" in key or key.startswith("trr"):
-        return CriticalRule("max")
-    if key.startswith("vf") and "max" in key:
-        return CriticalRule("max", condition_key="ifa")
-    if (key.startswith("ir") or "reverseleakage" in key) and ("max" in key or family == "tvs"):
-        compact_name = re.sub(r"\s+", "", clean_column(column).casefold())
-        return CriticalRule("max", condition_key="vrv" if "@vr" in compact_name else None)
-    if "clampingvoltagevc" in key:
-        return CriticalRule("max", condition_key="peakpulsecurrentipp")
-    if "junctioncapacitancecj" in key:
-        return CriticalRule("max")
-    if key.startswith("zzt"):
-        return CriticalRule("max", condition_key="izt")
-    if key.startswith("zzk"):
-        return CriticalRule("max", condition_key="izk")
-    if "hfemin" in key:
-        return CriticalRule("min")
-
-    # 以下是关键窗口值，但没有普适的单向“更好”关系。
-    if family in {"esd", "tvs"} and "breakdownvoltage" in key:
-        return CriticalRule("required")
-    return None
 
 
 def _find_condition_column(condition_key: str, numeric: list[str]) -> str | None:
@@ -220,18 +192,6 @@ def _similarity(query_value: float, candidate_value: float) -> float:
     if largest <= 1e-15 or query_value * candidate_value < 0:
         return 0.0
     return max(0.0, 1.0 - abs(query_value - candidate_value) / largest)
-
-
-def _passes_rule(rule: CriticalRule, query_value: float, candidate_value: float) -> bool:
-    tolerance = 1e-9 * max(1.0, abs(query_value), abs(candidate_value))
-    if rule.mode == "min":
-        return candidate_value + tolerance >= query_value
-    if rule.mode == "max":
-        return candidate_value <= query_value + tolerance
-    if rule.mode == "band":
-        denominator = max(abs(query_value), 1e-12)
-        return abs(candidate_value - query_value) / denominator <= rule.tolerance + 1e-12
-    return True
 
 
 def _condition_is_comparable(
@@ -262,8 +222,8 @@ def recommend(
 ) -> pd.DataFrame:
     """硬规则过滤后，只用 query/candidate 共同已知的参数计算相似度。"""
     numeric, categorical = infer_features(inventory)
-    family = _family(list(inventory.columns))
     source_name = str(inventory.attrs.get("source_name", "")).casefold()
+    family = _family(list(inventory.columns), source_name)
     work = inventory.copy()
     for column in numeric:
         work[column] = work[column].map(_number)
@@ -285,9 +245,11 @@ def recommend(
     if not active:
         raise ValueError("请至少填写一个电气参数。")
 
-    rules = {column: _critical_rule(column, family) for column in active}
+    rules = {column: get_rule(family, _field_key(column)) for column in active}
     feature_weights = {
-        column: float((weights or {}).get(column, 2.0 if rules[column] else 1.0))
+        column: float(
+            (weights or {}).get(column, 2.0 if rules[column] is not None and rules[column].critical else 1.0)
+        )
         for column in active
     }
     if any(value <= 0 for value in feature_weights.values()):
@@ -303,21 +265,27 @@ def recommend(
             continue
 
         risks: list[str] = []
-        pending_reasons = [f"{column}缺失" for column in missing if rules[column] is not None]
+        pending_reasons = [
+            f"{column}缺失"
+            for column in missing
+            if rules[column] is not None and rules[column].critical
+        ]
         failed_reasons: list[str] = []
         for column in shared:
             rule = rules[column]
-            if rule is None or rule.mode == "required":
+            if rule is None:
                 continue
             condition_column = _find_condition_column(rule.condition_key, numeric) if rule.condition_key else None
             if rule.condition_key and not _condition_is_comparable(condition_column, query, candidate):
                 pending_reasons.append(f"{column}测试条件未验证")
                 continue
-            if not _passes_rule(rule, _number(query[column]), float(candidate[column])):
-                symbol = {"min": ">=", "max": "<=", "band": f"±{rule.tolerance:.0%}"}.get(rule.mode, "")
-                failed_reasons.append(
-                    f"{column}={float(candidate[column]):g}，要求{symbol}{_number(query[column]):g}"
+            if not passes_rule(rule, _number(query[column]), float(candidate[column])):
+                problem = (
+                    f"{column}={float(candidate[column]):g}，"
+                    f"要求{requirement_text(rule, _number(query[column]))}"
                 )
+                if rule.critical:
+                    failed_reasons.append(problem)
 
         shared_weight = sum(feature_weights[column] for column in shared)
         coverage = shared_weight / total_weight
@@ -327,7 +295,24 @@ def recommend(
             feature_weights[column] * _similarity(_number(query[column]), float(candidate[column]))
             for column in shared
         ) / shared_weight
-        base_score = raw_similarity * (0.70 + 0.30 * coverage)
+        soft_columns = [
+            column for column in shared
+            if rules[column] is not None and not rules[column].critical
+        ]
+        if soft_columns:
+            soft_weight = sum(feature_weights[column] for column in soft_columns)
+            direction_preference = sum(
+                feature_weights[column]
+                * preference_score(rules[column], _number(query[column]), float(candidate[column]))
+                for column in soft_columns
+            ) / soft_weight
+        else:
+            direction_preference = 1.0
+        direction_factor = (
+            1.0 - SOFT_DIRECTION_INFLUENCE
+            + SOFT_DIRECTION_INFLUENCE * direction_preference
+        )
+        base_score = raw_similarity * direction_factor * (0.70 + 0.30 * coverage)
 
         topology_pending = False
         if _is_multi_function(query.get("Number of Functions")):
@@ -379,6 +364,7 @@ def recommend(
             "综合得分": final_score * 100,
             "已知参数匹配度": raw_similarity * 100,
             "参数覆盖率": coverage * 100,
+            "方向偏好得分": direction_preference * 100,
             "已比较参数": f"{len(shared)}/{len(active)}",
             "可信度": confidence,
             "关键参数检查": critical_status,
@@ -394,12 +380,9 @@ def recommend(
     if not result_rows:
         return pd.DataFrame()
     results = pd.DataFrame(result_rows)
-    source_product = str(query.get("Product", "")).strip().casefold()
-    if source_product:
-        results = results[results["Product"].astype(str).str.casefold() != source_product]
 
     leading = [
-        "Product", "Manufacture", "综合得分", "已知参数匹配度", "参数覆盖率", "已比较参数",
+        "Product", "Manufacture", "综合得分", "已知参数匹配度", "参数覆盖率", "方向偏好得分", "已比较参数",
         "可信度", "关键参数检查", "关键参数问题", "缺失参数", "风险提示", "核对提示", "车规等级",
         "Package Type", *categorical,
     ]

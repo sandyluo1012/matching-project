@@ -54,7 +54,6 @@ def clean_one(source: Path, target: Path) -> CleanStats:
     width = len(rows[1])
     title_row = (rows[0] + [""] * width)[:width]
     header_raw = (rows[1] + [""] * width)[:width]
-    unit_row = (rows[2] + [""] * width)[:width]
     header = [clean_column(value) for value in header_raw]
     nonempty_headers = [name for name in header if name]
     if len(set(nonempty_headers)) != len(nonempty_headers):
@@ -85,9 +84,6 @@ def clean_one(source: Path, target: Path) -> CleanStats:
         header[index] or f"未命名列 {index + 1}"
         for index in range(width) if index not in keep_indexes
     ]
-    title_row = [title_row[index] for index in keep_indexes]
-    header_raw = [header_raw[index] for index in keep_indexes]
-    unit_row = [unit_row[index] for index in keep_indexes]
     header = [header[index] for index in keep_indexes]
     kept_rows = [[row[index] for index in keep_indexes] for row in kept_rows]
 
@@ -100,7 +96,8 @@ def clean_one(source: Path, target: Path) -> CleanStats:
     target.parent.mkdir(parents=True, exist_ok=True)
     with target.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
-        writer.writerows([title_row, header_raw, unit_row])
+        # clean 文件采用数据库友好的单表头格式；单位已包含在规范化字段名中。
+        writer.writerow(header)
         writer.writerows(df.fillna("").astype(str).values.tolist())
     return CleanStats(category, len(body), len(df), removed, dropped_columns, remaining_missing)
 
@@ -117,6 +114,7 @@ def main() -> None:
     stats = [clean_one(source, CLEAN_DIR / source.name) for source in sources]
     report: list[str] = [
         "# MCC 产品表清理报告", "",
+        "输出格式：UTF-8 with BOM、单行标准表头；字段名中的换行、不间断空格和连续空格均已合并。", "",
         "缺失值策略：删除数据区整列为空的字段；保留局部 NA，不生成推算值。匹配模型只比较双方均有值的参数，并计算覆盖率。", "",
         "含逗号策略：如果一个物料的任意参数字段包含逗号，则删除整颗物料；通用信息字段不参与此规则。", "",
         "| 产品类别 | 原始数量 | 清理后数量 | 删除物料 | 删除不可用列 | 保留空白 |",

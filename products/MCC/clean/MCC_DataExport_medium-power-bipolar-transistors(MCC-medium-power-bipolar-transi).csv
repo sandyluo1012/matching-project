@@ -1,7 +1,4 @@
-﻿,,Medium Power Bipolar Transistors,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Polarity,Package Type,PD (W),VCEO(V),IC (A),HFE [min],HFE [max],"VCE(sat) [max]
-(V)",fT(MHz),Tj [max] (°C)
-,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Polarity,Package Type,PD (W),VCEO(V),IC (A),HFE [min],HFE [max],VCE(sat) [max] (V),fT(MHz),Tj [max] (°C)
 MCC (Micro Commercial Components),FMMT4350ZHE3,Preferred,A R H,Single,NPN,SOT-223,0.65,50,3,200,,0.29,100,150
 MCC (Micro Commercial Components),FMMT5350XHE3,Preferred,A R H,Single,PNP,SOT-89,0.5,-50,-3,200,,-0.09,100,150
 MCC (Micro Commercial Components),MJD45C,Active,R H,Single,PNP,DPAK,1.25,-80,-8,60,,-1,,150

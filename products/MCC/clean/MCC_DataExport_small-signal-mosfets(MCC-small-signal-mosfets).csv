@@ -1,33 +1,4 @@
-﻿,,Small Signal MOSFETS,,,,,,,,,,,,,,
-Manufacture,Product,Status,Compliance,Number of Functions,Channel,Package Type,"Drain-Source
-Voltage
-VDS (V)","Gate-Source
-Voltage
-VGS (V)","Drain
-Current
-ID (A)","RDS(ON)
-Max
-@VGS=10V
-(Ω)","RDS(ON)
-Max
-@VGS=4.5V
-(Ω)","RDS(ON)
-Max
-@VGS=2.5V
-(Ω)","Gate
-Threshold
-Voltage
-VGS(th) Min
-(V)","Gate
-Threshold
-Voltage
-VGS(th) Max
-(V)","ESD
-Diodes","Junction
-Temperature
-Tj [max]
-(°C)"
-,,,,,,,,,,,,,,,,
+﻿Manufacture,Product,Status,Compliance,Number of Functions,Channel,Package Type,Drain-Source Voltage VDS (V),Gate-Source Voltage VGS (V),Drain Current ID (A),RDS(ON) Max @VGS=10V (Ω),RDS(ON) Max @VGS=4.5V (Ω),RDS(ON) Max @VGS=2.5V (Ω),Gate Threshold Voltage VGS(th) Min (V),Gate Threshold Voltage VGS(th) Max (V),ESD Diodes,Junction Temperature Tj [max] (°C)
 MCC (Micro Commercial Components),BSS138KV,Preferred,R H,Dual,N+N,SOT-563,60,±20,0.204,3.3,4.1,6.3,0.6,1.4,Yes,150
 MCC (Micro Commercial Components),SI030N04YQ,Preferred,A R H,Single,N,SOT-23,40,±20,5.1,0.03,,,2,4,No,175
 MCC (Micro Commercial Components),MCM028N03YU,Preferred,R H,Single,N,DFN2020-6LE,30,±12,10,,0.028,0.035,0.45,1,No,150
