@@ -273,9 +273,9 @@ MCC (Micro Commercial Components),MCACD032NP06L,Active,R H,Dual,N+P,PDFN5060-8D,
 MCC (Micro Commercial Components),MCQD028NP04L,Active,R H,Dual,N+P,SOP-8,40/-40,±20,5.1/-3.3,0.028/0.071,0.039/0.099,,1.0/-1.0,2.5/-2.5,No,150,,20.4/-13.2
 MCC (Micro Commercial Components),MCQD037NP06L,Active,R H,Dual,N+P,SOP-8,60/-60,±20,4.4/-2.2,0.037/0.134,0.047/0.180,,1.0/-1.0,2.0/-2.0,No,150,25/12.2,17.6/-8.8
 MCC (Micro Commercial Components),MCACD100NP10L,Active,R H,Dual,N+P,PDFN5060-8D,100/-100,±20,10/-12,0.10/0.11,0.107/0.120,,1.1/-1.0,3/-2.5,No,150,12/49,40/-48
-MCC (Micro Commercial Components),MCQ200NP10L,Active,R H,Dual,N+P,SOP-8,100/-100,±20,4.0/-4.0, 0.27/0.20, 0.28/0.22,,1.0/-1.0, 2.5/-2.5,No,150,3.0/28,16/-16
+MCC (Micro Commercial Components),MCQ200NP10L,Active,R H,Dual,N+P,SOP-8,100/-100,±20,4.0/-4.0,0.27/0.20,0.28/0.22,,1.0/-1.0,2.5/-2.5,No,150,3.0/28,16/-16
 MCC (Micro Commercial Components),MCQ03NP10L,Active,R H,Dual,N+P,SOP-8,100/-100,±20,5.0/-3.0,0.027/0.110,0.030/0.120,,1.0/-1.0,2.5/-2.5,No,150,,20/-12
-MCC (Micro Commercial Components),MCGD016NP04L,Active,R H,Dual,N+P,DFN3333-D,40/-40,±20,	24/-18,0.016/0.029,0.021/0.041,,1.0/-1.1,2.2/-2.1,No,150,6.25/6.25,96/-72
+MCC (Micro Commercial Components),MCGD016NP04L,Active,R H,Dual,N+P,DFN3333-D,40/-40,±20,24/-18,0.016/0.029,0.021/0.041,,1.0/-1.1,2.2/-2.1,No,150,6.25/6.25,96/-72
 MCC (Micro Commercial Components),MCGD018NP03L,Active,R H,Dual,N+P,DFN3333-D,30/-30,±20,20/-20,0.020/0.018,0.030/0.025,,1.0/-1.0,2.5/-2.5,No,150,25/81,80/-80
 MCC (Micro Commercial Components),MCQ018NP03L,Active,R H,Dual,N+P,SOP-8,30/-30,±20,7.0/-5.0,0.018/0.043,0.030/0.063,,1.0/-1.0,2.2/-2.4,No,150,,28/-20
 MCC (Micro Commercial Components),MCQ019P03L,Active,R H,Single,P,SOP-8,-30,±20,-7.7,0.019,0.028,,-1,-2.5,No,150,60,-30.8
@@ -429,7 +429,7 @@ MCC (Micro Commercial Components),MCB2D8N10YHR,Active,R H,Single,N,D2-PAK,100,±
 MCC (Micro Commercial Components),MCB3D2N04YQ,Active,A R H,Single,N,D2-PAK,40,±20,138,0.0032,,,2,3.6,No,175,225,552
 MCC (Micro Commercial Components),MCACD12NP10YHE3,Active,A R H,Dual,N+P,PDFN5060-8D,100/-100,±20,40/-12,0.024/0.115,0.030/0.138,,1.2/-1.2,2.5/-2.5,No,150,72/36,80/-40
 MCC (Micro Commercial Components),MCQ11NP04,Active,R H,Dual,N+P,SOP-8,40/-40,±20,11/-11,0.032/0.033,0.050/0.050,,1.0/-1.0,2.5/-2.5,No,150,15/45,44/-44
-MCC (Micro Commercial Components),MCACD40NP03,Active,R H,Dual,N+P,PDFN5060-8D,30/-30,±20/±25 ,40/-40,0.009/0.012,0.014/0.020,,1.0/-1.2,2.5/-2.7,No,150,56/90,160/-160
+MCC (Micro Commercial Components),MCACD40NP03,Active,R H,Dual,N+P,PDFN5060-8D,30/-30,±20/±25,40/-40,0.009/0.012,0.014/0.020,,1.0/-1.2,2.5/-2.7,No,150,56/90,160/-160
 MCC (Micro Commercial Components),MCACD12NP10Y,Active,R H,Dual,N+P,DFN5060-8D,100/-100,±20,25/-12,0.026/0.120,0.030/0.130,,1.2/-1.2,2.5/-2.5,No,150,64/72,100/-48
 MCC (Micro Commercial Components),MCQ4559A,Active,R H,Dual,N+P,SOP-8,60/-60,±20,4.5/-3.5,0.045/0.080,0.050/0.115,,1.0/-1.0,2.5/-2.5,No,150,24,18/-14
 MCC (Micro Commercial Components),MCQ07NP03A,Active,R H,Dual,N+P,SOP-8,30/-30,±20,7.0/-7.0,0.018/0.023,0.030/0.034,,1.0/-1.0,2.2/-2.5,No,150,,28/-28

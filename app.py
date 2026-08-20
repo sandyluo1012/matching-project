@@ -44,6 +44,13 @@ CATALOG_CHINESE_NAMES = {
     "wide soa mosfets": "宽安全工作区MOSFETs",
 }
 
+COMPACT_RESULT_LEADING_COLUMNS = (
+    "Product", "Manufacture", "综合得分", "已知参数匹配度", "参数覆盖率",
+    "可信度", "关键参数检查", "车规等级", "Package Type",
+    "Number of Functions", "Configuration", "Polarity", "Channel", "ESD Diodes",
+)
+COMPACT_RESULT_TRAILING_COLUMNS = ("关键参数问题", "缺失参数", "风险提示")
+
 
 def _localized_catalogs(catalogs: dict[str, Path]) -> dict[str, Path]:
     """只改变 GUI 显示名称，保留英文名称对应的原始 CSV 路径。"""
@@ -61,6 +68,38 @@ def _is_esd_discharge_field(column: str) -> bool:
     return "iec61000-4-2" in normalized and "air/contact" in normalized
 
 
+def build_result_view(
+    results: pd.DataFrame,
+    *,
+    compact: bool = False,
+    automotive_only: bool = False,
+    critical_columns: set[str] | None = None,
+) -> pd.DataFrame:
+    """根据 GUI 视图选项筛选行和列，不修改模型生成的完整结果。"""
+    view = results
+    if automotive_only:
+        if "车规等级" not in view.columns:
+            view = view.iloc[0:0]
+        else:
+            view = view[view["车规等级"] == "车规级"]
+    if not compact:
+        return view.copy()
+
+    ordered = [
+        column for column in COMPACT_RESULT_LEADING_COLUMNS
+        if column in view.columns
+    ]
+    ordered.extend(
+        column for column in view.columns
+        if column in (critical_columns or set()) and column not in ordered
+    )
+    ordered.extend(
+        column for column in COMPACT_RESULT_TRAILING_COLUMNS
+        if column in view.columns and column not in ordered
+    )
+    return view.loc[:, ordered].copy()
+
+
 class MatchingApp(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
@@ -74,8 +113,17 @@ class MatchingApp(tk.Tk):
         self.paired_inputs: dict[str, tuple[tk.StringVar, tk.StringVar]] = {}
         self.single_input_widgets: dict[str, tk.Misc] = {}
         self.pair_input_widgets: dict[str, tk.Misc] = {}
-        self.previous_channel_value = ""
+        self.pair_selector_column = ""
+        self.pair_selector_target = ""
+        self.pair_labels = ("N沟道", "P沟道")
+        self.pair_first_single_values: set[str] = set()
+        self.pair_second_single_values: set[str] = set()
+        self.previous_pair_selector_value = ""
         self.results = pd.DataFrame()
+        self.has_run_match = False
+        self.critical_result_columns: set[str] = set()
+        self.compact_results_var = tk.BooleanVar(value=False)
+        self.automotive_only_var = tk.BooleanVar(value=False)
         self._style()
         self._layout()
         if self.catalogs:
@@ -150,6 +198,18 @@ class MatchingApp(tk.Tk):
         ttk.Button(action, text="开始匹配", style="Accent.TButton", command=self.run_match).pack(side="left")
         ttk.Button(action, text="清空输入", command=self.clear_inputs).pack(side="left", padx=(8, 0))
         ttk.Button(action, text="导出结果 CSV", command=self.export_results).pack(side="left", padx=8)
+        ttk.Checkbutton(
+            action,
+            text="精简显示",
+            variable=self.compact_results_var,
+            command=self._refresh_results_view,
+        ).pack(side="left", padx=(2, 8))
+        ttk.Checkbutton(
+            action,
+            text="只看车规级",
+            variable=self.automotive_only_var,
+            command=self._refresh_results_view,
+        ).pack(side="left")
         self.status_var = tk.StringVar(value="请填写参数后开始匹配")
         ttk.Label(action, textvariable=self.status_var, style="Sub.TLabel").pack(side="right")
         table_frame = ttk.Frame(right)
@@ -200,11 +260,32 @@ class MatchingApp(tk.Tk):
         self.paired_inputs.clear()
         self.single_input_widgets.clear()
         self.pair_input_widgets.clear()
-        self.previous_channel_value = ""
+        self.pair_selector_column = ""
+        self.pair_selector_target = ""
+        self.pair_labels = ("N沟道", "P沟道")
+        self.pair_first_single_values.clear()
+        self.pair_second_single_values.clear()
+        self.previous_pair_selector_value = ""
         numeric, categorical = infer_features(self.df)
         critical = critical_features(self.df)
+        self.critical_result_columns = critical
         preferred = preference_features(self.df)
         paired = paired_features(self.df)
+        if paired and "Polarity" in self.df.columns and any(
+            str(value).strip().casefold() == "npn+pnp"
+            for value in self.df["Polarity"].dropna()
+        ):
+            self.pair_selector_column = "Polarity"
+            self.pair_selector_target = "npn+pnp"
+            self.pair_labels = ("NPN", "PNP")
+            self.pair_first_single_values = {"npn", "npn*2"}
+            self.pair_second_single_values = {"pnp", "pnp*2"}
+        elif paired and "Channel" in self.df.columns:
+            self.pair_selector_column = "Channel"
+            self.pair_selector_target = "n+p"
+            self.pair_labels = ("N沟道", "P沟道")
+            self.pair_first_single_values = {"n", "n+n"}
+            self.pair_second_single_values = {"p", "p+p"}
         plus_minus = plus_minus_features(self.df)
         fields = ["Package Type", *categorical, *numeric]
         for index, column in enumerate(fields):
@@ -220,7 +301,8 @@ class MatchingApp(tk.Tk):
             else:
                 suffix = ""
             if column in paired:
-                suffix += "  [N+P双值]"
+                pair_name = "NPN+PNP" if self.pair_selector_column == "Polarity" else "N+P"
+                suffix += f"  [{pair_name}双值]"
             if column in plus_minus:
                 suffix += "  [默认±，可修改]"
             if is_esd_discharge:
@@ -248,11 +330,14 @@ class MatchingApp(tk.Tk):
             widget.grid(row=index * 2 + 1, column=0, sticky="ew")
             if column in paired:
                 pair_frame = ttk.Frame(self.form)
-                n_var = tk.StringVar()
-                p_var = tk.StringVar()
-                ttk.Label(pair_frame, text="N沟道").grid(row=0, column=0, padx=(0, 4))
+                pair_default = self.input_defaults[column]
+                n_var = tk.StringVar(value=pair_default)
+                p_var = tk.StringVar(value=pair_default)
+                first_label = ttk.Label(pair_frame, text=self.pair_labels[0])
+                first_label.grid(row=0, column=0, padx=(0, 4))
                 ttk.Entry(pair_frame, textvariable=n_var, width=14).grid(row=0, column=1, sticky="ew")
-                ttk.Label(pair_frame, text="P沟道").grid(row=0, column=2, padx=(10, 4))
+                second_label = ttk.Label(pair_frame, text=self.pair_labels[1])
+                second_label.grid(row=0, column=2, padx=(10, 4))
                 ttk.Entry(pair_frame, textvariable=p_var, width=14).grid(row=0, column=3, sticky="ew")
                 pair_frame.columnconfigure(1, weight=1)
                 pair_frame.columnconfigure(3, weight=1)
@@ -261,60 +346,80 @@ class MatchingApp(tk.Tk):
                 self.paired_inputs[column] = (n_var, p_var)
                 self.single_input_widgets[column] = widget
                 self.pair_input_widgets[column] = pair_frame
-            if column == "Channel":
+            if column == self.pair_selector_column:
                 widget.bind("<<ComboboxSelected>>", lambda _event: self._update_np_input_mode())
         self.count_label.configure(text=f"数据库：{len(self.df):,} 个物料 · {len(numeric)} 个电气参数")
         self._update_np_input_mode()
         # 产品类别切换后表单控件会重建，因此需要重新绑定新控件。
         self._bind_customer_mousewheel(self.customer_panel)
+        self.results = pd.DataFrame()
+        self.has_run_match = False
+        self.status_var.set("请填写参数后开始匹配")
         self._show(pd.DataFrame())
 
     def _update_np_input_mode(self) -> None:
-        """Channel=N+P 时显示独立的 N/P 输入框，否则使用原单值输入框。"""
-        channel = self.inputs.get("Channel")
-        channel_value = channel.get().strip().casefold() if channel else ""
-        np_mode = channel_value == "n+p"
+        """按当前目录切换 MOSFET N/P 或 BJT NPN/PNP 双输入框。"""
+        selector = self.inputs.get(self.pair_selector_column)
+        selector_value = selector.get().strip().casefold() if selector else ""
+        pair_mode = bool(self.pair_selector_target and selector_value == self.pair_selector_target)
+        was_pair_mode = bool(
+            self.pair_selector_target
+            and self.previous_pair_selector_value == self.pair_selector_target
+        )
+        previous_was_first = self.previous_pair_selector_value in self.pair_first_single_values
+        previous_was_second = self.previous_pair_selector_value in self.pair_second_single_values
+        current_is_first = selector_value in self.pair_first_single_values
+        current_is_second = selector_value in self.pair_second_single_values
         for column, (n_var, p_var) in self.paired_inputs.items():
             single_var = self.inputs[column]
             single_widget = self.single_input_widgets[column]
             pair_widget = self.pair_input_widgets[column]
-            if np_mode:
-                current = single_var.get().strip()
-                if current:
+            if pair_mode:
+                # 仅在进入双值模式时迁移，避免重复选择事件覆盖双框中的编辑。
+                if not was_pair_mode:
+                    current = single_var.get().strip()
                     parts = [part.strip() for part in current.split("/")]
                     if len(parts) == 2 and all(parts):
                         n_var.set(parts[0])
                         p_var.set(parts[1])
-                    elif self.previous_channel_value in {"n", "n+n"}:
+                    elif previous_was_first:
                         n_var.set(current)
-                    elif self.previous_channel_value in {"p", "p+p"}:
+                    elif previous_was_second:
                         p_var.set(current)
-                    elif not self.previous_channel_value:
+                    elif current and current != "±":
                         n_var.set(current)
-                        if is_shared_np_rating(column):
+                        if self.pair_selector_column == "Channel" and is_shared_np_rating(column):
                             p_var.set(current)
                 single_widget.grid_remove()
                 pair_widget.grid()
             else:
-                if channel_value in {"n", "n+n"} and n_var.get().strip():
+                # 离开双值模式时把所选侧迁回单框；空值也同步，避免旧值复现。
+                if was_pair_mode and current_is_first:
                     single_var.set(n_var.get().strip())
-                elif channel_value in {"p", "p+p"} and p_var.get().strip():
+                elif was_pair_mode and current_is_second:
                     single_var.set(p_var.get().strip())
                 pair_widget.grid_remove()
                 single_widget.grid()
-        self.previous_channel_value = channel_value
+        self.previous_pair_selector_value = selector_value
 
     def _collect_query(self) -> dict[str, str]:
-        channel = self.inputs.get("Channel")
-        np_mode = bool(channel and channel.get().strip().casefold() == "n+p")
+        selector = self.inputs.get(self.pair_selector_column)
+        pair_mode = bool(
+            selector
+            and selector.get().strip().casefold() == self.pair_selector_target
+        )
         query: dict[str, str] = {}
         for column, var in self.inputs.items():
-            if np_mode and column in self.paired_inputs:
+            if pair_mode and column in self.paired_inputs:
                 n_value = self.paired_inputs[column][0].get().strip()
                 p_value = self.paired_inputs[column][1].get().strip()
-                if bool(n_value) != bool(p_value):
-                    raise ValueError(f"{column} 的 N沟道和 P沟道参数必须同时填写。")
-                query[column] = f"{n_value}/{p_value}" if n_value else ""
+                n_filled = bool(n_value and n_value != "±")
+                p_filled = bool(p_value and p_value != "±")
+                if n_filled != p_filled:
+                    raise ValueError(
+                        f"{column} 的 {self.pair_labels[0]} 和 {self.pair_labels[1]} 参数必须同时填写。"
+                    )
+                query[column] = f"{n_value}/{p_value}" if n_filled else ""
             else:
                 query[column] = var.get().strip()
         query["Product"] = self.product_var.get().strip()
@@ -325,9 +430,10 @@ class MatchingApp(tk.Tk):
         self.product_var.set("")
         for column, var in self.inputs.items():
             var.set(self.input_defaults.get(column, ""))
-        for n_var, p_var in self.paired_inputs.values():
-            n_var.set("")
-            p_var.set("")
+        for column, (n_var, p_var) in self.paired_inputs.items():
+            pair_default = self.input_defaults.get(column, "")
+            n_var.set(pair_default)
+            p_var.set(pair_default)
         self._update_np_input_mode()
         self.status_var.set("输入已清空；当前匹配结果已保留")
 
@@ -338,12 +444,39 @@ class MatchingApp(tk.Tk):
         except Exception as exc:
             messagebox.showerror("无法匹配", str(exc))
             return
-        self._show(self.results)
+        self.has_run_match = True
+        self._refresh_results_view()
+
+    def _refresh_results_view(self) -> None:
+        """立即应用精简列与车规级行筛选，不重新执行匹配。"""
+        filtered = build_result_view(
+            self.results,
+            automotive_only=self.automotive_only_var.get(),
+        )
+        display = build_result_view(
+            filtered,
+            compact=self.compact_results_var.get(),
+            critical_columns=self.critical_result_columns,
+        )
+        self._show(display)
+        if not self.has_run_match:
+            self.status_var.set("请填写参数后开始匹配")
+            return
         if self.results.empty:
             self.status_var.set("没有满足封装和最低参数覆盖率的物料")
+            return
+        if filtered.empty:
+            self.status_var.set(f"完整结果有 {len(self.results)} 个候选，当前筛选下没有车规级物料")
+            return
+        verified = int((filtered["关键参数检查"] == "通过").sum())
+        if self.automotive_only_var.get():
+            self.status_var.set(
+                f"显示 {len(filtered)}/{len(self.results)} 个车规级候选，其中 {verified} 个通过关键参数规则"
+            )
         else:
-            verified = int((self.results["关键参数检查"] == "通过").sum())
-            self.status_var.set(f"找到 {len(self.results)} 个候选，其中 {verified} 个通过关键参数规则")
+            self.status_var.set(
+                f"找到 {len(filtered)} 个候选，其中 {verified} 个通过关键参数规则"
+            )
 
     def _show(self, data: pd.DataFrame) -> None:
         self.tree.delete(*self.tree.get_children())
@@ -367,14 +500,29 @@ class MatchingApp(tk.Tk):
             status = str(row.get("关键参数检查", ""))
             tag = {"通过": "passed", "待人工确认": "pending", "不满足": "failed"}.get(status, "")
             self.tree.insert("", "end", values=values, tags=(tag,) if tag else ())
+        self.tree.xview_moveto(0)
+        self.tree.yview_moveto(0)
 
     def export_results(self) -> None:
         if self.results.empty:
             messagebox.showinfo("暂无结果", "请先执行匹配。")
             return
-        path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[("CSV 文件", "*.csv")], initialfile="匹配结果.csv")
+        export_data = build_result_view(
+            self.results,
+            automotive_only=self.automotive_only_var.get(),
+        )
+        if export_data.empty:
+            messagebox.showinfo("暂无结果", "当前筛选下没有可导出的物料。")
+            return
+        initialfile = "车规级匹配结果.csv" if self.automotive_only_var.get() else "匹配结果.csv"
+        path = filedialog.asksaveasfilename(
+            defaultextension=".csv",
+            filetypes=[("CSV 文件", "*.csv")],
+            initialfile=initialfile,
+        )
         if path:
-            self.results.to_csv(Path(path), index=False, encoding="utf-8-sig")
+            # 精简显示只影响表格列；导出保留完整字段。车规级筛选会同步到导出行。
+            export_data.to_csv(Path(path), index=False, encoding="utf-8-sig")
             messagebox.showinfo("导出成功", f"结果已保存到：\n{path}")
 
 

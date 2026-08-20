@@ -1,31 +1,52 @@
 ﻿# MCC 产品表清理报告
 
-输出格式：UTF-8 with BOM、单行标准表头；字段名中的换行、不间断空格和连续空格均已合并。
+输出格式：UTF-8 with BOM、单行标准表头；字段名中的换行、不间断空格和连续空格均已合并。数据单元格只移除首尾 Unicode 空白及常见不可见格式符，内部字符保持不变。
 
 缺失值策略：删除数据区整列为空的字段；保留局部 NA，不生成推算值。匹配模型只比较双方均有值的参数，并计算覆盖率。
 
+数值格式策略：完整数值、科学计数、± 数值和双分量斜杠值可以解析；有界值或夹杂未知字符的值保留原文并在匹配时按未知处理。
+
 含逗号策略：如果一个物料的任意参数字段包含逗号，则删除整颗物料；通用信息字段不参与此规则。
 
-| 产品类别 | 原始数量 | 清理后数量 | 删除物料 | 删除不可用列 | 保留空白 |
-|---|---:|---:|---:|---:|---:|
-| Bridge Rectifiers | 422 | 422 | 0 | 0 | 0 |
-| Darlington Transistors | 11 | 11 | 0 | 0 | 11 |
-| ESD Protection Devices | 544 | 543 | 1 | 0 | 234 |
-| Fast Recovery Rectifiers | 105 | 105 | 0 | 1 | 0 |
-| Medium Power Bipolar Transistors | 98 | 98 | 0 | 0 | 39 |
-| Power MOSFETS | 716 | 716 | 0 | 0 | 1065 |
-| Pre-Biased Transistors | 248 | 248 | 0 | 0 | 26 |
-| Programmable Thyristor Surge Suppressor | 1 | 1 | 0 | 1 | 0 |
-| Schottky Barrier Rectifiers | 760 | 760 | 0 | 0 | 672 |
-| Small Signal Bipolar Transistors | 374 | 374 | 0 | 0 | 77 |
-| Small Signal MOSFETS | 299 | 299 | 0 | 0 | 271 |
-| Small Signal Schottky Diodes | 284 | 284 | 0 | 0 | 179 |
-| Standard Recovery Rectifiers | 200 | 200 | 0 | 1 | 119 |
-| Super Fast Recovery Rectifiers | 433 | 433 | 0 | 0 | 434 |
-| Switching Diodes | 160 | 160 | 0 | 0 | 119 |
-| TVS | 4681 | 4681 | 0 | 0 | 66 |
-| Wide SOA MOSFETs | 3 | 3 | 0 | 4 | 0 |
-| Zener Diodes | 2144 | 2144 | 0 | 1 | 185 |
+| 产品类别 | 原始数量 | 清理后数量 | 删除物料 | 修正首尾空白 | 无法安全解析数值 | 删除不可用列 | 保留空白 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Bridge Rectifiers | 422 | 422 | 0 | 0 | 0 | 0 | 0 |
+| Darlington Transistors | 11 | 11 | 0 | 0 | 0 | 0 | 11 |
+| ESD Protection Devices | 544 | 543 | 1 | 0 | 0 | 0 | 234 |
+| Fast Recovery Rectifiers | 105 | 105 | 0 | 0 | 0 | 1 | 0 |
+| Medium Power Bipolar Transistors | 98 | 98 | 0 | 0 | 0 | 0 | 39 |
+| Power MOSFETS | 716 | 716 | 0 | 5 | 0 | 0 | 1065 |
+| Pre-Biased Transistors | 248 | 248 | 0 | 0 | 0 | 0 | 26 |
+| Programmable Thyristor Surge Suppressor | 1 | 1 | 0 | 0 | 0 | 1 | 0 |
+| Schottky Barrier Rectifiers | 760 | 760 | 0 | 0 | 0 | 0 | 672 |
+| Small Signal Bipolar Transistors | 374 | 374 | 0 | 0 | 0 | 0 | 77 |
+| Small Signal MOSFETS | 299 | 299 | 0 | 6 | 0 | 0 | 271 |
+| Small Signal Schottky Diodes | 284 | 284 | 0 | 0 | 0 | 0 | 179 |
+| Standard Recovery Rectifiers | 200 | 200 | 0 | 1 | 1 | 1 | 119 |
+| Super Fast Recovery Rectifiers | 433 | 433 | 0 | 0 | 0 | 0 | 434 |
+| Switching Diodes | 160 | 160 | 0 | 0 | 0 | 0 | 119 |
+| TVS | 4681 | 4681 | 0 | 0 | 0 | 0 | 66 |
+| Wide SOA MOSFETs | 3 | 3 | 0 | 0 | 0 | 4 | 0 |
+| Zener Diodes | 2144 | 2144 | 0 | 0 | 0 | 1 | 185 |
+
+## 修正的单元格首尾空白
+
+- **Power MOSFETS / MCQ200NP10L / Drain-Source On-Resistance RDS(ON) Max @VGS=10V (Ω)**：`'\xa00.27/0.20'` → `'0.27/0.20'`
+- **Power MOSFETS / MCQ200NP10L / Drain-Source On-Resistance RDS(ON) Max @VGS=4.5V (Ω)**：`'\xa00.28/0.22'` → `'0.28/0.22'`
+- **Power MOSFETS / MCQ200NP10L / Gate Threshold Voltage VGS(th) Max (V)**：`'\xa02.5/-2.5'` → `'2.5/-2.5'`
+- **Power MOSFETS / MCGD016NP04L / Drain Current ID (A)**：`'\t24/-18'` → `'24/-18'`
+- **Power MOSFETS / MCACD40NP03 / Gate-Source Voltage VGS (V)**：`'±20/±25 '` → `'±20/±25'`
+- **Small Signal MOSFETS / MCMWF013N04LHE3 / Gate-Source Voltage VGS (V)**：`'\t+20/-16'` → `'+20/-16'`
+- **Small Signal MOSFETS / MCMWF9D1N03LHE3 / Gate-Source Voltage VGS (V)**：`'\t+20/-16'` → `'+20/-16'`
+- **Small Signal MOSFETS / MCMWF039N06LHE3 / Gate-Source Voltage VGS (V)**：`'\t+20/-16'` → `'+20/-16'`
+- **Small Signal MOSFETS / MC7252KV / Gate Threshold Voltage VGS(th) Max (V)**：`'\t2.0/-1.8'` → `'2.0/-1.8'`
+- **Small Signal MOSFETS / SI2301 / RDS(ON) Max @VGS=4.5V (Ω)**：`'\t0.051'` → `'0.051'`
+- **Small Signal MOSFETS / SI2301A / RDS(ON) Max @VGS=4.5V (Ω)**：`'\t0.051'` → `'0.051'`
+- **Standard Recovery Rectifiers / S2B-L / TRR (μs)**：`' '` → `''`
+
+## 无法安全转换的数值
+
+- **Standard Recovery Rectifiers / R4000GPS / TRR (μs)**：`'>1.2'`；有界值不能作为精确数值，匹配时按未知处理。
 
 ## 删除的全空或未命名列
 

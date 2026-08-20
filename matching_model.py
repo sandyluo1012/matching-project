@@ -31,45 +31,98 @@ MISSING_MARKERS = {"", "-", "—", "nan", "none", "n/a", "na", "null"}
 MIN_COVERAGE = 0.50
 PLUS_MINUS_DEFAULT_RATIO = 0.90
 NUMBER_TOKEN = r"(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?"
-OPTIONAL_UNIT = r"(?:\s*[a-zA-Z]+)?"
+# MCC 当前只有 ESD IEC 数值会在单元格中重复写入 kV；其他单位已经在列名中。
+# 使用白名单而不是任意字母后缀，避免把 ``24abc`` 静默当成 24。
+OPTIONAL_UNIT = r"(?:\s*(?i:kv))?"
 PLUS_MINUS_COMPONENT = re.compile(
-    rf"\s*±\s*[+-]?{NUMBER_TOKEN}{OPTIONAL_UNIT}\s*"
+    rf"\s*±\s*{NUMBER_TOKEN}{OPTIONAL_UNIT}\s*"
 )
 EXPLICIT_SIGNED_RANGE = re.compile(
     rf"\s*\+\s*{NUMBER_TOKEN}{OPTIONAL_UNIT}\s*/"
-    rf"\s*-\s*{NUMBER_TOKEN}{OPTIONAL_UNIT}\s*"
+    rf"\s*[-−]\s*{NUMBER_TOKEN}{OPTIONAL_UNIT}\s*"
 )
+NUMERIC_COMPONENT = re.compile(
+    rf"\s*(?:±|[+\-−])?\s*(?P<number>{NUMBER_TOKEN}){OPTIONAL_UNIT}\s*"
+)
+BOUNDED_NUMERIC_COMPONENT = re.compile(
+    rf"\s*(?:<=|>=|≤|≥|<|>)\s*(?:[+\-−])?\s*"
+    rf"(?P<number>{NUMBER_TOKEN}){OPTIONAL_UNIT}\s*"
+)
+OUTER_FORMAT_CHARACTERS = {"\u200b", "\ufeff"}
+
+# Only these device selections give a slash-separated value component meaning.
+# Keeping this explicit prevents unrelated slash values (for example ESD
+# Air/Contact ratings) from being interpreted as two devices.
+PAIR_PROFILES: dict[str, tuple[str, str, tuple[str, str], str]] = {
+    "mosfet": ("Channel", "n+p", ("N", "P"), "N/P"),
+    "transistor": ("Polarity", "npn+pnp", ("NPN", "PNP"), "NPN/PNP"),
+    "prebiased": ("Polarity", "npn+pnp", ("NPN", "PNP"), "NPN/PNP"),
+}
 
 def clean_column(name: str) -> str:
     """合并 CSV 表头中的换行和不间断空格。"""
     return " ".join(str(name).replace("\xa0", " ").split())
 
 
+def _strip_outer_spacing(value: Any) -> str:
+    """移除首尾 Unicode 空白及常见不可见格式字符，绝不拼接内部数字。"""
+    text = unicodedata.normalize("NFKC", str(value))
+    start = 0
+    end = len(text)
+    while start < end and (
+        text[start].isspace() or text[start] in OUTER_FORMAT_CHARACTERS
+    ):
+        start += 1
+    while end > start and (
+        text[end - 1].isspace() or text[end - 1] in OUTER_FORMAT_CHARACTERS
+    ):
+        end -= 1
+    return text[start:end]
+
+
 def _is_missing(value: Any) -> bool:
     if pd.isna(value):
         return True
-    text = str(value).strip()
+    text = _strip_outer_spacing(value)
     if text.casefold() in MISSING_MARKERS:
         return True
     # GUI 中的裸 ± 只是输入提示；N+P 双框会形成 ±/±，同样不能算作参数。
-    return bool(text) and all(part.strip() == "±" for part in text.split("/"))
+    return bool(text) and all(_strip_outer_spacing(part) == "±" for part in text.split("/"))
 
 
-def _numbers(value: Any) -> tuple[float, ...]:
-    """提取一个或多个规格值；斜杠表示按原顺序排列的独立分量。"""
+def parse_numeric_values(value: Any) -> tuple[float, ...]:
+    """严格解析一个或多个规格值；任一分量含未知字符时拒绝整个值。"""
     if _is_missing(value):
         return ()
-    text = str(value).strip()
+    text = _strip_outer_spacing(value)
     if "," in text:
         return ()
     parts = text.split("/")
+    if len(parts) not in {1, 2}:
+        return ()
     values: list[float] = []
     for part in parts:
-        match = re.search(r"[-+]?\d*\.?\d+(?:[eE][-+]?\d+)?", part)
+        match = NUMERIC_COMPONENT.fullmatch(part)
         if not match:
             return ()
-        values.append(abs(float(match.group())))
+        values.append(abs(float(match.group("number"))))
     return tuple(values)
+
+
+def is_bounded_numeric_value(value: Any) -> bool:
+    """识别 `<1.2`、`>=5` 等有界规格；它们不能冒充精确数值。"""
+    if _is_missing(value):
+        return False
+    parts = _strip_outer_spacing(value).split("/")
+    return bool(parts) and all(
+        BOUNDED_NUMERIC_COMPONENT.fullmatch(part) is not None
+        for part in parts
+    )
+
+
+def _numbers(value: Any) -> tuple[float, ...]:
+    """内部兼容别名；公开的数据清理流程复用 parse_numeric_values。"""
+    return parse_numeric_values(value)
 
 
 def _number(value: Any) -> float:
@@ -83,7 +136,7 @@ def _is_plus_minus_value(value: Any) -> bool:
         return False
     return all(
         PLUS_MINUS_COMPONENT.fullmatch(part)
-        for part in str(value).split("/")
+        for part in _strip_outer_spacing(value).split("/")
     )
 
 
@@ -91,7 +144,7 @@ def _is_explicit_signed_range(value: Any) -> bool:
     """识别 +正向额定值/-负向额定值，例如 +20/-16。"""
     if _is_missing(value):
         return False
-    return EXPLICIT_SIGNED_RANGE.fullmatch(str(value)) is not None
+    return EXPLICIT_SIGNED_RANGE.fullmatch(_strip_outer_spacing(value)) is not None
 
 
 def _field_key(name: str) -> str:
@@ -104,6 +157,20 @@ def _category_value(value: Any) -> str:
     if _is_missing(value):
         return ""
     return " ".join(unicodedata.normalize("NFKC", str(value)).casefold().split())
+
+
+def _pair_profile(family: str) -> tuple[str, str, tuple[str, str], str] | None:
+    return PAIR_PROFILES.get(family)
+
+
+def _is_pair_selection(family: str, values: Any) -> bool:
+    profile = _pair_profile(family)
+    if profile is None:
+        return False
+    selector, expected, _, _ = profile
+    value = values.get(selector) if hasattr(values, "get") else None
+    # Treat optional spaces around '+' as cosmetic differences.
+    return _category_value(value).replace(" ", "") == expected
 
 
 def discover_catalogs(data_dir: Path = DATA_DIR) -> dict[str, Path]:
@@ -186,18 +253,26 @@ def plus_minus_features(df: pd.DataFrame) -> set[str]:
 
 
 def paired_features(df: pd.DataFrame) -> set[str]:
-    """返回当前目录中存在 N/P 斜杠双值的数值字段。"""
-    if "Channel" not in df.columns:
+    """返回当前目录中存在器件成对斜杠值的数值字段。"""
+    family = _family(list(df.columns), str(df.attrs.get("source_name", "")))
+    profile = _pair_profile(family)
+    if profile is None:
+        return set()
+    selector, expected, _, _ = profile
+    if selector not in df.columns:
         return set()
     numeric, _ = infer_features(df)
-    np_rows = df[df["Channel"].map(_category_value) == "n+p"]
-    if np_rows.empty:
+    pair_rows = df[
+        df[selector].map(lambda value: _category_value(value).replace(" ", ""))
+        == expected
+    ]
+    if pair_rows.empty:
         return set()
     return {
         column
         for column in numeric
-        if np_rows[column].map(
-            lambda value: not _is_missing(value) and "/" in str(value)
+        if pair_rows[column].map(
+            lambda value: len(_numbers(value)) == 2
         ).any()
     }
 
@@ -326,7 +401,13 @@ def _align_numeric_values(
     query_values: tuple[float, ...],
     candidate_values: tuple[float, ...],
     allow_scalar_broadcast: bool,
+    required_components: int | None = None,
 ) -> tuple[tuple[float, ...], tuple[float, ...]] | None:
+    if required_components is not None and (
+        len(query_values) != required_components
+        or len(candidate_values) != required_components
+    ):
+        return None
     if len(query_values) == len(candidate_values):
         return query_values, candidate_values
     if allow_scalar_broadcast and {len(query_values), len(candidate_values)} == {1, 2}:
@@ -354,8 +435,9 @@ def _rule_failure_text(
     rule: Any,
     query_values: tuple[float, ...],
     candidate_values: tuple[float, ...],
+    component_labels: tuple[str, ...] | None = None,
 ) -> str:
-    labels = ("N", "P") if len(query_values) == 2 else tuple(str(index + 1) for index in range(len(query_values)))
+    labels = component_labels or tuple(str(index + 1) for index in range(len(query_values)))
     failures = [
         f"{label}={candidate_value:g}，要求{requirement_text(rule, query_value)}"
         for label, query_value, candidate_value in zip(labels, query_values, candidate_values)
@@ -388,19 +470,24 @@ def recommend(
         query_value = _category_value(query.get(column))
         if query_value:
             candidates = candidates[candidates[column].map(_category_value) == query_value]
-    if candidates.empty:
-        return pd.DataFrame()
 
-    query_channel = _category_value(query.get("Channel"))
+    pair_profile = _pair_profile(family)
+    pair_selector = pair_profile[0] if pair_profile else ""
+    pair_component_labels = pair_profile[2] if pair_profile else ()
+    pair_display_name = pair_profile[3] if pair_profile else "成对"
     query_has_pair = any(
         not _is_missing(query.get(column))
         and "/" in str(query.get(column))
         and not _is_asymmetric_signed_rating(column, query.get(column))
         for column in numeric
     )
-    if family == "mosfet" and query_has_pair and query_channel != "n+p":
-        raise ValueError("检测到 N/P 双值参数，请先将 Channel 选择为 N+P。")
-    query_pair_mode = family == "mosfet" and query_channel == "n+p"
+    query_pair_mode = _is_pair_selection(family, query)
+    if pair_profile and query_has_pair and not query_pair_mode:
+        expected_selection = "N+P" if family == "mosfet" else "NPN+PNP"
+        raise ValueError(
+            f"检测到 {pair_display_name} 双值参数，请先将 "
+            f"{pair_selector} 选择为 {expected_selection}。"
+        )
     query_values = {
         column: _numeric_values(
             query.get(column),
@@ -408,14 +495,28 @@ def recommend(
         )
         for column in numeric
     }
-    paired = paired_features(inventory) if query_channel == "n+p" else set()
+    invalid_query_values = sorted(
+        column
+        for column in numeric
+        if not _is_missing(query.get(column)) and not query_values[column]
+    )
+    if invalid_query_values:
+        raise ValueError(
+            "这些参数不是有效的完整数值格式，请检查内部空白、比较符或未知字符："
+            + "、".join(invalid_query_values)
+        )
+    paired = paired_features(inventory) if query_pair_mode else set()
     invalid_pairs = sorted([
         column
         for column in paired
         if query_pair_mode
         and not _is_missing(query.get(column))
         and len(query_values[column]) != 2
-        and not (is_shared_np_rating(column) and len(query_values[column]) == 1)
+        and not (
+            family == "mosfet"
+            and is_shared_np_rating(column)
+            and len(query_values[column]) == 1
+        )
     ])
     invalid_shared = sorted([
         column
@@ -427,13 +528,19 @@ def recommend(
     ])
     validation_messages: list[str] = []
     if invalid_pairs:
-        validation_messages.append(
-            "这些 N+P 参数必须按“ N值/P值 ”填写（VGS 也可填一个共享值）："
-            + "、".join(invalid_pairs)
-        )
+        if family == "mosfet":
+            validation_messages.append(
+                "这些 N+P 参数必须按“ N值/P值 ”填写（VGS 也可填一个共享值）："
+                + "、".join(invalid_pairs)
+            )
+        else:
+            validation_messages.append(
+                "这些 NPN+PNP 参数必须按“ NPN值/PNP值 ”填写："
+                + "、".join(invalid_pairs)
+            )
     if invalid_shared:
         validation_messages.append(
-            "这些参数是 N/P 共用规格，请只填写一个数值："
+            f"这些参数是 {pair_display_name} 共用规格，请只填写一个数值："
             + "、".join(invalid_shared)
         )
     if validation_messages:
@@ -441,6 +548,9 @@ def recommend(
     active = [column for column in numeric if query_values[column]]
     if not active:
         raise ValueError("请至少填写一个电气参数。")
+    # 即使硬约束没有候选，也要先完成客户输入校验，避免非法数值被空结果掩盖。
+    if candidates.empty:
+        return pd.DataFrame()
     rules = {column: get_rule(family, _field_key(column)) for column in active}
 
     feature_weights = {
@@ -452,13 +562,20 @@ def recommend(
     if any(value <= 0 for value in feature_weights.values()):
         raise ValueError("参数权重必须大于 0。")
     total_weight = sum(feature_weights.values())
-    minimum_shared = 1 if len(active) == 1 else 2
+    # A BJT pair can legitimately contain an incomplete catalog value.  Keep
+    # such candidates available for an explicit coverage/pending diagnosis;
+    # MIN_COVERAGE still prevents recommendations based on too little data.
+    has_active_pair = any(column in paired for column in active)
+    minimum_shared = (
+        1
+        if len(active) == 1
+        or (query_pair_mode and family != "mosfet" and has_active_pair)
+        else 2
+    )
     result_rows: list[dict[str, Any]] = []
 
     for _, candidate in candidates.iterrows():
-        candidate_pair_mode = family == "mosfet" and (
-            query_pair_mode or _category_value(candidate.get("Channel")) == "n+p"
-        )
+        candidate_pair_mode = query_pair_mode or _is_pair_selection(family, candidate)
         candidate_values = {
             column: _numeric_values(
                 candidate.get(column),
@@ -467,6 +584,11 @@ def recommend(
             )
             for column in active
         }
+        invalid_candidate_values = [
+            column
+            for column in active
+            if not _is_missing(candidate.get(column)) and not candidate_values[column]
+        ]
         aligned_values = {
             column: _align_numeric_values(
                 query_values[column],
@@ -474,6 +596,13 @@ def recommend(
                 allow_scalar_broadcast=(
                     family == "mosfet"
                     and is_shared_np_rating(column)
+                ),
+                required_components=(
+                    2
+                    if query_pair_mode
+                    and column in paired
+                    and not (family == "mosfet" and is_shared_np_rating(column))
+                    else None
                 ),
             )
             if candidate_values[column]
@@ -497,12 +626,16 @@ def recommend(
 
         risks: list[str] = []
         pending_reasons = [
-            f"{column}缺失"
+            (
+                f"{column}格式无法解析"
+                if column in invalid_candidate_values
+                else f"{column}缺失"
+            )
             for column in missing
             if rules[column] is not None and rules[column].critical
         ]
         pending_reasons.extend(
-            f"{column}的 N/P 数值数量不一致"
+            f"{column}的 {pair_display_name} 双值不完整"
             for column in incompatible
             if rules[column] is not None and rules[column].critical
         )
@@ -525,6 +658,7 @@ def recommend(
                     rule,
                     aligned_query,
                     aligned_candidate,
+                    pair_component_labels if len(aligned_query) == 2 else None,
                 )
                 if rule.critical:
                     failed_reasons.append(problem)
@@ -588,6 +722,12 @@ def recommend(
             risks.append(f"状态为 {candidate.get('Status')}")
         if family == "mosfet" and "wide soa" in source_name:
             risks.append("SOA 曲线未验证")
+        if invalid_candidate_values:
+            risks.append(
+                "候选参数格式无法解析：" + "、".join(invalid_candidate_values)
+            )
+        if incompatible:
+            risks.append(f"{pair_display_name} 成对参数不完整，未参与比较")
 
         if critical_status == "通过" and coverage >= 0.90 and not risks:
             confidence = "高"
@@ -613,8 +753,13 @@ def recommend(
             "关键参数检查": critical_status,
             "关键参数问题": "；".join(critical_issues) if critical_issues else "无",
             "缺失参数": "；".join([
-                *missing,
-                *(f"{column}（N/P 数量不一致）" for column in incompatible),
+                *(
+                    f"{column}（格式无法解析）"
+                    if column in invalid_candidate_values
+                    else column
+                    for column in missing
+                ),
+                *(f"{column}（{pair_display_name} 双值不完整）" for column in incompatible),
             ]) if missing or incompatible else "无",
             "风险提示": "；".join(dict.fromkeys(risks)) if risks else "无",
             "核对提示": "封装名称相同，Pinout/尺寸/原厂规格书仍需人工核对",

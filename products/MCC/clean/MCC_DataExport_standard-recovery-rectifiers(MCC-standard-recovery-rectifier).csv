@@ -98,7 +98,7 @@ MCC (Micro Commercial Components),GS2A-L,Active,R H,Single,SMA,2,50,1.1,5,2.1,50
 MCC (Micro Commercial Components),GS2J-L,Active,R H,Single,SMA,2,600,1.1,5,2.1,50,2,600,150
 MCC (Micro Commercial Components),GS2K-L,Active,R H,Single,SMA,2,800,1.1,5,2.1,50,2,800,150
 MCC (Micro Commercial Components),GS2M-L,Active,R H,Single,SMA,2,1000,1.1,5,2.1,50,2,1000,150
-MCC (Micro Commercial Components),S2B-L,Active,R H,Single,SMB,2,100,1.1,5, ,50,2,100,150
+MCC (Micro Commercial Components),S2B-L,Active,R H,Single,SMB,2,100,1.1,5,,50,2,100,150
 MCC (Micro Commercial Components),S2J-L,Active,R H,Single,SMB,2,600,1.1,5,,50,2,600,150
 MCC (Micro Commercial Components),S2K-L,Active,R H,Single,SMB,2,800,1.1,5,,50,2,800,150
 MCC (Micro Commercial Components),S2M-L,Active,R H,Single,SMB,2,1000,1.1,5,,50,2,1000,150
